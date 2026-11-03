@@ -1,0 +1,59 @@
+# Keeps the website's events and small groups in sync with Church Center.
+# Runs twice a day (about 5-6 AM and 1-2 PM Indianapolis time) and can be run by hand
+# from the Actions tab ("Run workflow"). If anything looks wrong it changes nothing and
+# the run fails, which makes GitHub email the repo owner.
+name: Church Center sync
+
+on:
+  schedule:
+    - cron: '17 10 * * *'
+    - cron: '17 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: church-center-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: sync
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: sync/package-lock.json
+
+      - name: Install
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Check the merge rules
+        run: node test.mjs
+
+      - name: Read Church Center and update data files
+        run: node sync.mjs
+
+      - name: Commit if anything changed
+        working-directory: .
+        run: |
+          if git diff --quiet -- data; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name "church-center-sync"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json data/groups.json
+          git commit -m "Sync events and groups from Church Center"
+          git pull --rebase
+          git push
