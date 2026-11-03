@@ -1,0 +1,875 @@
+{
+ "note": "Coordinates are traced from the June 2024 floor plan (2000px-wide drawing space). Rename rooms by editing 'name' only. 'kind' drives the colour in the 3D map.",
+ "entrance": "ENT",
+ "rooms": [
+  {
+   "id": "auditorium",
+   "name": "Auditorium",
+   "kind": "worship",
+   "rect": [
+    1205,
+    862,
+    1720,
+    1250
+   ],
+   "node": "AUD"
+  },
+  {
+   "id": "lobby",
+   "name": "Main Lobby",
+   "kind": "commons",
+   "rect": [
+    1460,
+    615,
+    1720,
+    855
+   ],
+   "node": "LOB"
+  },
+  {
+   "id": "south-hall",
+   "name": "Covered Entrance",
+   "kind": "patio",
+   "rect": [
+    1205,
+    648,
+    1458,
+    825
+   ],
+   "node": "PAV",
+   "noRoute": true,
+   "note": "The covered entry outside the main doors into the Main Lobby."
+  },
+  {
+   "id": "commons",
+   "name": "Commons",
+   "kind": "commons",
+   "rect": [
+    1255,
+    365,
+    1465,
+    612
+   ],
+   "node": "COM",
+   "rects": [
+    [
+     1255,
+     365,
+     1465,
+     612
+    ],
+    [
+     1465,
+     515,
+     1578,
+     612
+    ]
+   ],
+   "labelAt": [
+    1345,
+    545
+   ]
+  },
+  {
+   "id": "restrooms-ne",
+   "name": "Restrooms",
+   "kind": "service",
+   "rect": [
+    1465,
+    280,
+    1578,
+    515
+   ],
+   "node": "REST"
+  },
+  {
+   "id": "kitchen",
+   "name": "Kitchen",
+   "kind": "service",
+   "rect": [
+    1578,
+    425,
+    1720,
+    612
+   ],
+   "node": "KITE"
+  },
+  {
+   "id": "ne-large",
+   "name": "Gym",
+   "kind": "flex",
+   "rect": [
+    1578,
+    165,
+    1720,
+    425
+   ],
+   "node": "E1D"
+  },
+  {
+   "id": "ne-office-1",
+   "name": "Room E2",
+   "kind": "room",
+   "rect": [
+    1375,
+    165,
+    1420,
+    245
+   ],
+   "node": "NEH2",
+   "label": false
+  },
+  {
+   "id": "ne-office-2",
+   "name": "Room E3",
+   "kind": "room",
+   "rect": [
+    1420,
+    165,
+    1578,
+    245
+   ],
+   "node": "NEH2",
+   "label": false
+  },
+  {
+   "id": "ne-office-3",
+   "name": "Room E4",
+   "kind": "room",
+   "rect": [
+    1375,
+    280,
+    1465,
+    362
+   ],
+   "node": "NEH2",
+   "label": false
+  },
+  {
+   "id": "ne-hall",
+   "name": "East Hallway",
+   "kind": "hall",
+   "rect": [
+    1255,
+    165,
+    1375,
+    365
+   ],
+   "node": "NEH",
+   "rects": [
+    [
+     1255,
+     165,
+     1375,
+     365
+    ],
+    [
+     1375,
+     245,
+     1578,
+     280
+    ],
+    [
+     1120,
+     165,
+     1255,
+     228
+    ]
+   ],
+   "label": false
+  },
+  {
+   "id": "center-a",
+   "name": "Room C1",
+   "kind": "room",
+   "rect": [
+    875,
+    228,
+    997,
+    362
+   ],
+   "node": "HALLW",
+   "label": false
+  },
+  {
+   "id": "center-b",
+   "name": "Room C2",
+   "kind": "room",
+   "rect": [
+    997,
+    228,
+    1132,
+    362
+   ],
+   "node": "HALLM",
+   "label": false
+  },
+  {
+   "id": "center-c",
+   "name": "Room C3",
+   "kind": "room",
+   "rect": [
+    1132,
+    228,
+    1255,
+    362
+   ],
+   "node": "HALLE",
+   "label": false
+  },
+  {
+   "id": "center-hall",
+   "name": "Center Hallway",
+   "kind": "hall",
+   "rect": [
+    875,
+    362,
+    1255,
+    425
+   ],
+   "node": "HALLM",
+   "label": false
+  },
+  {
+   "id": "center-south",
+   "name": "Patio",
+   "kind": "patio",
+   "rect": [
+    855,
+    425,
+    1255,
+    520
+   ],
+   "node": "PATN"
+  },
+  {
+   "id": "north-large",
+   "name": "Room N1",
+   "kind": "flex",
+   "rect": [
+    875,
+    38,
+    1120,
+    228
+   ],
+   "node": "N1D",
+   "label": false
+  },
+  {
+   "id": "north-ne",
+   "name": "Room N2",
+   "kind": "room",
+   "rect": [
+    1120,
+    38,
+    1255,
+    165
+   ],
+   "node": "N1D",
+   "label": false
+  },
+  {
+   "id": "west-hall",
+   "name": "Multipurpose Room",
+   "kind": "flex",
+   "rect": [
+    722,
+    38,
+    875,
+    335
+   ],
+   "node": "WEST"
+  },
+  {
+   "id": "west-lobby",
+   "name": "West Entry",
+   "kind": "hall",
+   "rect": [
+    722,
+    335,
+    875,
+    425
+   ],
+   "node": "WLOB"
+  },
+  {
+   "id": "nw-classroom",
+   "name": "Teen Room",
+   "kind": "room",
+   "rect": [
+    330,
+    38,
+    550,
+    215
+   ],
+   "node": "NWR"
+  },
+  {
+   "id": "nw-lounge",
+   "name": "Room NW2",
+   "kind": "room",
+   "rect": [
+    262,
+    38,
+    330,
+    110
+   ],
+   "node": "NWR",
+   "label": false
+  },
+  {
+   "id": "nw-storage",
+   "name": "Room NW3",
+   "kind": "service",
+   "rect": [
+    262,
+    110,
+    330,
+    215
+   ],
+   "node": "NWR",
+   "label": false
+  },
+  {
+   "id": "nw-annex",
+   "name": "Teen Lobby",
+   "kind": "room",
+   "rect": [
+    550,
+    38,
+    722,
+    215
+   ],
+   "node": "TLD"
+  },
+  {
+   "id": "office-1",
+   "name": "Office O1",
+   "kind": "office",
+   "rect": [
+    442,
+    240,
+    612,
+    312
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-2",
+   "name": "Office O2",
+   "kind": "office",
+   "rect": [
+    612,
+    240,
+    690,
+    272
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-3",
+   "name": "Office O3",
+   "kind": "office",
+   "rect": [
+    612,
+    272,
+    690,
+    312
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-4",
+   "name": "Office O4",
+   "kind": "office",
+   "rect": [
+    442,
+    340,
+    518,
+    425
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-5",
+   "name": "Office O5",
+   "kind": "office",
+   "rect": [
+    518,
+    340,
+    595,
+    425
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-rr",
+   "name": "Office Restrooms",
+   "kind": "service",
+   "rect": [
+    595,
+    340,
+    690,
+    425
+   ],
+   "node": "OFC",
+   "label": false
+  },
+  {
+   "id": "office-hall",
+   "name": "Office Hallway",
+   "kind": "hall",
+   "rects": [
+    [
+     442,
+     215,
+     722,
+     240
+    ],
+    [
+     690,
+     240,
+     722,
+     425
+    ],
+    [
+     442,
+     312,
+     690,
+     340
+    ]
+   ],
+   "node": "OFC",
+   "label": false
+  }
+ ],
+ "nodes": {
+  "ENT": [
+   1458,
+   738
+  ],
+  "LOB": [
+   1600,
+   735
+  ],
+  "AUDD": [
+   1495,
+   858
+  ],
+  "AUD": [
+   1440,
+   1040
+  ],
+  "PAVD": [
+   1460,
+   735
+  ],
+  "PAV": [
+   1330,
+   735
+  ],
+  "LOBN": [
+   1495,
+   622
+  ],
+  "COM": [
+   1360,
+   500
+  ],
+  "COMN": [
+   1300,
+   392
+  ],
+  "HALLE": [
+   1200,
+   395
+  ],
+  "HALLM": [
+   1065,
+   395
+  ],
+  "HALLW": [
+   905,
+   395
+  ],
+  "WLOB": [
+   800,
+   390
+  ],
+  "WEST": [
+   800,
+   200
+  ],
+  "NWC": [
+   640,
+   228
+  ],
+  "NWR": [
+   450,
+   150
+  ],
+  "OFC": [
+   560,
+   326
+  ],
+  "NEH": [
+   1315,
+   265
+  ],
+  "NEH2": [
+   1400,
+   262
+  ],
+  "REST": [
+   1500,
+   535
+  ],
+  "KIT": [
+   1640,
+   520
+  ],
+  "KITD": [
+   1560,
+   600
+  ],
+  "E1D": [
+   1650,
+   300
+  ],
+  "N1D": [
+   1100,
+   200
+  ],
+  "LOBE": [
+   1688,
+   712
+  ],
+  "KITS": [
+   1688,
+   612
+  ],
+  "KITE": [
+   1688,
+   515
+  ],
+  "GYMD": [
+   1688,
+   425
+  ],
+  "WW": [
+   706,
+   395
+  ],
+  "TLD": [
+   706,
+   228
+  ],
+  "PATE": [
+   1248,
+   468
+  ],
+  "PATN": [
+   1262,
+   432
+  ],
+  "COMW": [
+   1266,
+   398
+  ]
+ },
+ "edges": [
+  [
+   "LOB",
+   "AUDD"
+  ],
+  [
+   "AUDD",
+   "AUD"
+  ],
+  [
+   "LOB",
+   "PAVD"
+  ],
+  [
+   "PAVD",
+   "PAV"
+  ],
+  [
+   "LOB",
+   "LOBN"
+  ],
+  [
+   "LOBN",
+   "COM"
+  ],
+  [
+   "LOBN",
+   "KITD"
+  ],
+  [
+   "KITD",
+   "KIT"
+  ],
+  [
+   "COM",
+   "REST"
+  ],
+  [
+   "COM",
+   "COMN"
+  ],
+  [
+   "COMN",
+   "NEH"
+  ],
+  [
+   "NEH",
+   "NEH2"
+  ],
+  [
+   "COMN",
+   "HALLE"
+  ],
+  [
+   "HALLE",
+   "HALLM"
+  ],
+  [
+   "HALLM",
+   "HALLW"
+  ],
+  [
+   "HALLW",
+   "WLOB"
+  ],
+  [
+   "WLOB",
+   "WEST"
+  ],
+  [
+   "WEST",
+   "NWC"
+  ],
+  [
+   "NWC",
+   "NWR"
+  ],
+  [
+   "NWC",
+   "OFC"
+  ],
+  [
+   "NEH",
+   "N1D"
+  ],
+  [
+   "ENT",
+   "PAVD"
+  ],
+  [
+   "ENT",
+   "PAV"
+  ],
+  [
+   "LOB",
+   "LOBE"
+  ],
+  [
+   "LOBE",
+   "KITS"
+  ],
+  [
+   "KITS",
+   "KITE"
+  ],
+  [
+   "KITE",
+   "GYMD"
+  ],
+  [
+   "GYMD",
+   "E1D"
+  ],
+  [
+   "KITE",
+   "KIT"
+  ],
+  [
+   "WLOB",
+   "WW"
+  ],
+  [
+   "WW",
+   "TLD"
+  ],
+  [
+   "TLD",
+   "NWC"
+  ],
+  [
+   "COM",
+   "PATE"
+  ],
+  [
+   "LOBN",
+   "PATN"
+  ],
+  [
+   "LOBN",
+   "COMW"
+  ],
+  [
+   "COMW",
+   "HALLE"
+  ]
+ ],
+ "landmarks": [
+  {
+   "id": "kids-checkin",
+   "name": "Kids Check-in",
+   "at": [
+    1418,
+    402
+   ],
+   "type": "counter",
+   "size": [
+    64,
+    16
+   ]
+  },
+  {
+   "id": "coffee-bar",
+   "name": "Coffee Bar",
+   "at": [
+    1610,
+    634
+   ],
+   "type": "counter",
+   "size": [
+    120,
+    22
+   ]
+  },
+  {
+   "id": "stairs-gt",
+   "name": "Stairs to Growth Track Room",
+   "at": [
+    1552,
+    560
+   ],
+   "type": "stairs"
+  },
+  {
+   "id": "growth-track-room",
+   "name": "Growth Track Room",
+   "at": [
+    1552,
+    560
+   ],
+   "type": "none",
+   "via": "Stairs to Growth Track Room",
+   "suffix": " (upstairs)"
+  },
+  {
+   "id": "back-entrance",
+   "name": "Back Entrance",
+   "at": [
+    1720,
+    700
+   ],
+   "type": "door",
+   "noRoute": true,
+   "note": "A second way in, on the east wall of the Main Lobby."
+  },
+  {
+   "id": "west-door",
+   "name": "West Entrance",
+   "at": [
+    762,
+    425
+   ],
+   "type": "door",
+   "noLabel": true
+  },
+  {
+   "id": "students-entrance",
+   "name": "Venture Students Entrance",
+   "at": [
+    530,
+    38
+   ],
+   "type": "door",
+   "noRoute": true,
+   "note": "The outside door into the Venture Students wing, on the north wall by the Teen Room and Teen Lobby."
+  }
+ ],
+ "zones": [
+  {
+   "id": "venture-kids",
+   "name": "Venture Kids",
+   "color": "#FF654D",
+   "rects": [
+    [
+     875,
+     38,
+     1255,
+     362
+    ],
+    [
+     1255,
+     165,
+     1720,
+     280
+    ],
+    [
+     1255,
+     280,
+     1465,
+     365
+    ],
+    [
+     1578,
+     280,
+     1720,
+     425
+    ],
+    [
+     1369,
+     365,
+     1465,
+     420
+    ]
+   ],
+   "labelAt": [
+    1070,
+    200
+   ],
+   "entry": "kids-checkin",
+   "suffix": " (check in here)"
+  },
+  {
+   "id": "venture-students",
+   "name": "Venture Students",
+   "color": "#D3483D",
+   "rects": [
+    [
+     262,
+     38,
+     722,
+     215
+    ]
+   ],
+   "labelAt": [
+    490,
+    110
+   ],
+   "entry": "nw-annex",
+   "suffix": ""
+  }
+ ]
+}

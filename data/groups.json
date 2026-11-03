@@ -1,0 +1,236 @@
+{
+ "updated": "2026-11-02T13:41:13-05:00",
+ "source": "https://yvc.churchcenter.com/groups/small-groups",
+ "groups": [
+  {
+   "name": "2026 Men's Bible Reading",
+   "when": "Once a month",
+   "day": "Monthly",
+   "who": "Men",
+   "where": "Varies",
+   "roomId": null,
+   "summary": "Men reading the whole Bible together from January 1 to December 31, 2026, in any translation.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/2026-men-s-bible-reading"
+  },
+  {
+   "name": "27:17 Men",
+   "when": "Most Tuesdays 6\u20137:30 PM; every third week on Wednesday",
+   "day": "Tuesday",
+   "who": "Men",
+   "where": "In a home \u00b7 Pittsboro",
+   "roomId": null,
+   "summary": "Iron sharpens iron. Men committed to pushing one another toward Christ.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/27-17-men"
+  },
+  {
+   "name": "Care & Share (Ladies)",
+   "when": "Thursdays 6\u20138 PM",
+   "day": "Thursday",
+   "who": "Women",
+   "where": "In a home",
+   "roomId": null,
+   "summary": "Make a craft or share a talent, plus scripture, testimonies and prayer.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/care-share-fall-2026-ladies"
+  },
+  {
+   "name": "Coffee & Jesus (Ladies)",
+   "when": "Fridays 9\u201311 AM",
+   "day": "Friday",
+   "who": "Women",
+   "where": "Off-site \u00b7 Maplewood",
+   "roomId": null,
+   "summary": "Pitch-in breakfast and coffee while walking through the parables of Jesus.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/coffee-jesus-ladies"
+  },
+  {
+   "name": "Discipleship Study (Men)",
+   "when": "Thursdays 6:30\u20138 PM",
+   "day": "Thursday",
+   "who": "Men",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "A study of how ordinary, flawed disciples were changed by time with Jesus.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/discipleship-study-men"
+  },
+  {
+   "name": "Football & Faith",
+   "when": "Sundays 1\u20134 PM",
+   "day": "Sunday",
+   "who": "Men",
+   "where": "At Venture \u00b7 Growth Track Room",
+   "roomId": "growth-track-room",
+   "summary": "Men watch football together after church upstairs in the Growth Track Room.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/football-faith"
+  },
+  {
+   "name": "Freedom with the Greens",
+   "when": "Wednesdays 6:30\u20138 PM",
+   "day": "Wednesday",
+   "who": "Everyone",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "A 13-week semester working through the Freedom small group curriculum.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/freedom-with-the-greens"
+  },
+  {
+   "name": "Gathered & Grounded Brownsburg",
+   "when": "Saturdays 9\u201311 AM",
+   "day": "Saturday",
+   "who": "Women",
+   "where": "In a home \u00b7 Brownsburg",
+   "roomId": null,
+   "summary": "Women of all ages growing in God's Word with a short weekly video study.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/gathered-grounded-brownsburg"
+  },
+  {
+   "name": "Grace at the Basin",
+   "when": "Tuesdays 6\u20137:30 PM",
+   "day": "Tuesday",
+   "who": "Everyone",
+   "where": "At Venture \u00b7 Coffee Bar",
+   "roomId": "coffee-bar",
+   "summary": "A study of A King Washes Feet by Jessica Bond on the humility of Jesus.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/grace-at-the-basin"
+  },
+  {
+   "name": "GriefShare",
+   "when": "Mondays 6:30\u20138 PM",
+   "day": "Monday",
+   "who": "Support",
+   "where": "At Venture \u00b7 Multipurpose Room",
+   "roomId": "west-hall",
+   "summary": "Help and encouragement after the death of a spouse, child, family member or friend.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/grief-share"
+  },
+  {
+   "name": "LiFT (Living in Faith Together)",
+   "when": "Wednesdays 10\u201311:30 AM",
+   "day": "Wednesday",
+   "who": "Women",
+   "where": "Off-site",
+   "roomId": null,
+   "summary": "Ladies of all ages deepening their walk with Jesus and building friendships.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/lift-living-in-faith-together"
+  },
+  {
+   "name": "Loaves & Life (Women 18\u201330s)",
+   "when": "Tuesdays 6\u20137:30 PM",
+   "day": "Tuesday",
+   "who": "Young adults",
+   "where": "Off-site",
+   "roomId": null,
+   "summary": "A space for young women in every walk of life to grow, love and encourage one another.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/loaves-life-18-30s-women"
+  },
+  {
+   "name": "Men's Breakfast",
+   "when": "Second Saturday of every month, 8 AM",
+   "day": "Saturday",
+   "who": "Men",
+   "where": "At Venture \u00b7 Main Lobby",
+   "roomId": "lobby",
+   "summary": "A big buffet breakfast and time together for the men of Venture.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/men-s-breakfast-2nd-sat"
+  },
+  {
+   "name": "Pour It Out and Fill It Up (Ladies)",
+   "when": "Mondays 6:30\u20138 PM",
+   "day": "Monday",
+   "who": "Women",
+   "where": "At Venture \u00b7 Teen Room",
+   "roomId": "nw-classroom",
+   "summary": "A laid-back group for women of all ages to connect and do life together.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/pour-it-out-and-fill-it-up-ladies"
+  },
+  {
+   "name": "Restore: Addiction & Recovery",
+   "when": "Tuesdays 6:30\u20138 PM",
+   "day": "Tuesday",
+   "who": "Support",
+   "where": "At Venture \u00b7 Multipurpose Room",
+   "roomId": "west-hall",
+   "summary": "For people facing active addiction, working in recovery, or who have lost a loved one to it.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/restore-addiction-recovery-tuesday-6-30-pm"
+  },
+  {
+   "name": "Take 5",
+   "when": "Fridays 6\u20138 PM",
+   "day": "Friday",
+   "who": "Families",
+   "where": "In a home",
+   "roomId": null,
+   "summary": "Friday, family, faith, food and fun: five things every meeting focuses on.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/take-5"
+  },
+  {
+   "name": "The Cornerstone (Young Adults)",
+   "when": "Fridays 5:30\u20137 PM",
+   "day": "Friday",
+   "who": "Young adults",
+   "where": "Online",
+   "roomId": null,
+   "summary": "A virtual young adult community figuring out adulthood together.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/the-cornerstone-for-young-adults-online"
+  },
+  {
+   "name": "The Revival Project",
+   "when": "Saturdays 9\u201311 AM",
+   "day": "Saturday",
+   "who": "Everyone",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "Working through the book Revival and its practices together.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/the-revival-project"
+  },
+  {
+   "name": "Venture 55+ Been There Done That",
+   "when": "Monthly outings",
+   "day": "Monthly",
+   "who": "55+",
+   "where": "Varies",
+   "roomId": null,
+   "summary": "Monthly outings for men and women 55 and up. Starting back up in the spring.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/venture-55-been-there-done-that-men-women"
+  },
+  {
+   "name": "Venture Maintenance Team",
+   "when": "Usually after the monthly men's breakfast",
+   "day": "Monthly",
+   "who": "Serve teams",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "Men and women using their skills to care for Venture's buildings.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/venture-maintenance-team-men-women"
+  },
+  {
+   "name": "Venture Serve Team",
+   "when": "As needs come up",
+   "day": "Varies",
+   "who": "Serve teams",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "Serving others as needs come up, plus Serve Day every July.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/venture-serve-team-men-women"
+  },
+  {
+   "name": "Weight Release for Women",
+   "when": "Tuesdays 6\u20138 PM",
+   "day": "Tuesday",
+   "who": "Women",
+   "where": "At Venture",
+   "roomId": null,
+   "summary": "Releasing what holds us back, from pounds to things we carry inside.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/weight-release-for-women"
+  },
+  {
+   "name": "Well Built Women",
+   "when": "Tuesdays 6\u20137:30 PM",
+   "day": "Tuesday",
+   "who": "Women",
+   "where": "At Venture \u00b7 Kids Check-in area",
+   "roomId": "kids-checkin",
+   "summary": "Learning to live by the virtues of the Proverbs 31 woman.",
+   "url": "https://yvc.churchcenter.com/groups/small-groups/well-built-women"
+  }
+ ]
+}

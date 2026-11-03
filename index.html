@@ -1,0 +1,1862 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Venture Photo Wall Hero</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Your Venture Church is a nondenominational church in Pittsboro, Indiana. Sundays at 8:00, 9:30 and 11:00 AM.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Jost:wght@200;300&display=swap">
+<style>
+/* Layout concept: an ink "frame" holds bright white inset panels and full-bleed photo bands — the Vista rhythm — with coral reserved for action and wayfinding. */
+[hidden]{display:none!important}
+:root{
+  --coral:#FF654D; --ember:#D3483D; --ink:#070707; --paper:#FFFFFF;
+  --blush:#FFF1EE; --ash:#1A1615; --smoke:#2A2422; --muted:#6F6360; --line:#EADFDC; --on-dark:#F4EDEB; --dim:#A79A97;
+  --display:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --thin:"Jost","Futura","Avenir Next","Helvetica Neue",sans-serif;
+  --r:28px; --gut:max(16px, env(safe-area-inset-left, 0px)); --gutR:max(16px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--on-dark);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+a{color:inherit}
+img,video{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:1.02;text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font:300 13px/1.2 var(--thin);letter-spacing:.32em;text-transform:uppercase}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutR)}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.mono{font-variant-numeric:tabular-nums}
+.fine{font-size:14px;color:var(--muted)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.6em;font:700 15px/1 var(--body);letter-spacing:.01em;text-decoration:none;padding:15px 22px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{transition:transform .25s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn-coral{background:var(--coral);color:var(--paper)}
+.btn-coral:hover{background:var(--ember)}
+.btn-light{background:var(--paper);color:var(--ink)}
+.btn-ghost{border-color:currentColor;color:inherit;background:transparent}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{background:var(--coral)}
+
+/* ---------- header ---------- */
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;padding-left:var(--gut);padding-right:var(--gutR);transition:background .35s,backdrop-filter .35s}
+.top .bar{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.top.solid{background:rgba(7,7,7,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;color:var(--paper);text-decoration:none}
+.brand svg{height:38px;width:auto}
+.top-actions{display:flex;align-items:center;gap:10px}
+.top-actions .btn{padding:11px 18px;font-size:14px}
+.menu-btn{display:inline-flex;align-items:center;gap:12px;background:none;border:2px solid currentColor;border-radius:999px;color:var(--paper);font:700 14px/1 var(--body);cursor:pointer;padding:9px 12px 9px 18px;position:relative;transition:background .25s,transform .25s var(--ease)}
+.menu-btn:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
+.menu-btn:hover .toggle::after{transform:translateX(5px)}
+body.menu-open .menu-btn:hover .toggle::after{transform:translateX(18px)}
+/* gentle "click me" hint until the visitor has opened the menu once */
+.menu-btn::before{content:"";position:absolute;inset:-2px;border-radius:inherit;pointer-events:none;box-shadow:0 0 0 0 rgba(255,101,77,.7);opacity:0}
+.menu-btn.hint::before{animation:menuRing 2.6s ease-out 1.2s infinite}
+.menu-btn.hint .toggle::after{animation:menuPeek 2.6s var(--ease) 1.2s infinite}
+body.menu-open .menu-btn.hint::before,body.menu-open .menu-btn.hint .toggle::after{animation:none}
+@keyframes menuRing{0%{opacity:1;box-shadow:0 0 0 0 rgba(255,101,77,.75)}60%,100%{opacity:0;box-shadow:0 0 0 12px rgba(255,101,77,0)}}
+@keyframes menuPeek{0%,40%,100%{transform:none}18%,28%{transform:translateX(9px)}}
+@media (prefers-reduced-motion:reduce){.menu-btn.hint::before,.menu-btn.hint .toggle::after{animation:none}}
+.toggle{width:40px;height:22px;border-radius:99px;border:2px solid currentColor;position:relative;transition:background .3s}
+.toggle::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:currentColor;transition:transform .35s var(--ease)}
+body.menu-open .toggle{background:var(--paper)}
+body.menu-open .toggle::after{transform:translateX(18px);background:var(--coral)}
+@media (max-width:640px){.top-actions .hide-sm{display:none}.brand svg{height:32px}}
+
+/* ---------- menu overlay ---------- */
+.menu{position:fixed;inset:0;z-index:40;background:var(--coral);color:var(--paper);clip-path:circle(0% at calc(100% - 60px) 40px);transition:clip-path .7s var(--ease);overflow:auto;padding-top:calc(96px + env(safe-area-inset-top,0px));padding-bottom:40px;padding-left:var(--gut);padding-right:var(--gutR)}
+body.menu-open .menu{clip-path:circle(150% at calc(100% - 60px) 40px)}
+.menu-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+.menu-main a{display:block;font:800 clamp(40px,7vw,88px)/1 var(--display);letter-spacing:-.04em;text-decoration:none;padding:4px 0;transform:translateY(30px);opacity:0;transition:transform .6s var(--ease),opacity .6s,color .2s}
+.menu-main a:hover{color:var(--ink)}
+body.menu-open .menu-main a{transform:none;opacity:1}
+.menu-main a:nth-child(2){transition-delay:.04s}.menu-main a:nth-child(3){transition-delay:.08s}.menu-main a:nth-child(4){transition-delay:.12s}.menu-main a:nth-child(5){transition-delay:.16s}.menu-main a:nth-child(6){transition-delay:.2s}.menu-main a:nth-child(7){transition-delay:.24s}
+.menu-side{display:grid;gap:28px;align-content:start}
+.menu-side h4{font:300 13px var(--thin);letter-spacing:.3em;text-transform:uppercase;margin-bottom:10px}
+.menu-side a{display:block;text-decoration:none;font-weight:600;font-size:19px;padding:3px 0}
+.menu-side a:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){.menu-grid{grid-template-columns:1fr}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(92vh,880px);display:grid;align-items:end;overflow:hidden;background:var(--ink)}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,7,.55) 0%,rgba(7,7,7,.15) 35%,rgba(7,7,7,.35) 60%,rgba(7,7,7,.9) 100%)}
+.hero-in{position:relative;z-index:2;width:100%;max-width:1400px;margin:0 auto;padding:140px var(--gutR) 64px var(--gut);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:end}
+.hero h1{font-size:clamp(52px,9vw,136px);line-height:.9;letter-spacing:-.05em;color:var(--paper)}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.06em;padding-right:.12em;margin-right:-.12em}
+.hero h1 .w>span{display:inline-block;animation:rise 1s var(--ease) both}
+.hero h1 em{font-style:normal;color:var(--coral)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.join{background:rgba(7,7,7,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:26px;display:grid;gap:16px;animation:fade 1.2s .5s var(--ease) both}
+.join h2{font-size:22px;letter-spacing:-.01em}
+.times{display:flex;flex-wrap:wrap;gap:8px}
+.times span{font:700 15px var(--body);background:var(--paper);color:var(--ink);border-radius:99px;padding:7px 13px}
+.join .acts{display:flex;flex-wrap:wrap;gap:10px}
+.hero-foot{position:relative;z-index:2;max-width:1400px;margin:0 auto;width:100%;padding:0 var(--gutR) 26px var(--gut);display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--dim);font-size:14px}
+.play-story{display:inline-flex;align-items:center;gap:12px;background:none;border:0;color:var(--paper);font:600 15px var(--body);cursor:pointer;padding:0}
+.play-story .pb{width:46px;height:46px;border-radius:50%;background:var(--coral);display:grid;place-items:center;transition:transform .3s var(--ease)}
+.play-story:hover .pb{transform:scale(1.12)}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:860px){.hero-in{grid-template-columns:1fr;gap:28px;padding-top:120px}.hero{min-height:0}}
+
+/* ---------- ribbon: the logo's thin + bold voices, each phrase glowing in turn ---------- */
+.ribbon{position:relative;overflow:hidden;background:var(--ink)}
+.band{position:relative;white-space:nowrap;overflow:hidden}
+.band-a{background:var(--coral);color:var(--paper);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -1px 0 rgba(0,0,0,.12);
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 14px)}
+.band-a::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.22) 48%,rgba(255,255,255,.04) 56%,transparent 70%);background-size:250% 100%;animation:sheen 7s ease-in-out infinite}
+@keyframes sheen{0%{background-position:150% 0}60%,100%{background-position:-60% 0}}
+.band .track{display:inline-flex;align-items:center;will-change:transform;animation:slide 46s linear infinite}
+.ribbon:hover .track{animation-play-state:paused}
+.band-a .set{display:flex;align-items:center;justify-content:space-evenly;gap:clamp(8px,1.6vw,32px);padding-block:clamp(14px,1.7vw,22px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (max-width:980px){
+  .band-a .set{display:grid;grid-template-columns:1fr 1fr;row-gap:14px;column-gap:12px;justify-items:center}
+  .band-a .vm{display:none}
+  .band-a .it{flex-direction:column;align-items:center;gap:6px}
+  .band-a i{transform:none}
+}
+.band-a .it{display:inline-flex;align-items:baseline;gap:.42em;animation:glow 7.2s ease-in-out infinite}
+.band-a i{font:200 clamp(10px,1vw,17px)/1 var(--thin);font-style:normal;letter-spacing:.32em;text-transform:uppercase;opacity:.95;transform:translateY(-.35em)}
+.band-a b{font:800 clamp(22px,2.5vw,46px)/1 var(--display);letter-spacing:-.045em;transition:color .4s}
+.band-a .it:nth-of-type(even) b{color:transparent;-webkit-text-stroke:1.5px var(--paper);animation:fill 7.2s ease-in-out infinite;animation-delay:inherit}
+.band-a .it:nth-of-type(1){animation-delay:0s}.band-a .it:nth-of-type(2){animation-delay:1.8s}.band-a .it:nth-of-type(3){animation-delay:3.6s}.band-a .it:nth-of-type(4){animation-delay:5.4s}
+@keyframes glow{0%,18%,100%{text-shadow:none;transform:none}8%{text-shadow:0 0 14px rgba(255,255,255,.95),0 0 34px rgba(255,236,226,.75),0 0 60px rgba(255,255,255,.35);transform:translateY(-2px) scale(1.04)}}
+@keyframes fill{0%,18%,100%{color:transparent}8%{color:var(--paper)}}
+.vm{width:clamp(20px,2.2vw,34px);height:clamp(20px,2.2vw,34px);flex:none;color:var(--ink);animation:sway 3.2s ease-in-out infinite}
+.band-a .vm:nth-of-type(even){color:var(--paper)}
+@keyframes sway{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+/* ---------- panels ---------- */
+.frame{padding:28px max(14px, env(safe-area-inset-right, 0px)) 28px max(14px, env(safe-area-inset-left, 0px))}
+.panel{background:var(--paper);color:var(--ink);border-radius:var(--r);overflow:hidden}
+.panel .fine{color:var(--muted)}
+.intro{padding:clamp(56px,9vw,120px) var(--gutR) clamp(56px,9vw,120px) var(--gut);text-align:center;display:grid;gap:22px;justify-items:center}
+.intro h2{font-size:clamp(38px,6vw,76px);max-width:15ch}
+.intro p{max-width:62ch;font-size:19px;color:#3b3433}
+.intro .eyebrow{color:var(--ember)}
+
+/* ---------- split bands ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.split.flip .media{order:2}
+.split .media{position:relative;overflow:hidden;min-height:360px}
+.split .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.4s var(--ease)}
+.split:hover .media img{transform:scale(1)}
+.split .copy{padding:clamp(40px,7vw,96px) var(--gutR) clamp(40px,7vw,96px) var(--gut);display:grid;align-content:center;gap:20px;min-width:0}
+.split .copy h2{font-size:clamp(36px,5vw,64px)}
+.split .copy p{max-width:48ch;font-size:18px}
+.split.dark{background:var(--ink);color:var(--on-dark)}
+.split.light{background:var(--paper);color:var(--ink)}
+.split.coral{background:var(--coral);color:var(--paper)}
+@media (max-width:860px){.split{grid-template-columns:1fr;min-height:0}.split.flip .media{order:0}.split .media{aspect-ratio:4/3;min-height:0}}
+
+/* ---------- pathways ---------- */
+.paths{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.path{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;color:var(--paper);text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;isolation:isolate}
+.path img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .9s var(--ease),filter .5s}
+.path::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,7,7,0) 30%,rgba(7,7,7,.85));transition:background .5s}
+.path:hover img{transform:scale(1.07)}
+.path:hover::before{background:linear-gradient(180deg,rgba(255,101,77,.25) 0%,rgba(211,72,61,.92))}
+.path .n{font:300 13px var(--thin);letter-spacing:.3em;text-transform:uppercase}
+.path h3{font-size:clamp(26px,2.6vw,34px);margin:8px 0 8px}
+.path p{font-size:15px;line-height:1.45;color:#eee4e2;max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.path:hover p,.path:focus-visible p{max-height:120px}
+@media (max-width:960px){.paths{grid-template-columns:repeat(2,minmax(0,1fr))}.path p{max-height:none}}
+@media (max-width:520px){.paths{grid-template-columns:1fr}.path{aspect-ratio:16/11}}
+
+/* ---------- section heads ---------- */
+.sec{padding-block:clamp(56px,8vw,110px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.sec-head h2{font-size:clamp(38px,5.5vw,72px)}
+.sec-head .eyebrow{color:var(--coral);margin-bottom:14px}
+.panel .sec-head .eyebrow{color:var(--ember)}
+
+/* ---------- event cards ---------- */
+.ev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.ev{background:var(--ash);border:1px solid var(--smoke);border-radius:22px;padding:22px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:start;transition:transform .3s var(--ease),border-color .3s}
+.ev:hover{transform:translateY(-4px);border-color:var(--coral)}
+.panel .ev{background:var(--blush);border-color:var(--line)}
+.date{width:64px;border-radius:14px;overflow:hidden;text-align:center;background:var(--paper);color:var(--ink);flex:none}
+.date b{display:block;background:var(--coral);color:var(--paper);font:700 11px/1 var(--body);letter-spacing:.14em;padding:6px 0;text-transform:uppercase}
+.date span{display:block;font:800 28px/1 var(--display);padding:8px 0 9px;font-variant-numeric:tabular-nums}
+.ev h3{font-size:21px;letter-spacing:-.015em;line-height:1.15;margin-bottom:6px}
+.ev .meta{font-size:14px;color:var(--dim);display:grid;gap:2px}
+.panel .ev .meta{color:var(--muted)}
+.ev .sum{font-size:15px;margin-top:10px;line-height:1.5}
+.ev .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:6px;font:700 13px var(--body);padding:7px 12px;border-radius:99px;text-decoration:none;border:1.5px solid currentColor;background:none;color:inherit;cursor:pointer}
+.chip.room{background:var(--coral);border-color:var(--coral);color:var(--paper)}
+.chip.room:hover{background:var(--ember);border-color:var(--ember)}
+.tag{font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+.empty{border:1.5px dashed var(--smoke);border-radius:22px;padding:36px;display:grid;gap:12px;max-width:720px}
+.panel .empty{border-color:var(--line)}
+.empty h3{font-size:26px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filters button{font:600 14px var(--body);padding:9px 16px;border-radius:99px;border:1.5px solid var(--smoke);background:none;color:inherit;cursor:pointer}
+.filters button.on{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.updated{font-size:13px;color:var(--dim)}
+
+/* ---------- black cards ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card-x{background:var(--ink);color:var(--on-dark);border-radius:22px;overflow:hidden;display:grid;text-decoration:none}
+.card-x .ph{aspect-ratio:16/9;overflow:hidden}
+.card-x .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.card-x:hover .ph img{transform:scale(1.05)}
+.card-x .tx{padding:28px;display:grid;gap:12px}
+.card-x h3{font-size:clamp(28px,3.4vw,40px)}
+.card-x .eyebrow{color:var(--coral)}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
+/* ---------- map ---------- */
+.map-wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px}
+.map-stage{position:relative;height:min(72vh,680px);min-height:420px;border-radius:22px;overflow:hidden;background:radial-gradient(120% 90% at 60% 30%,#1d1716,#070707);border:1px solid var(--smoke)}
+#map-canvas,#map-canvas canvas{position:absolute;inset:0;width:100%!important;height:100%!important;touch-action:none}
+#map-labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.map-label{position:absolute;left:0;top:0;pointer-events:auto;font:600 11px var(--body);color:var(--on-dark);background:rgba(7,7,7,.66);border:1px solid rgba(255,255,255,.14);padding:4px 8px;border-radius:99px;white-space:nowrap;cursor:pointer;opacity:.75;transition:opacity .2s,background .2s}
+.map-label.major{font-size:13px;opacity:1}
+.map-label.on{background:var(--coral);border-color:var(--coral);color:var(--paper);opacity:1;font-size:14px;z-index:2}
+.map-label.lm{background:var(--paper);color:var(--ink);border-color:var(--coral);opacity:1;font-size:12px;font-weight:700}
+.map-label.lm::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--coral);margin-right:6px;vertical-align:1px}
+.map-label.lm.on{background:var(--coral);color:var(--paper)}
+.map-label.lm.on::before{background:var(--paper)}
+#room-list button.lm{border-color:rgba(255,101,77,.55);color:var(--paper)}
+.map-label.entrance{background:var(--paper);color:var(--ink);opacity:1;pointer-events:none}
+.map-hint{position:absolute;left:16px;bottom:14px;font-size:12px;color:var(--dim);pointer-events:none}
+.map-side{background:var(--ash);border:1px solid var(--smoke);border-radius:22px;padding:22px;display:grid;gap:18px;align-content:start;min-width:0}
+.map-side input{width:100%;font:500 16px var(--body);padding:12px 16px;border-radius:12px;border:1.5px solid var(--smoke);background:var(--ink);color:var(--paper)}
+#room-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px;max-height:210px;overflow:auto}
+#room-list button{font:600 13px var(--body);padding:7px 11px;border-radius:99px;border:1.5px solid var(--smoke);background:none;color:inherit;cursor:pointer}
+#room-list button:hover,#room-list button.on{border-color:var(--coral);color:var(--coral)}
+#map-route h3{font-size:30px;margin:6px 0 12px;color:var(--paper)}
+#map-route .eyebrow{color:var(--coral)}
+.steps{margin:0 0 12px;padding:0;list-style:none;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 14px 34px;font-weight:600}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--coral);color:var(--paper);font:700 12px/22px var(--body);text-align:center}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:10px;top:24px;bottom:2px;width:2px;background:var(--smoke)}
+.map-side .fine{color:var(--dim)}
+.map-fallback{padding:40px;color:var(--dim)}
+@media (max-width:960px){.map-wrap{grid-template-columns:1fr}.map-stage{height:62vh}}
+
+/* ---------- inner pages ---------- */
+.page-hero{position:relative;padding:calc(150px + env(safe-area-inset-top,0px)) var(--gutR) 70px var(--gut);overflow:hidden;isolation:isolate}
+.page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.55}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,7,7,.92),rgba(7,7,7,.35))}
+.page-hero .in{max-width:1240px;margin:0 auto;display:grid;gap:18px}
+.page-hero h1{font-size:clamp(52px,9vw,124px);letter-spacing:-.05em;line-height:.9}
+.page-hero p{max-width:56ch;font-size:19px;color:#e9e0de}
+.page-hero .eyebrow{color:var(--coral)}
+.prose{display:grid;gap:18px;max-width:68ch}
+.prose h3{font-size:28px;margin-top:10px}
+.prose p,.prose li{font-size:18px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.box{border-radius:22px;padding:28px;display:grid;gap:12px;align-content:start}
+.box.blush{background:var(--blush);color:var(--ink)}
+.box.ink{background:var(--ink);color:var(--on-dark)}
+.box.coral{background:var(--coral);color:var(--paper)}
+.box h3{font-size:26px}
+.box .eyebrow{color:var(--ember)}
+.box.coral .eyebrow,.box.ink .eyebrow{color:inherit;opacity:.85}
+.beliefs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border-top:1px solid var(--line)}
+.beliefs details{border-bottom:1px solid var(--line);padding:22px 4px}
+.beliefs summary{cursor:pointer;font:800 22px/1.2 var(--display);letter-spacing:-.015em;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.beliefs summary::after{content:"+";color:var(--coral);font-size:28px;line-height:.8;transition:transform .3s}
+.beliefs details[open] summary::after{transform:rotate(45deg)}
+.beliefs details p{margin-top:12px;color:#3b3433}
+.staff{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.person{display:grid;gap:12px}
+.person .av{aspect-ratio:4/5;border-radius:20px;background:var(--blush);display:grid;place-items:center;overflow:hidden;position:relative}
+.person .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s var(--ease)}
+.person:hover .av img{transform:scale(1.04)}
+.person .av span{font:800 64px var(--display);color:var(--coral);letter-spacing:-.04em}
+.person h3{font-size:21px}
+.person p{font-size:14px;color:var(--muted)}
+.steps-big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.steps-big{grid-template-columns:1fr}}
+.copyline{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.copyline code{font:600 15px var(--body);background:var(--blush);color:var(--ink);padding:8px 12px;border-radius:10px;user-select:all}
+.copybtn{font:600 13px var(--body);border:1.5px solid currentColor;background:none;color:inherit;border-radius:99px;padding:7px 12px;cursor:pointer}
+
+/* ---------- footer ---------- */
+.foot{padding:clamp(56px,8vw,96px) var(--gutR) 40px var(--gut)}
+.foot-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
+.foot .big svg{height:110px;width:auto;color:var(--coral)}
+.foot h4{font:300 13px var(--thin);letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.foot a{display:block;text-decoration:none;padding:4px 0;font-weight:500}
+.foot a:hover{color:var(--coral)}
+.foot .addr{color:var(--dim);font-size:15px;margin-top:18px}
+.foot-base{max-width:1240px;margin:56px auto 0;padding-top:24px;border-top:1px solid var(--smoke);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--dim)}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:70;background:rgba(7,7,7,.92);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.modal video{width:min(1100px,100%);max-height:80vh;border-radius:16px;background:#000}
+.modal .x{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:0;background:var(--paper);color:var(--ink);font:700 22px var(--body);cursor:pointer}
+
+/* ---------- reveal (motion only; content is visible at rest) ---------- */
+.rv{transition:transform .9s var(--ease)}
+.js .rv.pre{transform:translateY(28px)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.band .track{transform:none}}
+.month{font:300 13px var(--thin);letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:8px 0 -4px}
+.hide-sm{}
+@media (max-width:640px){.hide-sm{display:none}}
+#campus-labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+#map-fade{position:absolute;inset:0;background:var(--ink);opacity:0;pointer-events:none;transition:opacity .38s ease}
+#map-fade.on{opacity:1}
+.map-stage[data-mode="campus"] #map-labels,.map-stage[data-mode="plan"] #campus-labels{display:none}
+.map-stage[data-mode="campus"] .h-plan,.map-stage[data-mode="plan"] .h-campus{display:none}
+.map-stage[data-mode="campus"]{background:#e9a48c}
+.map-switch{position:absolute;top:14px;left:14px;display:flex;background:rgba(7,7,7,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:99px;padding:4px;gap:2px;z-index:3}
+.map-switch a{font:700 13px var(--body);text-decoration:none;color:var(--on-dark);padding:8px 14px;border-radius:99px}
+.map-stage[data-mode="campus"] .sw-campus,.map-stage[data-mode="plan"] .sw-plan{background:var(--coral);color:var(--paper)}
+.map-stage[data-mode="campus"] .map-hint{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.map-label.campus{background:rgba(255,255,255,.88);color:var(--ink);border-color:transparent;opacity:1;pointer-events:none;font-size:12px}
+.map-label.campus.road{background:rgba(7,7,7,.6);color:#fff;font-weight:500;letter-spacing:.04em}
+.map-label.campus.wh{background:rgba(7,7,7,.72);color:#fff;font-size:11px;font-weight:600;letter-spacing:.02em}
+.map-label.campus.spot{background:rgba(255,255,255,.7);font-weight:600}
+.map-label.campus.spot.on{background:var(--coral);color:#fff;font-size:13px;box-shadow:0 6px 18px rgba(255,101,77,.45)}
+.spot-box{border:1px solid var(--coral);border-radius:14px;padding:14px 16px;margin-bottom:18px;background:rgba(255,101,77,.08)}
+.spot-box .side-h{margin:.2em 0 .3em}
+.map-label.campus.entrance{background:var(--coral);color:#fff}
+.map-label.campus.church{pointer-events:auto;background:var(--ink);color:#fff;display:grid;gap:2px;padding:9px 14px;border-radius:14px;text-align:left;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.map-label.campus.church span{font-size:12px;color:var(--coral);font-weight:700}
+.map-label.campus.church:hover{background:var(--coral)}
+.map-label.campus.church:hover span{color:#fff}
+.side-campus,.side-plan{display:grid;gap:16px;align-content:start}
+.side-h{font-size:26px;color:var(--paper)}
+body[data-mapmode="plan"] .side-campus,body:not([data-mapmode="plan"]) .side-plan{display:none}
+.latest-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(24px,4vw,56px);align-items:center}
+.latest-copy{display:grid;gap:18px}
+.latest-copy .eyebrow{color:var(--coral)}
+.latest-copy h2{font-size:clamp(36px,4.6vw,60px)}
+.latest-copy p{color:#d9cfcc;max-width:44ch}
+@media (max-width:860px){.latest-grid{grid-template-columns:1fr}}
+.sermon{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:22px;overflow:hidden;background:var(--ash);border:1px solid var(--smoke);box-shadow:0 30px 80px -30px rgba(255,101,77,.35)}
+.sermon iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
+.sermon-fallback{position:absolute;inset:0;display:block;color:var(--paper);text-decoration:none}
+.sermon-fallback img{width:100%;height:100%;object-fit:cover;filter:brightness(.62);transition:transform .9s var(--ease),filter .5s}
+.sermon-fallback:hover img{transform:scale(1.04);filter:brightness(.5)}
+.sermon-play{position:absolute;left:50%;top:50%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;background:var(--coral);display:grid;place-items:center;box-shadow:0 0 0 0 rgba(255,101,77,.6);animation:pulse 2.4s infinite;transition:transform .3s var(--ease)}
+.sermon-fallback:hover .sermon-play{transform:scale(1.1)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,101,77,.55)}70%{box-shadow:0 0 0 26px rgba(255,101,77,0)}100%{box-shadow:0 0 0 0 rgba(255,101,77,0)}}
+.sermon-cap{position:absolute;left:22px;bottom:18px;right:22px;display:grid;gap:2px}
+.sermon-cap b{font:800 clamp(20px,2.4vw,28px)/1.1 var(--display);letter-spacing:-.02em}
+.sermon-cap span{font-size:14px;color:#eadfdc}
+
+.ev .recur{color:var(--coral);font-weight:600}
+.grp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.grp{background:var(--ash);border:1px solid var(--smoke);border-radius:22px;padding:24px;display:grid;gap:8px;align-content:start;transition:transform .3s var(--ease),border-color .3s}
+.grp:hover{transform:translateY(-4px);border-color:var(--coral)}
+.grp h3{font-size:22px;line-height:1.15;letter-spacing:-.015em}
+.grp .when{font-weight:700;color:var(--paper)}
+.grp .where{font-size:14px;color:var(--dim)}
+.grp .sum{font-size:15px;line-height:1.5}
+.grp .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.filters button{min-height:36px}
+.map-label.lm.major{font-size:14px;padding:5px 11px}
+.map-label.lm.door{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+
+svg.leaders{position:absolute;inset:0;pointer-events:none;overflow:visible}
+svg.leaders line{stroke:rgba(255,255,255,.75);stroke-width:1.5}
+svg.leaders circle{fill:var(--paper);stroke:var(--coral);stroke-width:2}
+svg.leaders line.on{stroke:var(--coral);stroke-width:2}
+svg.leaders circle.on{fill:var(--coral);stroke:var(--paper)}
+#campus-labels svg.leaders line{stroke:rgba(7,7,7,.55)}
+.map-label{transition:opacity .2s}
+svg.leaders line,svg.leaders circle{transition:opacity .2s}
+
+.map-label.lm.zone{background:var(--zc,var(--coral));color:var(--paper);border-color:var(--zc,var(--coral));font-size:14px;font-weight:800;letter-spacing:.01em;padding:5px 12px}
+.map-label.lm.zone::before{background:var(--paper)}
+.map-label.lm.zone.on{background:var(--paper);color:var(--zc,var(--coral))}
+.map-label.lm.zone.on::before{background:var(--zc,var(--coral))}
+#room-list button.zone{background:var(--zc,var(--coral));border-color:var(--zc,var(--coral));color:var(--paper)}
+
+/* ---------- photo-wall hero: the church's own photos stream past on a tilted wall, with brand tiles mixed in ---------- */
+.hero-wall{position:absolute;inset:0;overflow:hidden;background:var(--ink)}
+.wall{position:absolute;left:-18%;right:-18%;top:-38%;bottom:-38%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;transform:rotate(-9deg)}
+.wall .col{overflow:visible;min-width:0}
+.wall .track{display:flex;flex-direction:column;animation:wallUp var(--sp,60s) linear infinite;will-change:transform}
+.wall .col:nth-child(even) .track{animation-name:wallDown}
+@keyframes wallUp{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@keyframes wallDown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.tile{margin-bottom:16px;border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/5;max-width:100%}
+.tile.sq{aspect-ratio:1/1}.tile.wide{aspect-ratio:4/3}
+.tile img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) brightness(.9)}
+.tile.b{display:grid;align-content:end;padding:clamp(14px,1.6vw,26px);aspect-ratio:1/1}
+.tile.b i{font:200 clamp(10px,.9vw,15px)/1 var(--thin);font-style:normal;letter-spacing:.32em;text-transform:uppercase}
+.tile.b b{font:800 clamp(24px,2.6vw,44px)/.95 var(--display);letter-spacing:-.04em;margin-top:8px}
+.tile.coral{background:var(--coral);color:var(--paper)}
+.tile.ember{background:var(--ember);color:var(--paper)}
+.tile.paper{background:var(--paper);color:var(--ink)}
+.tile.paper b{color:var(--coral)}
+.tile.line{background:transparent;border:3px solid var(--coral);color:var(--paper)}
+.tile.line b{color:transparent;-webkit-text-stroke:1.5px var(--paper)}
+.tile.dots{background:var(--ash) radial-gradient(circle,var(--coral) 3px,transparent 4px) 0 0/22px 22px;aspect-ratio:1/1}
+.tile.mark{background:var(--ink);display:grid;place-items:center;aspect-ratio:1/1;border:1px solid var(--smoke)}
+.tile.mark svg{width:58%;height:auto;color:var(--coral)}
+.tile.stripe{background:repeating-linear-gradient(-45deg,var(--coral) 0 14px,var(--ink) 14px 32px);aspect-ratio:4/3}
+.hero-wall::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(7,7,7,.9) 0%,rgba(7,7,7,.68) 32%,rgba(7,7,7,.14) 58%,rgba(7,7,7,.12) 100%),
+             linear-gradient(180deg,rgba(7,7,7,.55) 0%,rgba(7,7,7,0) 24%,rgba(7,7,7,0) 62%,rgba(7,7,7,.95) 100%)}
+.hero.wallhero::after{display:none}
+body:not([data-page="home"]) .wall .track{animation-play-state:paused}
+@media (max-width:860px){
+  .wall{grid-template-columns:repeat(3,minmax(0,1fr));left:-30%;right:-30%;gap:12px}
+  .wall .col:nth-child(n+4){display:none}
+  .tile{margin-bottom:12px}
+  .hero-wall::after{background:linear-gradient(180deg,rgba(7,7,7,.6) 0%,rgba(7,7,7,.45) 30%,rgba(7,7,7,.8) 62%,rgba(7,7,7,.97) 100%)}
+}
+@media (prefers-reduced-motion:reduce){.wall .track{animation:none}}
+</style>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#home" aria-label="Your Venture Church home"><svg role="img" aria-label="Your Venture Church" xmlns="http://www.w3.org/2000/svg" viewBox="245 406 510 188" fill="currentColor"><path d="M 339.2 526.2 L 317.6 463.8 L 299.5 463.8 L 329.7 546.2 L 348.6 546.2 L 379 463.8 L 361.4 463.8 ZM 339.2 526.2"/><path d="M 339.2 574.8 C 298 574.8 264.4 541.3 264.4 500 C 264.4 458.7 298 425.2 339.2 425.2 C 380.5 425.2 414 458.7 414 500 C 414 541.3 380.5 574.8 339.2 574.8 M 339.2 410.1 C 289.6 410.1 249.3 450.4 249.3 500 C 249.3 549.6 289.6 589.9 339.2 589.9 C 388.8 589.9 429.1 549.6 429.1 500 C 429.1 450.4 388.8 410.1 339.2 410.1"/><path d="M 487.2 477.9 L 500.1 477.9 L 483.5 523.7 L 470.9 523.7 L 454.5 477.9 L 467.9 477.9 L 477.5 511.7 ZM 487.2 477.9"/><path d="M 516.6 489.2 C 514.9 490.9 513.9 493.3 513.4 496.3 L 534 496.3 C 533.8 493.1 532.8 490.7 530.9 489 C 528.9 487.4 526.6 486.6 523.8 486.6 C 520.7 486.6 518.3 487.4 516.6 489.2 M 534.5 478.9 C 537.7 480.3 540.3 482.5 542.4 485.6 C 544.3 488.3 545.5 491.5 546.1 495.1 C 546.4 497.2 546.5 500.2 546.5 504.2 L 513.1 504.2 C 513.3 508.8 514.9 512 517.9 513.8 C 519.8 515 521.9 515.5 524.5 515.5 C 527.2 515.5 529.5 514.8 531.2 513.4 C 532.1 512.7 532.9 511.6 533.6 510.3 L 545.8 510.3 C 545.5 513 544 515.8 541.4 518.6 C 537.3 523 531.6 525.2 524.2 525.2 C 518.1 525.2 512.7 523.4 508.1 519.6 C 503.4 515.9 501.1 509.8 501.1 501.3 C 501.1 493.4 503.2 487.3 507.4 483.1 C 511.6 478.8 517 476.7 523.8 476.7 C 527.7 476.7 531.3 477.4 534.5 478.9"/><path d="M 587.3 480.6 C 590.3 483 591.8 487.1 591.8 492.9 L 591.8 523.7 L 579.5 523.7 L 579.5 495.9 C 579.5 493.4 579.2 491.6 578.5 490.3 C 577.4 488 575.1 486.8 571.9 486.8 C 567.8 486.8 565.1 488.5 563.6 492 C 562.8 493.8 562.4 496.1 562.4 498.9 L 562.4 523.7 L 550.4 523.7 L 550.4 478 L 562 478 L 562 484.7 C 563.6 482.3 565 480.6 566.4 479.6 C 568.8 477.8 571.9 476.8 575.7 476.8 C 580.4 476.8 584.3 478.1 587.3 480.6"/><path d="M 596 486.6 L 596 478.1 L 602.4 478.1 L 602.4 465.3 L 614.2 465.3 L 614.2 478.1 L 639.1 478.1 L 639.1 486.6 L 614.2 486.6 L 614.2 511.1 C 614.2 512.9 614.5 514.1 615 514.6 C 615.4 515 616.9 515.2 619.3 515.2 C 619.7 515.2 620.1 515.2 620.5 515.2 C 620.9 515.2 621.3 515.2 621.7 515.2 L 621.7 524.1 L 616 524.3 C 610.4 524.5 606.5 523.5 604.4 521.4 C 603.1 520 602.4 517.9 602.4 515 L 602.4 486.6 ZM 596 486.6"/><path d="M 639.1 491.4 L 639.1 505.5 C 639.1 508.1 639.4 510.1 640.1 511.4 C 641.1 513.7 643.3 514.9 646.4 514.9 C 650.5 514.9 653.3 513.2 654.8 509.9 C 655.6 508.1 656 505.8 656 502.8 L 656 477.9 L 668.1 477.9 L 668.1 523.7 L 656.5 523.7 L 656.5 517.2 C 656.4 517.4 656.1 517.8 655.6 518.5 C 655.2 519.2 654.7 519.8 654 520.3 C 652.2 522 650.4 523.2 648.6 523.8 C 646.9 524.4 644.8 524.7 642.5 524.7 C 635.7 524.7 631.2 522.3 628.8 517.4 C 627.5 514.7 626.9 510.7 626.9 505.5 L 626.9 491.4 ZM 639.1 491.4"/><path d="M 703 476.9 C 703.2 476.9 703.5 476.9 704 476.9 L 704 489.2 C 703.3 489.1 702.6 489 702 489 C 701.4 489 701 489 700.6 489 C 695.8 489 692.5 490.5 690.9 493.7 C 690 495.4 689.5 498.2 689.5 501.8 L 689.5 523.7 L 677.5 523.7 L 677.5 477.9 L 688.9 477.9 L 688.9 485.9 C 690.7 482.9 692.3 480.8 693.7 479.7 C 695.9 477.8 698.9 476.8 702.4 476.8 C 702.7 476.8 702.8 476.8 703 476.9"/><path d="M 720.8 489.2 C 719.1 490.9 718.1 493.3 717.6 496.3 L 738.2 496.3 C 738 493.1 737 490.7 735.1 489 C 733.1 487.4 730.8 486.6 728 486.6 C 724.9 486.6 722.5 487.4 720.8 489.2 M 738.7 478.9 C 741.9 480.3 744.5 482.5 746.6 485.6 C 748.5 488.3 749.7 491.5 750.3 495.1 C 750.6 497.2 750.7 500.2 750.7 504.2 L 717.3 504.2 C 717.5 508.8 719.1 512 722.1 513.8 C 723.9 515 726.1 515.5 728.7 515.5 C 731.4 515.5 733.7 514.8 735.4 513.4 C 736.3 512.7 737.1 511.6 737.8 510.3 L 750 510.3 C 749.7 513 748.2 515.8 745.6 518.6 C 741.5 523 735.8 525.2 728.4 525.2 C 722.3 525.2 716.9 523.4 712.3 519.6 C 707.6 515.9 705.3 509.8 705.3 501.3 C 705.3 493.4 707.4 487.3 711.6 483.1 C 715.8 478.8 721.2 476.7 727.9 476.7 C 731.9 476.7 735.5 477.4 738.7 478.9"/><path d="M 518.5 547 C 517.6 546.2 516.6 545.6 515.6 545.2 C 514.5 544.8 513.5 544.6 512.4 544.6 C 509.9 544.6 507.8 545.4 506.2 546.9 C 504.7 548.5 503.9 550.6 503.9 553.2 C 503.9 554.5 504.1 555.6 504.5 556.6 C 504.8 557.7 505.4 558.6 506.2 559.4 C 507 560.2 507.9 560.7 508.9 561.2 C 509.9 561.6 511 561.8 512.1 561.8 C 513.2 561.8 514.3 561.6 515.4 561.2 C 516.5 560.8 517.5 560.2 518.4 559.5 L 518.4 561.6 C 517.5 562.2 516.4 562.6 515.4 562.9 C 514.3 563.2 513.3 563.4 512.2 563.4 C 510.8 563.4 509.5 563.1 508.2 562.6 C 506.9 562.1 505.8 561.4 504.9 560.5 C 503.9 559.6 503.2 558.5 502.7 557.2 C 502.2 556 502 554.6 502 553.2 C 502 551.7 502.2 550.4 502.7 549.1 C 503.2 547.9 504 546.8 504.9 545.9 C 505.8 545 506.9 544.3 508.2 543.8 C 509.5 543.3 510.8 543 512.2 543 C 513.4 543 514.6 543.2 515.7 543.5 C 516.7 543.9 517.7 544.4 518.5 545 ZM 518.5 547"/><path d="M 541.4 562.9 L 541.4 543.4 L 543.1 543.4 L 543.1 551.3 L 553.7 551.3 L 553.7 543.4 L 555.5 543.4 L 555.5 562.9 L 553.7 562.9 L 553.7 552.8 L 543.1 552.8 L 543.1 562.9 ZM 541.4 562.9"/><path d="M 579.3 543.4 L 581 543.4 L 581 556.1 C 581 558.1 581.5 559.5 582.3 560.4 C 583.2 561.4 584.6 561.8 586.4 561.8 C 588.1 561.8 589.5 561.4 590.3 560.4 C 591.2 559.5 591.7 558.1 591.7 556.1 L 591.7 543.4 L 593.4 543.4 L 593.4 555.6 C 593.4 558.2 592.8 560.2 591.7 561.5 C 590.5 562.8 588.7 563.4 586.4 563.4 C 584 563.4 582.2 562.8 581 561.5 C 579.9 560.2 579.3 558.2 579.3 555.6 ZM 579.3 543.4"/><path d="M 619 545 L 619 552.2 L 620.8 552.2 C 622.4 552.2 623.6 551.9 624.2 551.4 C 624.9 550.8 625.2 549.9 625.2 548.7 C 625.2 547.3 624.8 546.4 624.2 545.8 C 623.5 545.3 622.4 545 620.8 545 ZM 629 562.9 L 626.9 562.9 L 620 553.6 L 619 553.6 L 619 562.9 L 617.2 562.9 L 617.2 543.4 L 620.8 543.4 C 622.9 543.4 624.5 543.9 625.5 544.8 C 626.6 545.6 627.1 547 627.1 548.7 C 627.1 550.2 626.6 551.4 625.8 552.3 C 624.9 553.2 623.6 553.6 622 553.6 ZM 629 562.9"/><path d="M 666.2 547 C 665.3 546.2 664.3 545.6 663.3 545.2 C 662.3 544.8 661.2 544.6 660.1 544.6 C 657.6 544.6 655.5 545.4 653.9 546.9 C 652.4 548.5 651.6 550.6 651.6 553.2 C 651.6 554.5 651.8 555.6 652.2 556.6 C 652.6 557.7 653.1 558.6 653.9 559.4 C 654.7 560.2 655.6 560.7 656.6 561.2 C 657.6 561.6 658.7 561.8 659.8 561.8 C 661 561.8 662 561.6 663.1 561.2 C 664.2 560.8 665.2 560.2 666.1 559.5 L 666.1 561.6 C 665.2 562.2 664.2 562.6 663.1 562.9 C 662 563.2 661 563.4 659.9 563.4 C 658.5 563.4 657.2 563.1 655.9 562.6 C 654.6 562.1 653.5 561.4 652.6 560.5 C 651.6 559.6 650.9 558.5 650.4 557.2 C 649.9 556 649.7 554.6 649.7 553.2 C 649.7 551.7 649.9 550.4 650.4 549.1 C 650.9 547.9 651.7 546.8 652.6 545.9 C 653.5 545 654.6 544.3 655.9 543.8 C 657.2 543.3 658.5 543 659.9 543 C 661.2 543 662.3 543.2 663.4 543.5 C 664.4 543.9 665.4 544.4 666.3 545 ZM 666.2 547"/><path d="M 689.1 562.9 L 689.1 543.4 L 690.9 543.4 L 690.9 551.3 L 701.4 551.3 L 701.4 543.4 L 703.2 543.4 L 703.2 562.9 L 701.4 562.9 L 701.4 552.8 L 690.9 552.8 L 690.9 562.9 ZM 689.1 562.9"/><path d="M 551.9 446.5 L 551.9 455.3 L 550 455.3 L 550 446.5 L 543.9 436.9 L 546.1 436.9 L 550.9 444.9 L 555.8 436.9 L 557.9 436.9 ZM 551.9 446.5"/><path d="M 591.5 446.1 C 591.5 441.2 588.3 438.4 584.2 438.4 C 580.2 438.4 577 441.2 577 446.1 C 577 451 580.2 453.8 584.2 453.8 C 588.3 453.8 591.5 451 591.5 446.1 M 575.1 446.1 C 575.1 440.2 579.1 436.6 584.2 436.6 C 589.3 436.6 593.3 440.2 593.3 446.1 C 593.3 452 589.3 455.6 584.2 455.6 C 579.1 455.6 575.1 452 575.1 446.1"/><path d="M 614 449.3 L 614 436.9 L 615.8 436.9 L 615.8 449.1 C 615.8 452.2 617.9 453.9 620.5 453.9 C 623.2 453.9 625.3 452.2 625.3 449.1 L 625.3 436.9 L 627.1 436.9 L 627.1 449.3 C 627.1 453.2 624.3 455.6 620.5 455.6 C 616.8 455.6 614 453.2 614 449.3"/><path d="M 650.9 446.3 L 655.6 446.3 C 657.9 446.3 659.3 444.7 659.3 442.4 C 659.3 440.2 657.9 438.5 655.6 438.5 L 650.9 438.5 ZM 654.7 447.8 L 650.9 447.8 L 650.9 455.3 L 649.1 455.3 L 649.1 436.9 L 655.6 436.9 C 659.2 436.9 661.2 439.3 661.2 442.4 C 661.2 445.1 659.4 447.4 656.7 447.8 L 661.2 455.3 L 659.1 455.3 ZM 654.7 447.8"/></svg></a>
+    <div class="top-actions">
+      <a class="btn btn-ghost hide-sm" href="#events" style="color:var(--paper)">Events</a>
+      <a class="btn btn-coral hide-sm" href="#visit">Plan a Visit</a>
+      <button class="menu-btn hint" type="button" aria-expanded="false" aria-controls="menu" title="Open the menu to see every page">Menu <span class="toggle" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="menu" id="menu" aria-label="Site">
+  <div class="menu-grid">
+    <div class="menu-main">
+      <a href="#visit">Plan a Visit</a>
+      <a href="#events">Announcements</a>
+      <a href="#next-steps">Next Steps</a>
+      <a href="#map">Building Map</a>
+      <a href="#watch">Watch</a>
+      <a href="#give">Give</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="menu-side">
+      <div><h4>Families</h4><a href="#kids">Venture Kids</a><a href="#students">Students</a></div>
+      <div><h4>Get connected</h4><a href="#growth-track">Growth Track</a><a href="#small-groups">Small Groups</a><a href="#dream-team">Dream Team</a><a href="#baptism">Baptism</a><a href="#prayer">Prayer Request</a></div>
+      <div><h4>Who we are</h4><a href="#about">Mission &amp; Vision</a><a href="#beliefs">What We Believe</a><a href="#story">Our Story</a><a href="#staff">Staff</a><a href="#contact">Contact</a></div>
+      <div><h4>Sundays</h4><p style="font-weight:700;font-size:20px">8:00 · 9:30 · 11:00 AM</p><p>7865 N County Road 100 E<br>Pittsboro, IN 46167</p></div>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section data-view="home">
+  <div class="hero wallhero">
+    <div class="hero-wall" aria-hidden="true"><div class="wall"><div class="col"><div class="track" style="--sp:64s"><div class="tile "><img src="img/s67.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b coral"><i>Know</i><b>God</b></div><div class="tile sq"><img src="img/s20.jpg" alt="" loading="eager" decoding="async"></div><div class="tile dots"></div><div class="tile wide"><img src="img/s138.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s67.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b coral"><i>Know</i><b>God</b></div><div class="tile sq"><img src="img/s20.jpg" alt="" loading="eager" decoding="async"></div><div class="tile dots"></div><div class="tile wide"><img src="img/s138.jpg" alt="" loading="eager" decoding="async"></div></div></div><div class="col"><div class="track" style="--sp:52s"><div class="tile sq"><img src="img/s84.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s30.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b line"><i>Find</i><b>Freedom</b></div><div class="tile wide"><img src="img/s120.jpg" alt="" loading="eager" decoding="async"></div><div class="tile mark"><svg viewBox="312 312 376 376" fill="currentColor"><path d="M 500 553.7 L 455.7 425.9 L 418.6 425.9 L 480.5 594.6 L 519.1 594.6 L 581.4 425.9 L 545.3 425.9 ZM 500 553.7"/><path d="M 500 653.2 C 415.5 653.2 346.8 584.5 346.8 500 C 346.8 415.5 415.5 346.8 500 346.8 C 584.5 346.8 653.2 415.5 653.2 500 C 653.2 584.5 584.5 653.2 500 653.2 M 500 315.9 C 398.5 315.9 315.9 398.5 315.9 500 C 315.9 601.5 398.5 684.1 500 684.1 C 601.5 684.1 684.1 601.5 684.1 500 C 684.1 398.5 601.5 315.9 500 315.9"/></svg></div><div class="tile sq"><img src="img/s84.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s30.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b line"><i>Find</i><b>Freedom</b></div><div class="tile wide"><img src="img/s120.jpg" alt="" loading="eager" decoding="async"></div><div class="tile mark"><svg viewBox="312 312 376 376" fill="currentColor"><path d="M 500 553.7 L 455.7 425.9 L 418.6 425.9 L 480.5 594.6 L 519.1 594.6 L 581.4 425.9 L 545.3 425.9 ZM 500 553.7"/><path d="M 500 653.2 C 415.5 653.2 346.8 584.5 346.8 500 C 346.8 415.5 415.5 346.8 500 346.8 C 584.5 346.8 653.2 415.5 653.2 500 C 653.2 584.5 584.5 653.2 500 653.2 M 500 315.9 C 398.5 315.9 315.9 398.5 315.9 500 C 315.9 601.5 398.5 684.1 500 684.1 C 601.5 684.1 684.1 601.5 684.1 500 C 684.1 398.5 601.5 315.9 500 315.9"/></svg></div></div></div><div class="col"><div class="track" style="--sp:70s"><div class="tile b paper"><i>Discover</i><b>Purpose</b></div><div class="tile "><img src="img/s73.jpg" alt="" loading="eager" decoding="async"></div><div class="tile sq"><img src="img/s48.jpg" alt="" loading="eager" decoding="async"></div><div class="tile stripe"></div><div class="tile "><img src="img/s132.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b paper"><i>Discover</i><b>Purpose</b></div><div class="tile "><img src="img/s73.jpg" alt="" loading="eager" decoding="async"></div><div class="tile sq"><img src="img/s48.jpg" alt="" loading="eager" decoding="async"></div><div class="tile stripe"></div><div class="tile "><img src="img/s132.jpg" alt="" loading="eager" decoding="async"></div></div></div><div class="col"><div class="track" style="--sp:58s"><div class="tile wide"><img src="img/s96.jpg" alt="" loading="eager" decoding="async"></div><div class="tile sq"><img src="img/s55.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s186.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b ember"><i>Make a</i><b>Difference</b></div><div class="tile sq"><img src="img/s12.jpg" alt="" loading="eager" decoding="async"></div><div class="tile wide"><img src="img/s96.jpg" alt="" loading="eager" decoding="async"></div><div class="tile sq"><img src="img/s55.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s186.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b ember"><i>Make a</i><b>Difference</b></div><div class="tile sq"><img src="img/s12.jpg" alt="" loading="eager" decoding="async"></div></div></div><div class="col"><div class="track" style="--sp:66s"><div class="tile "><img src="img/s234.jpg" alt="" loading="eager" decoding="async"></div><div class="tile dots"></div><div class="tile wide"><img src="img/s114.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b coral"><i>Find</i><b>Freedom</b></div><div class="tile "><img src="img/s126.jpg" alt="" loading="eager" decoding="async"></div><div class="tile "><img src="img/s234.jpg" alt="" loading="eager" decoding="async"></div><div class="tile dots"></div><div class="tile wide"><img src="img/s114.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b coral"><i>Find</i><b>Freedom</b></div><div class="tile "><img src="img/s126.jpg" alt="" loading="eager" decoding="async"></div></div></div><div class="col"><div class="track" style="--sp:55s"><div class="tile sq"><img src="img/s78.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b paper"><i>Know</i><b>God</b></div><div class="tile "><img src="img/s205.jpg" alt="" loading="eager" decoding="async"></div><div class="tile wide"><img src="img/s102.jpg" alt="" loading="eager" decoding="async"></div><div class="tile stripe"></div><div class="tile sq"><img src="img/s78.jpg" alt="" loading="eager" decoding="async"></div><div class="tile b paper"><i>Know</i><b>God</b></div><div class="tile "><img src="img/s205.jpg" alt="" loading="eager" decoding="async"></div><div class="tile wide"><img src="img/s102.jpg" alt="" loading="eager" decoding="async"></div><div class="tile stripe"></div></div></div></div></div>
+    <div class="hero-in">
+      <h1 aria-label="Your past is not the end of your story.">
+        <span class="w"><span style="animation-delay:.05s">Your</span></span> <span class="w"><span style="animation-delay:.12s">past</span></span> <span class="w"><span style="animation-delay:.19s">is</span></span> <span class="w"><span style="animation-delay:.26s">not</span></span> <span class="w"><span style="animation-delay:.33s">the</span></span> <span class="w"><span style="animation-delay:.40s">end</span></span> <span class="w"><span style="animation-delay:.47s">of</span></span> <span class="w"><span style="animation-delay:.54s">your</span></span> <span class="w"><span style="animation-delay:.61s"><em>story.</em></span></span>
+      </h1>
+      <div class="join">
+        <p class="eyebrow" style="color:var(--coral)">Join us this Sunday</p>
+        <h2>Whether you feel close to God or miles away, there's a seat for you here.</h2>
+        <div class="times mono"><span>8:00 AM</span><span>9:30 AM</span><span>11:00 AM</span></div>
+        <div class="acts"><a class="btn btn-coral" href="#visit">Plan a Visit <span class="arr">→</span></a><a class="btn btn-ghost" href="#watch" style="color:var(--paper)">Watch Online</a></div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <span class="hide-sm" style="margin-left:auto">Pittsboro, Indiana · Hendricks County</span>
+    </div>
+  </div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="vmark" viewBox="312 312 376 376"><path d="M 500 553.7 L 455.7 425.9 L 418.6 425.9 L 480.5 594.6 L 519.1 594.6 L 581.4 425.9 L 545.3 425.9 ZM 500 553.7"/><path d="M 500 653.2 C 415.5 653.2 346.8 584.5 346.8 500 C 346.8 415.5 415.5 346.8 500 346.8 C 584.5 346.8 653.2 415.5 653.2 500 C 653.2 584.5 584.5 653.2 500 653.2 M 500 315.9 C 398.5 315.9 315.9 398.5 315.9 500 C 315.9 601.5 398.5 684.1 500 684.1 C 601.5 684.1 684.1 601.5 684.1 500 C 684.1 398.5 601.5 315.9 500 315.9"/></symbol></svg>
+  <div class="ribbon" aria-hidden="true">
+    <div class="band band-a"><div class="set"><span class="it"><i>Know</i><b>God</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Find</i><b>Freedom</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Discover</i><b>Purpose</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Make a</i><b>Difference</b></span></div></div>
+  </div>
+
+  <div class="frame">
+    <div class="panel">
+      <div class="intro rv">
+        <p class="eyebrow">Your Venture Church</p>
+        <h2>Bring your questions. Find your people.</h2>
+        <p>Your Venture Church is a nondenominational church in Pittsboro where people can meet Jesus and find real community. New to faith, a long-time Christian, or looking for a fresh start, you belong here.</p>
+        <p>Bring the whole family. Venture Kids welcomes kids from nursery through 6th grade, and students get a place of their own where faith becomes personal.</p>
+        <a class="btn btn-ink" href="#about">About Venture <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap sec latest" style="padding-bottom:0">
+    <div class="latest-grid">
+      <div class="latest-copy rv">
+        <p class="eyebrow">Latest message</p>
+        <h2>Missed Sunday? Catch up here.</h2>
+        <p>The 9:30 and 11:00 AM services stream live every Sunday. The newest message always shows up right here, ready to play.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="https://www.youtube.com/@yourventurechurch24/streams" target="_blank" rel="noopener">All live streams ↗</a><a class="btn btn-ghost" href="#watch" style="color:var(--paper)">More to watch</a></div>
+      </div>
+      <div class="sermon" data-sermon>
+        <a class="sermon-fallback" href="https://www.youtube.com/@yourventurechurch24/streams" target="_blank" rel="noopener">
+          <img src="img/s186.jpg" alt="" loading="lazy">
+          <span class="sermon-play" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 2.5l9 5.5-9 5.5z"/></svg></span>
+          <span class="sermon-cap"><b>Watch the latest message</b><span>Opens Sunday's stream on YouTube ↗</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap sec" style="padding-top:clamp(28px,4vw,48px)">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">Announcements</p><h2>Happening soon</h2></div>
+      <a class="btn btn-ghost" href="#events" style="color:var(--paper)">See everything <span class="arr">→</span></a>
+    </div>
+    <div id="home-events"><p class="updated">Loading events…</p></div>
+  </div>
+
+  <div class="wrap sec" style="padding-top:0">
+    <div class="sec-head rv"><div><p class="eyebrow">Your next step</p><h2>Four ways to take your venture further</h2></div></div>
+    <div class="paths">
+      <a class="path rv" href="#visit"><img src="img/s30.jpg" alt="Greeting guests in the lobby" loading="lazy"><span class="n">Step one</span><h3>Know God</h3><p>Weekend services built around a real relationship with God, for skeptics, seekers and lifelong believers.</p></a>
+      <a class="path rv" href="#small-groups"><img src="img/s20.jpg" alt="Friends at the coffee bar" loading="lazy"><span class="n">Step two</span><h3>Find Freedom</h3><p>Small groups are where life change sticks: people who know your name and walk with you.</p></a>
+      <a class="path rv" href="#growth-track"><img src="img/s138.jpg" alt="Growth Track graduates holding certificates" loading="lazy"><span class="n">Step three</span><h3>Discover Purpose</h3><p>Growth Track helps you discover your gifts and how God wired you.</p></a>
+      <a class="path rv" href="#dream-team"><img src="img/s132.jpg" alt="Dream Team volunteers in team shirts" loading="lazy"><span class="n">Step four</span><h3>Make a Difference</h3><p>Join the Dream Team and use your gifts to serve the church and our community.</p></a>
+    </div>
+  </div>
+
+  <div class="split light rv">
+    <div class="media"><img src="img/s12.jpg" alt="A greeter pouring coffee for guests" loading="lazy"></div>
+    <div class="copy">
+      <p class="eyebrow" style="color:var(--ember)">8:00, 9:30 &amp; 11:00 AM Sundays</p>
+      <h2>Plan your visit</h2>
+      <p>If it's your first time, you'll be greeted like family. We're friendly on purpose. Grab a coffee, sit wherever feels right, and ask anything you like.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="#visit">Plan a Visit <span class="arr">→</span></a><a class="btn btn-ghost" href="#map">See the building</a></div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <div class="duo">
+      <a class="card-x rv" href="#staff"><div class="ph"><img src="img/s186.jpg" alt="Pastor preaching" loading="lazy"></div><div class="tx"><p class="eyebrow">Meet our team</p><h3>Staff &amp; Leaders</h3><p>Our pastors aren't polished performers. They'll be honest about where they're still growing and cheer you on as you find your part.</p></div></a>
+      <a class="card-x rv" href="#events"><div class="ph"><img src="img/s120.jpg" alt="Kids playing in foam at a church event" loading="lazy"></div><div class="tx"><p class="eyebrow">Church life</p><h3>What's Happening</h3><p>First Wednesday prayer, small groups, kids' events and more. Every event links to a map of the room it's in.</p></div></a>
+    </div>
+  </div>
+
+  <div class="split coral rv">
+    <div class="copy">
+      <p class="eyebrow">Find your way</p>
+      <h2>Our building is big. Getting around isn't.</h2>
+      <p>Fly over the campus in 3D, tap the building to step inside, and pick any room. A coral path walks you there from the main entrance.</p>
+      <div><a class="btn btn-light" href="#map">Open the campus map <span class="arr">→</span></a></div>
+    </div>
+    <div class="media"><img src="img/s73.jpg" alt="The auditorium filling up before service" loading="lazy"></div>
+  </div>
+
+  <div class="split dark flip rv">
+    <div class="media"><img src="img/s84.jpg" alt="Kids celebrating at a Venture Kids party" loading="lazy"></div>
+    <div class="copy">
+      <p class="eyebrow" style="color:var(--coral)">Families</p>
+      <h2>Kids and students have a place here</h2>
+      <p>Venture Kids is a safe, high-energy space for nursery through 6th grade during every service. Students meet to grow in faith with friends who get it.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="#kids">Venture Kids</a><a class="btn btn-ghost" href="#students">Students</a></div>
+    </div>
+  </div>
+
+</section>
+
+<section data-view="events" hidden>
+  <div class="page-hero"><img src="img/s114.jpg" alt=""><div class="in"><p class="eyebrow">Announcements hub</p><h1>What's happening at Venture</h1><p>Everything coming up, pulled straight from our Church Center calendar. If an event has a room, tap "Find room" for walking directions.</p></div></div>
+  <div class="wrap sec">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:12px">
+      <div class="filters" id="hub-filters" style="margin:0"></div>
+      <span class="updated" id="hub-updated"></span>
+    </div>
+    <div id="hub-list" style="display:grid;gap:22px"><p class="updated">Loading events…</p></div>
+  </div>
+</section>
+
+<section data-view="map" hidden>
+  <div class="page-hero" style="padding-bottom:40px"><img src="img/s55.jpg" alt=""><div class="in"><p class="eyebrow">Campus &amp; building map</p><h1>Find your way</h1><p>Start outside with the whole campus, then tap the building to step inside and get walking directions to any room.</p></div></div>
+  <div class="wrap" style="padding-bottom:80px">
+    <div class="map-wrap">
+      <div class="map-stage" id="map-stage" data-mode="campus">
+        <div id="map-canvas"></div><div id="campus-labels"></div><div id="map-labels"></div><div id="map-fade"></div>
+        <div class="map-switch" role="group" aria-label="Map view"><a href="#map" class="sw-campus">Campus</a><a href="#building" class="sw-plan">Inside</a></div>
+        <p class="map-hint"><span class="h-campus">Drag to orbit · Scroll to zoom · Tap the church to go inside</span><span class="h-plan">Drag to rotate · Scroll to zoom · Tap a room</span></p>
+      </div>
+      <aside class="map-side">
+        <div class="side-campus">
+          <div id="campus-spot" class="spot-box" hidden></div>
+          <p class="eyebrow" style="color:var(--coral)">Getting here</p>
+          <h3 class="side-h">7865 N County Road 100 E</h3>
+          <p class="fine">Pittsboro, IN 46167. Turn in from N County Rd 100 E just south of the railroad crossing. Parking wraps the north and west sides of the building. The main entrance faces the west lot with the tree island, under the coral canopy.</p>
+          <div class="copyline"><a class="chip" href="https://maps.app.goo.gl/tyhMTU5Ad9uXUUei6" target="_blank" rel="noopener">Directions in Google Maps ↗</a></div>
+          <a class="btn btn-coral" href="#building">Step inside the building <span class="arr">→</span></a>
+        </div>
+        <div class="side-plan">
+          <label for="room-q" class="eyebrow" style="color:var(--coral)">Search rooms</label>
+          <input id="room-q" type="search" placeholder="Auditorium, Kitchen…" autocomplete="off">
+          <ul id="room-list"></ul>
+          <div id="map-route" data-empty="&lt;p class=&quot;eyebrow&quot; style=&quot;color:var(--coral)&quot;&gt;Directions&lt;/p&gt;&lt;h3&gt;Pick a room&lt;/h3&gt;&lt;p class=&quot;fine&quot;&gt;Choose a room from the list or tap one on the map to see the path from the main entrance.&lt;/p&gt;"><p class="eyebrow" style="color:var(--coral)">Directions</p><h3>Pick a room</h3><p class="fine">Choose a room from the list or tap one on the map to see the path from the main entrance.</p></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<section data-view="visit" hidden>
+  <div class="page-hero"><img src="img/s30.jpg" alt=""><div class="in"><p class="eyebrow">Plan your visit</p><h1>You're invited</h1><p>Welcome! We're glad you're here. Our team would love to serve you and help you get connected from the moment you pull in.</p></div></div>
+  <div class="wrap sec">
+    <div class="steps-big">
+      <div class="box blush rv"><p class="eyebrow">When</p><h3>Sundays at 8:00, 9:30 &amp; 11:00 AM</h3><p>The 8:00 Express service wraps up around 9:00, the 9:30 service around 10:15 and the 11:00 service around 12:15. On the first Wednesday of every month, join us for a pitch-in dinner at 6:00 PM and a prayer service at 7:00 PM.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><p class="eyebrow">Where</p><h3>7865 N County Road 100 E</h3><p>Pittsboro, Indiana 46167. Our building sits on 20 acres in Hendricks County, with plenty of parking.</p><div class="copyline"><code>7865 N County Road 100 E, Pittsboro, IN 46167</code><button class="copybtn" type="button" data-copy="7865 N County Road 100 E, Pittsboro, IN 46167">Copy</button></div><a class="chip" href="https://maps.google.com/?q=7865+N+County+Road+100+E,+Pittsboro,+IN+46167" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
+      <div class="box coral rv"><p class="eyebrow">What to expect</p><h3>Come as you are</h3><p>Grab a coffee in the lobby, check the kids in, and sit wherever feels right. Worship, a practical message from the Bible, and people who are glad you came.</p></div>
+    </div>
+  </div>
+  <div class="split light rv">
+    <div class="media"><img src="img/s48.jpg" alt="A smiling girl with a pink bow at Venture Kids" loading="lazy"></div>
+    <div class="copy"><p class="eyebrow" style="color:var(--ember)">Bringing kids?</p><h2>First-time check-in is easy</h2><p>On your first visit, our Venture Kids Check-In Team will register your child and learn anything you'd like us to know. Nursery through 6th grade meet during every service.</p><div><a class="btn btn-ink" href="#kids">About Venture Kids <span class="arr">→</span></a></div></div>
+  </div>
+  <div class="wrap sec">
+    <div class="sec-head rv"><div><p class="eyebrow">Let us know you're coming</p><h2>We'll save you a seat</h2></div></div>
+    <div class="cols">
+      <div class="box blush rv"><h3>Tell us when you're visiting</h3><p>Fill out our short plan-a-visit form and someone from our team will meet you at the door.</p><a class="btn btn-coral" href="https://www.yourventurechurch.org/plan-your-visit" target="_blank" rel="noopener">Plan-a-visit form ↗</a></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Find your way inside</h3><p>The main entrance opens into our lobby. The auditorium, kids' rooms and classrooms are all on the 3D map.</p><a class="btn btn-light" href="#map">Open the building map <span class="arr">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section data-view="about" hidden>
+  <div class="page-hero"><img src="img/s228.jpg" alt=""><div class="in"><p class="eyebrow">Mission &amp; vision</p><h1>A place to know God</h1><p>"Go therefore and make disciples…" (Matthew 28:19)</p></div></div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="cols">
+      <div class="prose rv"><p class="eyebrow" style="color:var(--ember)">The mission</p><h3>Know God. Find Freedom. Discover Purpose. Make a Difference.</h3><p>This is a place where you find freedom, discover your purpose and make a difference. At Your Venture Church we give people the opportunity to use what God has given them to serve and love our world through like-minded discipleship.</p></div>
+      <div class="prose rv"><p class="eyebrow" style="color:var(--ember)">The vision</p><h3>We don't focus on your past. We invest in your future.</h3><p>Our vision is to be a place for people who feel far from God to know and grow close to Him. We want to be a place where God uses ordinary people to do extraordinary things through Christ, bringing glory to God.</p></div>
+    </div>
+  </div></div></div>
+  <div class="wrap sec">
+    <div class="cols">
+      <a class="card-x rv" href="#beliefs" style="border:1px solid var(--smoke)"><div class="tx"><p class="eyebrow">Doctrine</p><h3>What We Believe</h3><p>One God in three persons, the authority of Scripture, and salvation in Christ alone.</p></div></a>
+      <a class="card-x rv" href="#story" style="border:1px solid var(--smoke)"><div class="tx"><p class="eyebrow">Since 2014</p><h3>Our Story</h3><p>From $600 and a rented theater to a former lawn mower factory on 20 acres.</p></div></a>
+      <a class="card-x rv" href="#staff" style="border:1px solid var(--smoke)"><div class="tx"><p class="eyebrow">People</p><h3>Meet the Team</h3><p>The pastors and directors who serve Venture every week.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section data-view="beliefs" hidden>
+  <div class="page-hero"><img src="img/s234.jpg" alt=""><div class="in"><p class="eyebrow">What we believe</p><h1>Come as you are</h1><p>Venture Church is designed to erase the preconceived notions about church that have turned many people away from a local church.</p></div></div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="sec-head rv"><div><p class="eyebrow">In short</p><h2>Our core beliefs</h2></div></div>
+    <div class="cols" style="margin-bottom:48px">
+      <div class="box blush rv"><h3>One God</h3><p>Eternally existing in three persons: the Father, the Son and the Holy Spirit.</p></div>
+      <div class="box blush rv"><h3>The Bible</h3><p>The inspired and authoritative Word of God, without error.</p></div>
+      <div class="box blush rv"><h3>The Holy Spirit</h3><p>Indwells all believers, enabling them to live godly lives when surrendered to the Lordship of Jesus Christ.</p></div>
+      <div class="box blush rv"><h3>Salvation</h3><p>We were made in God's image but separated by sin. Only through faith, repentance and trusting in Christ alone can that separation be removed.</p></div>
+    </div>
+    <div class="beliefs">
+      <details open><summary>God</summary><p>There is one eternally existing God who has three distinct persons: God the Father, God the Son, and God the Holy Spirit. He is the creator of all that exists, both visible and invisible, and is therefore worthy of all glory and praise. God is perfect in love, power, holiness, goodness, knowledge, wisdom, justice, and mercy. He is unchangeable and therefore is the same yesterday, today, and tomorrow.</p></details>
+      <details><summary>Revelation</summary><p>God has revealed himself to us through his son, Jesus Christ, who is the visible image of the invisible God, the holy scriptures, and through all of creation itself.</p></details>
+      <details><summary>Mankind</summary><p>Humans, both male and female, were created in God's image for His glory. The first humans, Adam and Eve, were created without sin and appointed as caretakers of the rest of God's creation.</p></details>
+      <details><summary>The Fall</summary><p>When Adam and Eve chose not to obey God, they ceased to be what they were made to be and became distorted images of God. This caused them to fall out of fellowship with God, and fractured all of creation ever since that time.</p></details>
+      <details><summary>Salvation</summary><p>Jesus Christ came to reconcile us with God. He lived a life without sin and willingly died on the cross to pay the penalty for our transgressions. God raised him from the dead and now, by grace, offers as a free gift eternal life to all who follow Christ, by faith, as their Lord and Savior. That is why salvation can be found in Christ alone.</p></details>
+      <details><summary>The Church</summary><p>The Church is meant to be the visible body of Christ, sent into the world to glorify God and proclaim the gospel of Jesus Christ.</p></details>
+      <details><summary>Resurrection</summary><p>Jesus Christ is returning one day to judge both the living and the dead and to usher in the fullness of God's kingdom on earth.</p></details>
+    </div>
+  </div></div></div>
+</section>
+
+<section data-view="story" hidden>
+  <div class="page-hero"><img src="img/s205.jpg" alt=""><div class="in"><p class="eyebrow">Our story</p><h1>It started with $600</h1><p>A place that doesn't focus on your past but invests in your future.</p></div></div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="cols">
+      <div class="prose rv"><p class="eyebrow" style="color:var(--ember)">May 18, 2014</p><h3>How it all started</h3><p>Your Venture Church began when Rob and Jamie Dugan followed the desire God put on their hearts to start a church in the Pittsboro and Lizton area to serve the communities of Hendricks County. With only $600, Venture rented and held its first service in the Hendricks County Civic Theater in Maplewood, the former Maplewood Christian Church.</p></div>
+      <div class="prose rv"><p class="eyebrow" style="color:var(--ember)">18 months mobile</p><h3>A home of our own</h3><p>Venture met in several locations, including the Tri-West High School auditorium. After 18 months of setting up and tearing down every week, Venture secured a former lawn mower factory sitting on 20 acres. It became our first permanent home, and the building on this site's map.</p></div>
+      <div class="prose rv"><p class="eyebrow" style="color:var(--ember)">Today</p><h3>Expanding the vision</h3><p>We want to keep reaching the surrounding communities with the message of hope and good news found only in Jesus Christ.</p><p class="fine">"Therefore go and make disciples of all nations…" (Matthew 28:19)</p></div>
+    </div>
+  </div></div></div>
+  <div class="split dark rv">
+    <div class="media"><img src="img/s126.jpg" alt="A woman smiling in the Venture lobby" loading="lazy"></div>
+    <div class="copy"><p class="eyebrow" style="color:var(--coral)">Your past isn't the end</p><h2>God has a better plan for you</h2><p>All of us have a past that may involve problems and pain, some of it out of our control. God didn't cause all of it, but He can bring good out of the bad.</p><p class="fine" style="color:var(--dim)">"If anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come." (2 Corinthians 5:17)</p><div><button class="btn btn-coral" type="button" data-story>Watch the Venture story <span class="arr">▶</span></button></div></div>
+  </div>
+</section>
+
+<section data-view="staff" hidden>
+  <div class="page-hero"><img src="img/s67.jpg" alt=""><div class="in"><p class="eyebrow">Staff &amp; leaders</p><h1>Meet the team</h1><p>Ordinary people God is using to do extraordinary things. Say hi on Sunday.</p></div></div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="staff" id="staff-grid"></div>
+  </div></div></div>
+</section>
+
+<section data-view="kids" hidden>
+  <div class="page-hero"><img src="img/s78.jpg" alt=""><div class="in"><p class="eyebrow">Nursery – 6th grade</p><h1>Venture Kids</h1><p>Fun at church, meaningful friendships, and learning about the love of Jesus, during every Sunday service.</p></div></div>
+  <div class="wrap sec">
+    <div class="steps-big">
+      <div class="box blush rv"><p class="eyebrow">Nursery &amp; preschool</p><h3>Personal care from a well-staffed team</h3><p>Age-appropriate toys cleaned between services, and a quick form so our team knows your little one's feeding, sleeping and changing needs. We love and pray for your child every week.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><p class="eyebrow">1st – 3rd grade</p><h3>Rooms designed with your child in mind</h3><p>Stories, video lessons, small groups and worship songs that plant Biblical truth, and teachers who build real relationships with kids.</p></div>
+      <div class="box coral rv"><p class="eyebrow">4th – 6th grade</p><h3>Worship, age-specific learning, friends</h3><p>Kids engage in praise and worship, learn God's Word at the right pace, and build friendships in their grade level.</p></div>
+    </div>
+  </div>
+  <div class="split coral rv">
+    <div class="copy"><p class="eyebrow">First visit</p><h2>"Let the little children come to me."</h2><p>Matthew 19:14. On your first Sunday, our Venture Kids Check-In Team will register your child and learn about anything you want us to know.</p><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-light" href="#visit">Plan a visit <span class="arr">→</span></a><a class="btn btn-ghost" href="#map">Find kids' rooms</a></div></div>
+    <div class="media"><img src="img/s84.jpg" alt="Kids at a Venture Kids Christmas party" loading="lazy"></div>
+  </div>
+</section>
+
+<section data-view="students" hidden>
+  <div class="page-hero"><img src="img/s96.jpg" alt=""><div class="in"><p class="eyebrow">6th – 12th grade</p><h1>Venture Students</h1><p>Students aren't the church of tomorrow. They're the church of today.</p></div></div>
+  <div class="wrap sec">
+    <div class="sec-head rv"><div><p class="eyebrow">When students meet</p><h2>Two nights, two age groups</h2></div><p style="max-width:44ch;color:var(--dim)">We help each student discover their God-given gifts and use them in every area of life.</p></div>
+    <div class="cols" style="margin-bottom:16px">
+      <a class="box coral rv" href="#room-nw-classroom" style="text-decoration:none"><p class="eyebrow">Middle School · 6th–8th grade</p><h3>Sundays · 11:00 AM–12:15 PM</h3><p>Every Sunday during the 11:00 service, in the Teen Room.</p></a>
+      <a class="box blush rv" href="#room-nw-classroom" style="text-decoration:none"><p class="eyebrow">High School · 9th–12th grade</p><h3>Wednesdays · 7:00–9:00 PM</h3><p>Every Wednesday night, in the Teen Room.</p></a>
+    </div>
+    <div class="cols">
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Having fun</h3><p>Following Jesus is incredibly fun, so we have a blast together every week.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Knowing God</h3><p>Students grow in their relationship with God through messages made for their age.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Making friends</h3><p>Every student is placed in a small group with others of the same age and gender.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Being encouraged</h3><p>Life is hard. Here we encourage each other to live out the purpose God has for us.</p></div>
+    </div>
+  </div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="cols">
+      <div class="box blush rv"><p class="eyebrow">Students</p><h3>Text @yvstudents to 81010</h3><p>Get reminders and updates straight to your phone.</p></div>
+      <div class="box blush rv"><p class="eyebrow">Parents</p><h3>Text @parentvs to 81010</h3><p>Stay in the loop on events, trips and what your student is learning.</p></div>
+    </div>
+  </div></div></div>
+</section>
+
+<section data-view="next-steps" hidden>
+  <div class="page-hero"><img src="img/s132.jpg" alt=""><div class="in"><p class="eyebrow">Next steps</p><h1>Take your next step</h1><p>We're here to help people Know God, Find Freedom, Discover their Purpose, and Make a Difference. Wherever you are, there's a next step.</p></div></div>
+  <div class="wrap sec">
+    <div class="paths">
+      <a class="path rv" href="#growth-track"><img src="img/s138.jpg" alt="" loading="lazy"><span class="n">Discover purpose</span><h3>Growth Track</h3><p>Three Sundays a month at 11 AM. Connect, discover your design, join the team.</p></a>
+      <a class="path rv" href="#small-groups"><img src="img/s36.jpg" alt="" loading="lazy"><span class="n">Find freedom</span><h3>Small Groups</h3><p>Life-changing community throughout the week.</p></a>
+      <a class="path rv" href="#dream-team"><img src="img/s132.jpg" alt="" loading="lazy"><span class="n">Make a difference</span><h3>Dream Team</h3><p>Serve with your gifts at church and in the community.</p></a>
+      <a class="path rv" href="#baptism"><img src="img/s102.jpg" alt="" loading="lazy"><span class="n">Go public</span><h3>Baptism</h3><p>We'd be honored to baptize you.</p></a>
+    </div>
+    <div class="cols" style="margin-top:16px">
+      <a class="box coral rv" href="#prayer" style="text-decoration:none"><p class="eyebrow">Prayer</p><h3>How can we pray for you?</h3><p>Our prayer team prays over every request.</p></a>
+      <a class="box blush rv" href="#give" style="text-decoration:none"><p class="eyebrow">Generosity</p><h3>Give</h3><p>Give online, in person or by mail.</p></a>
+    </div>
+  </div>
+</section>
+
+<section data-view="growth-track" hidden>
+  <div class="page-hero"><img src="img/s138.jpg" alt=""><div class="in"><p class="eyebrow">First three Sundays · 11 AM</p><h1>Growth Track</h1><p>Discover your redemptive purpose and live the life God created for you.</p></div></div>
+  <div class="wrap sec">
+    <div class="steps-big">
+      <div class="box blush rv"><p class="eyebrow">Step 1 · First Sunday</p><h3>Become a Member</h3><p>Discover the ins and outs of Venture: our beliefs, leadership and church government, how we handle money and how we're organized. You'll have the opportunity to become a member.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><p class="eyebrow">Step 2 · Second Sunday</p><h3>Discover Your Design</h3><p>Dive into your personality, discover your gifts, and begin discovering your purpose and how you can make a difference in others' lives.</p></div>
+      <div class="box coral rv"><p class="eyebrow">Step 3 · Third Sunday</p><h3>Join the Team</h3><p>Find out what it means to make a difference at Venture and connect to opportunities to serve others with your God-given gifts.</p></div>
+    </div>
+    <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="#events">See upcoming sessions <span class="arr">→</span></a><a class="btn btn-ghost" href="#map">Find the Growth Track room</a></div>
+  </div>
+</section>
+
+<section data-view="small-groups" hidden>
+  <div class="page-hero"><img src="img/s36.jpg" alt=""><div class="in"><p class="eyebrow">Find freedom</p><h1>Small Groups</h1><p>"As iron sharpens iron, so one man sharpens another." (Proverbs 27:17)</p></div></div>
+  <div class="split light rv">
+    <div class="media"><img src="img/s20.jpg" alt="Friends talking at the coffee bar" loading="lazy"></div>
+    <div class="copy"><p class="eyebrow" style="color:var(--ember)">Who, not what</p><h2>We all need each other</h2><p>At its core, a small group is less about what you do and more about who you do it with. Through meaningful conversation, prayer and studying the Bible together, we grow closer to God and each other. Groups meet throughout the week in different neighborhoods.</p><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="#find-a-group">Find a group <span class="arr">↓</span></a><a class="btn btn-ghost" href="#contact">Want to lead one?</a></div></div>
+  </div>
+  <div class="wrap sec" id="find-a-group">
+    <div class="sec-head rv"><div><p class="eyebrow">Open groups</p><h2>Find your group</h2></div><div style="display:grid;gap:4px;justify-items:end"><span class="updated" id="group-count"></span><span class="updated" id="group-updated"></span></div></div>
+    <div id="group-filters" style="display:grid;gap:8px;margin-bottom:24px"></div>
+    <div class="grp-grid" id="group-list"><p class="updated">Loading groups…</p></div>
+    <p class="fine" style="color:var(--dim);margin-top:22px">Don't see one that fits? Groups start throughout the year. Contact us and we'll help you find one.</p>
+  </div>
+</section>
+
+<section data-view="dream-team" hidden>
+  <div class="page-hero"><img src="img/s132.jpg" alt=""><div class="in"><p class="eyebrow">Make a difference</p><h1>Dream Team</h1><p>Build the body of Christ by each person fulfilling their calling and serving to make an eternal difference.</p></div></div>
+  <div class="wrap sec">
+    <div class="sec-head rv"><div><p class="eyebrow">Where you can serve</p><h2>Find your team</h2></div></div>
+    <div class="cols">
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Host Team</h3><p>Create a comfortable, welcoming environment from the parking lot to your seat.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Student Ministries</h3><p>Lead the next generation to Jesus in Venture Kids and Students.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Service Experience</h3><p>Worship, production, lights and sound that craft a dynamic Sunday.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Small Group Leaders</h3><p>Tear down barriers across our city by leading a group.</p></div>
+      <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Dream Center</h3><p>Partner with the Dream Center Team to serve our community.</p></div>
+      <div class="box coral rv"><h3>Start with Growth Track</h3><p>Every Dream Team member starts on the Growth Track, the first three Sundays of each month.</p><a class="btn btn-light" href="#growth-track">Learn more <span class="arr">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section data-view="baptism" hidden>
+  <div class="page-hero"><img src="img/s102.jpg" alt=""><div class="in"><p class="eyebrow">Go public with your faith</p><h1>Baptism</h1><p>The Bible says all professing Christians should be baptized (Matthew 28:18-20). Whether you've followed Jesus for a long time or you're brand new, we would be honored to baptize you.</p></div></div>
+  <div class="wrap sec"><div class="cols">
+    <div class="box coral rv"><h3>Sign up to be baptized</h3><p>Tell us a little about your story and we'll reach out with next steps and dates.</p><a class="btn btn-light" href="https://www.yourventurechurch.org/baptism-signup" target="_blank" rel="noopener">Baptism sign-up form ↗</a></div>
+    <div class="box ink rv" style="border:1px solid var(--smoke)"><h3>Questions first?</h3><p>Call the church office at 317-526-1600, Monday–Friday 9am–5pm, or talk to any pastor on Sunday.</p></div>
+  </div></div>
+</section>
+
+<section data-view="prayer" hidden>
+  <div class="page-hero"><img src="img/s186.jpg" alt=""><div class="in"><p class="eyebrow">Prayer</p><h1>How can we pray for you?</h1><p>We would be honored to pray for you or someone you know. Our prayer team prays for every request we receive.</p></div></div>
+  <div class="wrap sec"><div class="cols">
+    <div class="box coral rv"><h3>Send a prayer request</h3><p>Share as much or as little as you like. Your name and contact info are optional.</p><a class="btn btn-light" href="https://www.yourventurechurch.org/prayer-request" target="_blank" rel="noopener">Prayer request form ↗</a></div>
+    <div class="box ink rv" style="border:1px solid var(--smoke)"><p class="eyebrow">First Wednesday</p><h3>Prayer Service · 7:00 PM</h3><p>Join us the first Wednesday of every month. Prayer is better shared.</p></div>
+  </div></div>
+</section>
+
+<section data-view="give" hidden>
+  <div class="page-hero"><img src="img/s205.jpg" alt=""><div class="in"><p class="eyebrow">Generosity</p><h1>Giving</h1><p>"For where your treasure is, there your heart will be also." (Matthew 6:21)</p></div></div>
+  <div class="frame"><div class="panel"><div class="wrap sec">
+    <div class="intro rv" style="padding-top:0"><p class="eyebrow">Why we give</p><h2>God is generous, so we are too</h2><p>What we do with what God has given us shows the world where our hearts are and helps proclaim the gospel. We want to glorify God with every area of our lives, including our finances.</p></div>
+    <div class="steps-big">
+      <div class="box coral rv"><p class="eyebrow">Online</p><h3>Give online</h3><p>Choose an amount and how often you'd like to give. Secure giving through Subsplash.</p><a class="btn btn-light" href="https://subsplash.com/u/-H86PDV/give" target="_blank" rel="noopener">Give now ↗</a></div>
+      <div class="box blush rv"><p class="eyebrow">In person</p><h3>On Sunday</h3><p>Give during the offering at the end of the service, or use the wooden box as you leave the auditorium.</p></div>
+      <div class="box ink rv"><p class="eyebrow">By mail</p><h3>Mail a check</h3><p>Your Venture Church<br>P.O. Box 435<br>Pittsboro, Indiana 46167</p></div>
+    </div>
+  </div></div></div>
+</section>
+
+<section data-view="watch" hidden>
+  <div class="page-hero"><img src="img/s234.jpg" alt=""><div class="in"><p class="eyebrow">Live every Sunday · 9:30 &amp; 11:00 AM</p><h1>Watch</h1><p>Missed a Sunday? Catch the latest message or browse past series on YouTube.</p><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-coral" href="https://www.youtube.com/@yourventurechurch24/streams" target="_blank" rel="noopener">Watch live ↗</a><a class="btn btn-ghost" href="https://www.youtube.com/channel/UCKsBvnIosSH1_KeqAn9KiLQ" target="_blank" rel="noopener" style="color:var(--paper)">Browse sermons ↗</a></div></div></div>
+  <div class="wrap sec">
+    <div class="sec-head rv"><div><p class="eyebrow">Newest first</p><h2>Latest message</h2></div></div>
+    <div class="sermon" data-sermon>
+        <a class="sermon-fallback" href="https://www.youtube.com/@yourventurechurch24/streams" target="_blank" rel="noopener">
+          <img src="img/s186.jpg" alt="" loading="lazy">
+          <span class="sermon-play" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 2.5l9 5.5-9 5.5z"/></svg></span>
+          <span class="sermon-cap"><b>Watch the latest message</b><span>Opens Sunday's stream on YouTube ↗</span></span>
+        </a>
+      </div>
+    <button class="card-x rv" type="button" data-story style="border:1px solid var(--smoke);width:100%;text-align:left;cursor:pointer;padding:0;font:inherit;margin-top:16px">
+      <div class="ph" style="aspect-ratio:21/9"><img src="img/s67.jpg" alt="Worship at Venture" loading="lazy"></div>
+      <div class="tx"><p class="eyebrow">4 minutes</p><h3>This is Venture ▶</h3><p>Coffee, kids, worship and the people who make Sunday what it is.</p></div>
+    </button>
+  </div>
+</section>
+
+<section data-view="contact" hidden>
+  <div class="page-hero"><img src="img/s12.jpg" alt=""><div class="in"><p class="eyebrow">Contact</p><h1>Say hello</h1><p>Online or here in Hendricks County, carrying something heavy or just curious, reach out anytime.</p></div></div>
+  <div class="wrap sec"><div class="steps-big">
+    <div class="box blush rv"><p class="eyebrow">Call</p><h3 class="mono">317-526-1600</h3><p>Office hours Monday–Friday, 9am–5pm.</p><div class="copyline"><code>317-526-1600</code><button class="copybtn" type="button" data-copy="317-526-1600">Copy</button></div></div>
+    <div class="box coral rv"><p class="eyebrow">Email</p><h3 style="font-size:20px;word-break:break-word">connections@yourventurechurch.org</h3><p>We usually reply within a business day.</p><div class="copyline"><button class="copybtn" type="button" data-copy="connections@yourventurechurch.org">Copy address</button></div></div>
+    <div class="box ink rv" style="border:1px solid var(--smoke)"><p class="eyebrow">Visit</p><h3>7865 N County Road 100 E</h3><p>Pittsboro, Indiana 46167<br>Mail: P.O. Box 435, Pittsboro, IN 46167</p></div>
+  </div></div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="big">
+      <svg role="img" aria-label="Your Venture Church" xmlns="http://www.w3.org/2000/svg" viewBox="256 262 488 476" fill="currentColor"><path d="M 496.3 398.6 L 471.7 327.5 L 451 327.5 L 485.5 421.4 L 507 421.4 L 541.6 327.5 L 521.6 327.5 ZM 496.3 398.6"/><path d="M 496.3 454 C 449.3 454 411.1 415.8 411.1 368.7 C 411.1 321.7 449.3 283.5 496.3 283.5 C 543.3 283.5 581.6 321.7 581.6 368.7 C 581.6 415.8 543.3 454 496.3 454 M 496.3 266.3 C 439.8 266.3 393.9 312.2 393.9 368.7 C 393.9 425.2 439.8 471.2 496.3 471.2 C 552.8 471.2 598.8 425.2 598.8 368.7 C 598.8 312.2 552.8 266.3 496.3 266.3"/><path d="M 313 595.2 L 333.8 595.2 L 307.1 669.4 L 286.6 669.4 L 260 595.2 L 281.8 595.2 L 297.2 649.9 ZM 313 595.2"/><path d="M 360.7 613.4 C 357.9 616.3 356.2 620.1 355.5 624.9 L 388.9 624.9 C 388.6 619.8 386.8 615.9 383.7 613.2 C 380.6 610.5 376.8 609.2 372.2 609.2 C 367.3 609.2 363.4 610.6 360.7 613.4 M 389.7 596.7 C 394.8 599 399.1 602.7 402.5 607.7 C 405.5 612.1 407.5 617.2 408.4 623 C 408.9 626.4 409.1 631.3 409 637.7 L 355 637.7 C 355.3 645.2 357.9 650.4 362.8 653.4 C 365.7 655.2 369.3 656.2 373.5 656.2 C 377.9 656.2 381.5 655 384.2 652.8 C 385.7 651.5 387.1 649.8 388.2 647.7 L 408 647.7 C 407.5 652.1 405.1 656.5 400.8 661.1 C 394.2 668.3 384.9 671.9 372.9 671.9 C 363.1 671.9 354.4 668.8 346.8 662.8 C 339.3 656.7 335.5 646.8 335.5 633.1 C 335.5 620.2 338.9 610.4 345.7 603.5 C 352.5 596.7 361.4 593.2 372.2 593.2 C 378.7 593.2 384.5 594.4 389.7 596.7"/><path d="M 475.2 599.4 C 480 603.5 482.4 610.1 482.4 619.4 L 482.4 669.4 L 462.6 669.4 L 462.6 624.2 C 462.6 620.3 462.1 617.4 461 615.3 C 459.1 611.5 455.5 609.6 450.2 609.6 C 443.7 609.6 439.2 612.3 436.8 617.9 C 435.5 620.9 434.9 624.6 434.9 629.2 L 434.9 669.4 L 415.5 669.4 L 415.5 595.3 L 434.3 595.3 L 434.3 606.2 C 436.8 602.3 439.1 599.6 441.3 597.9 C 445.3 594.9 450.3 593.4 456.4 593.4 C 464.1 593.4 470.3 595.4 475.2 599.4"/><path d="M 489.4 609.2 L 489.4 595.4 L 499.7 595.4 L 499.7 574.7 L 518.9 574.7 L 518.9 595.4 L 559.2 595.4 L 559.2 609.2 L 518.9 609.2 L 518.9 648.9 C 518.9 651.9 519.3 653.8 520 654.6 C 520.8 655.3 523.2 655.7 527.1 655.7 C 527.7 655.7 528.3 655.7 529 655.6 C 529.6 655.6 530.3 655.6 530.9 655.5 L 530.9 670 L 521.7 670.4 C 512.6 670.7 506.3 669.1 503 665.6 C 500.8 663.4 499.7 660 499.7 655.3 L 499.7 609.2 ZM 489.4 609.2"/><path d="M 559.2 617.1 L 559.2 639.9 C 559.2 644.1 559.7 647.3 560.7 649.4 C 562.5 653.2 565.9 655.1 571.1 655.1 C 577.7 655.1 582.2 652.4 584.6 647 C 585.9 644.1 586.5 640.3 586.5 635.5 L 586.5 595.2 L 606.2 595.2 L 606.2 669.4 L 587.3 669.4 L 587.3 658.9 C 587.1 659.1 586.7 659.8 586 660.9 C 585.2 662.1 584.4 663.1 583.4 663.9 C 580.4 666.6 577.4 668.5 574.6 669.5 C 571.8 670.5 568.5 671 564.7 671 C 553.7 671 546.3 667 542.5 659.1 C 540.4 654.8 539.4 648.4 539.4 639.9 L 539.4 617.1 ZM 559.2 617.1"/><path d="M 662.7 593.5 C 663 593.5 663.5 593.5 664.4 593.6 L 664.4 613.4 C 663.2 613.3 662.1 613.2 661.1 613.2 C 660.2 613.1 659.4 613.1 658.8 613.1 C 651 613.1 645.8 615.6 643.1 620.7 C 641.6 623.6 640.9 628 640.9 633.9 L 640.9 669.4 L 621.3 669.4 L 621.3 595.2 L 639.8 595.2 L 639.8 608.1 C 642.8 603.2 645.4 599.8 647.7 598 C 651.3 594.9 656 593.4 661.8 593.4 C 662.2 593.4 662.5 593.4 662.7 593.5"/><path d="M 691.6 613.4 C 688.8 616.3 687.1 620.1 686.4 624.9 L 719.8 624.9 C 719.5 619.8 717.8 615.9 714.7 613.2 C 711.6 610.5 707.7 609.2 703.2 609.2 C 698.2 609.2 694.3 610.6 691.6 613.4 M 720.6 596.7 C 725.8 599 730 602.7 733.4 607.7 C 736.4 612.1 738.4 617.2 739.3 623 C 739.8 626.4 740.1 631.3 740 637.7 L 685.9 637.7 C 686.2 645.2 688.8 650.4 693.7 653.4 C 696.7 655.2 700.2 656.2 704.4 656.2 C 708.8 656.2 712.4 655 715.2 652.8 C 716.7 651.5 718 649.8 719.1 647.7 L 738.9 647.7 C 738.4 652.1 736 656.5 731.8 661.1 C 725.1 668.3 715.8 671.9 703.9 671.9 C 694 671.9 685.3 668.8 677.7 662.8 C 670.2 656.7 666.4 646.8 666.4 633.1 C 666.4 620.2 669.8 610.4 676.6 603.5 C 683.4 596.7 692.3 593.2 703.2 593.2 C 709.6 593.2 715.4 594.4 720.6 596.7"/><path d="M 363.7 707.1 C 362.2 705.8 360.6 704.8 358.9 704.1 C 357.3 703.5 355.6 703.2 353.8 703.2 C 349.7 703.2 346.4 704.5 343.8 707 C 341.3 709.6 340 713 340 717.1 C 340 719.2 340.3 721.1 341 722.8 C 341.6 724.4 342.5 725.9 343.8 727.2 C 345.1 728.4 346.5 729.4 348.2 730.1 C 349.8 730.7 351.5 731.1 353.4 731.1 C 355.2 731.1 357 730.8 358.7 730.1 C 360.4 729.5 362 728.6 363.6 727.4 L 363.6 730.8 C 362 731.7 360.4 732.4 358.7 732.9 C 356.9 733.4 355.2 733.7 353.5 733.7 C 351.2 733.7 349.1 733.3 347 732.5 C 344.9 731.7 343.1 730.5 341.6 729 C 340.1 727.5 338.9 725.8 338.1 723.7 C 337.3 721.7 337 719.5 337 717.1 C 337 714.8 337.4 712.6 338.2 710.6 C 339 708.5 340.1 706.8 341.7 705.3 C 343.1 703.8 344.9 702.7 347 701.9 C 349.1 701.1 351.3 700.7 353.5 700.7 C 355.5 700.7 357.4 700.9 359.1 701.5 C 360.8 702 362.4 702.9 363.8 704 ZM 363.7 707.1"/><path d="M 400.8 732.9 L 400.8 701.4 L 403.7 701.4 L 403.7 714.1 L 420.8 714.1 L 420.8 701.4 L 423.7 701.4 L 423.7 732.9 L 420.8 732.9 L 420.8 716.6 L 403.7 716.6 L 403.7 732.9 ZM 400.8 732.9"/><path d="M 462.2 701.4 L 465 701.4 L 465 721.9 C 465 725 465.8 727.4 467.2 728.9 C 468.6 730.4 470.8 731.1 473.7 731.1 C 476.6 731.1 478.7 730.4 480.2 728.9 C 481.6 727.4 482.3 725 482.3 721.9 L 482.3 701.4 L 485.1 701.4 L 485.1 721 C 485.1 725.3 484.2 728.5 482.3 730.6 C 480.4 732.7 477.5 733.7 473.7 733.7 C 469.8 733.7 467 732.7 465.1 730.6 C 463.2 728.5 462.2 725.3 462.2 721 ZM 462.2 701.4"/><path d="M 526.6 703.9 L 526.6 715.5 L 529.4 715.5 C 532.1 715.5 534 715.1 535 714.2 C 536.1 713.4 536.6 711.9 536.6 709.9 C 536.6 707.7 536.1 706.2 535 705.2 C 533.9 704.3 532 703.9 529.4 703.9 ZM 542.8 732.9 L 539.3 732.9 L 528.3 717.8 L 526.6 717.8 L 526.6 732.9 L 523.7 732.9 L 523.7 701.4 L 529.5 701.4 C 532.9 701.4 535.5 702.1 537.2 703.5 C 538.9 704.9 539.7 707.1 539.7 709.9 C 539.7 712.4 539 714.3 537.5 715.7 C 536.1 717.1 534.1 717.8 531.5 717.8 ZM 542.8 732.9"/><path d="M 603.1 707.1 C 601.6 705.8 600 704.8 598.3 704.1 C 596.7 703.5 595 703.2 593.2 703.2 C 589.1 703.2 585.8 704.5 583.2 707 C 580.7 709.6 579.4 713 579.4 717.1 C 579.4 719.2 579.7 721.1 580.3 722.8 C 581 724.4 581.9 725.9 583.2 727.2 C 584.5 728.4 585.9 729.4 587.5 730.1 C 589.2 730.7 590.9 731.1 592.8 731.1 C 594.6 731.1 596.3 730.8 598.1 730.1 C 599.8 729.5 601.4 728.6 602.9 727.4 L 602.9 730.8 C 601.4 731.7 599.8 732.4 598 732.9 C 596.3 733.4 594.6 733.7 592.9 733.7 C 590.6 733.7 588.4 733.3 586.4 732.5 C 584.3 731.7 582.5 730.5 581 729 C 579.5 727.5 578.3 725.8 577.5 723.7 C 576.7 721.7 576.3 719.5 576.3 717.1 C 576.3 714.8 576.7 712.6 577.5 710.6 C 578.4 708.5 579.5 706.8 581 705.3 C 582.5 703.8 584.3 702.7 586.4 701.9 C 588.5 701.1 590.6 700.7 592.9 700.7 C 594.9 700.7 596.8 700.9 598.5 701.5 C 600.2 702 601.8 702.9 603.2 704 ZM 603.1 707.1"/><path d="M 640.2 732.9 L 640.2 701.4 L 643 701.4 L 643 714.1 L 660.2 714.1 L 660.2 701.4 L 663 701.4 L 663 732.9 L 660.2 732.9 L 660.2 716.6 L 643 716.6 L 643 732.9 ZM 640.2 732.9"/><path d="M 417.8 544.2 L 417.8 558.6 L 414.8 558.6 L 414.8 544.3 L 404.9 528.6 L 408.4 528.6 L 416.3 541.6 L 424.2 528.6 L 427.6 528.6 ZM 417.8 544.2"/><path d="M 482 543.6 C 482 535.6 476.8 531.1 470.2 531.1 C 463.7 531.1 458.4 535.6 458.4 543.6 C 458.4 551.6 463.7 556.1 470.2 556.1 C 476.8 556.1 482 551.6 482 543.6 M 455.5 543.6 C 455.5 534 462 528.2 470.2 528.2 C 478.5 528.2 485 534 485 543.6 C 485 553.2 478.5 559 470.2 559 C 462 559 455.5 553.2 455.5 543.6"/><path d="M 518.5 548.8 L 518.5 528.6 L 521.5 528.6 L 521.5 548.4 C 521.5 553.6 524.8 556.2 529.1 556.2 C 533.4 556.2 536.8 553.5 536.8 548.4 L 536.8 528.6 L 539.7 528.6 L 539.7 548.8 C 539.7 555.1 535.1 559 529.1 559 C 523.1 559 518.5 555.1 518.5 548.8"/><path d="M 578.2 543.9 L 585.8 543.9 C 589.6 543.9 591.9 541.3 591.9 537.6 C 591.9 534 589.6 531.2 585.8 531.2 L 578.2 531.2 ZM 584.4 546.4 L 578.2 546.4 L 578.2 558.6 L 575.3 558.6 L 575.3 528.6 L 586 528.6 C 591.7 528.6 594.9 532.6 594.9 537.6 C 594.9 542.1 592.1 545.7 587.6 546.3 L 595.1 558.6 L 591.6 558.6 ZM 584.4 546.4"/></svg>
+      <p class="addr">7865 N County Road 100 E<br>Pittsboro, Indiana 46167</p>
+      <p class="addr">Sundays at 8:00, 9:30 &amp; 11:00 AM<br>First Wednesday Prayer · 7:00 PM</p>
+    </div>
+    <div><h4>Visit</h4><a href="#visit">Plan a Visit</a><a href="#kids">Venture Kids</a><a href="#students">Students</a><a href="#map">Building Map</a><a href="#events">Announcements</a></div>
+    <div><h4>Grow</h4><a href="#next-steps">Next Steps</a><a href="#growth-track">Growth Track</a><a href="#small-groups">Small Groups</a><a href="#dream-team">Dream Team</a><a href="#baptism">Baptism</a><a href="#prayer">Prayer</a></div>
+    <div><h4>Connect</h4><a href="#contact">Contact</a><a href="#give">Give</a><a href="https://www.youtube.com/@yourventurechurch24" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.instagram.com/yourventurechurch" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/yourventurechurch" target="_blank" rel="noopener">Facebook ↗</a>
+      <p class="addr">317-526-1600<br>connections@yourventurechurch.org</p></div>
+  </div>
+  <div class="foot-base"><span>© 2026 Your Venture Church · Pittsboro, Indiana</span><span>Know God · Find Freedom · Discover Purpose · Make a Difference</span></div>
+</footer>
+
+<div class="modal" id="story" hidden>
+  <button class="x" type="button" aria-label="Close video">×</button>
+  <video src="media/venture-story.mp4" controls playsinline preload="none" poster="img/s67.jpg"></video>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+/* ---------- 3D campus (traced from satellite imagery; 1 unit = 1 metre) ---------- */
+const VCampus = (() => {
+  // Traced in a 19z satellite frame centred on 39.87665,-86.50455 at 0.374 m per traced pixel.
+  const M = (sx, sy) => [(sx - 784) * 0.374, (sy - 389) * 0.374];
+  const P = pts => pts.map(p => M(p[0], p[1]));
+  const RAIL = [[-1400, 60 - 1937 * 0.359], [3000, 60 + 2463 * 0.359]];
+  const C = {
+    roads: [{ a: [537, -2400], b: [537, 3200], w: 7 }, { a: [-518, -2400], b: [-518, 3200], w: 6 }],
+    asphalt: [
+      [[543, 148], [662, 150], [965, 258], [958, 332], [543, 332]],
+      [[543, 332], [735, 332], [735, 445], [543, 445]],
+      [[735, 332], [820, 332], [820, 420], [735, 420]],
+      [[543, 440], [705, 440], [705, 466], [543, 466]],
+      [[722, 383], [803, 383], [803, 416], [722, 416]]
+    ],
+    gravel: [[[958, 262], [1012, 288], [998, 342], [952, 336]]],
+    concrete: [[[797, 279], [848, 279], [848, 346], [797, 346]], [[719, 300], [726, 300], [726, 331], [719, 331]]],
+    island: { c: [624, 381], r: [60, 46] },
+    sand: [[937, 465], [980, 465], [980, 533], [937, 533]],
+    dirt: [[805, 428], [850, 425], [893, 440], [890, 500], [850, 507], [806, 495]],
+    path: [[[1035, 292], [1180, 352], [1400, 418], [1700, 520], [2300, 740]], [[1035, 292], [1003, 328], [991, 380], [989, 520], [1001, 563], [1050, 580], [1200, 590], [1560, 608], [2300, 640]]],
+    woods: [[1592, 483], [1803, 533], [2064, 624], [2280, 700], [2300, 1000], [2064, 1060], [1823, 1018], [1602, 935]],
+    nwTrees: [[95, -110], [517, 232]],
+    houses: [[284, 173], [354, 123], [464, -147], [804, -107], [864, -87], [1386, -197], [1506, -177], [-322, 23], [-262, 83]],
+    buildings: [
+      { id: 'A1', r: [607.5, 213.5, 662, 241.5], h: 5 },
+      { id: 'A2', r: [638.5, 218.5, 743.5, 285], h: 6.5 },
+      { id: 'B', r: [736, 241.5, 802.5, 385], h: 7.5 },
+      { id: 'Bw', r: [725, 301.5, 758.5, 330], h: 4.5 },
+      { id: 'Bs', r: [725, 330, 796, 385], h: 6 },
+      { id: 'C', r: [820, 330, 948.5, 425], h: 7, wh: 'East Warehouse' },
+      { id: 'D', r: [699.5, 413.5, 791, 541.5], h: 8, hvac: true, wh: 'South Warehouse' }
+    ],
+    shed: [970, 297.5, 998.5, 326.5],
+    carRows: [
+      [[556, 154], [652, 154]], [[690, 180], [955, 268]], [[556, 322], [652, 322]], [[662, 330], [700, 390]],
+      [[566, 455], [662, 455]], [[838, 272], [930, 300]], [[835, 290], [930, 318]], [[958, 300], [958, 335]]
+    ],
+    labels: [
+      { t: 'Railroad', at: [1250, 60 + 713 * 0.359 - 4], cls: 'road' },
+      { t: 'Main parking', at: [800, 220] },
+      { t: 'Walking trail', at: [1320, 592] },
+      { t: 'Sand volleyball', at: [958, 500] },
+      { t: 'Main entrance', at: [716, 316], cls: 'entrance' }
+    ],
+    // outdoor spots events can link to (#campus-<id>)
+    spots: [
+      { id: 'back-yard', t: 'Back Yard', at: [1180, 470], note: 'The open lawn inside the walking trail loop, behind the church and east of the sand volleyball court.' }
+    ]
+  };
+
+  let scene, camera, controls, world = {}, labels = [], bldGroup, hoverOn = false, host, layer;
+  const SIZE = 900, TEX = 2048;
+
+  function paintGround() {
+    const cv = document.createElement('canvas'); cv.width = cv.height = TEX;
+    const g = cv.getContext('2d');
+    const T = ([x, z]) => [(x + SIZE / 2) / SIZE * TEX, (z + SIZE / 2) / SIZE * TEX];
+    const poly = (pts, fill, conv = true) => { g.beginPath(); pts.forEach((p, i) => { const [x, y] = conv ? T(M(p[0], p[1])) : T(p); i ? g.lineTo(x, y) : g.moveTo(x, y); }); g.closePath(); g.fillStyle = fill; g.fill(); };
+    const line = (pts, w, col, dash) => { g.beginPath(); pts.forEach((p, i) => { const [x, y] = T(M(p[0], p[1])); i ? g.lineTo(x, y) : g.moveTo(x, y); }); g.lineWidth = w / SIZE * TEX; g.strokeStyle = col; g.setLineDash(dash || []); g.lineCap = 'round'; g.lineJoin = 'round'; g.stroke(); g.setLineDash([]); };
+    // base farmland with crop rows
+    g.fillStyle = '#b9a47c'; g.fillRect(0, 0, TEX, TEX);
+    g.globalAlpha = .18; g.strokeStyle = '#8c7754'; g.lineWidth = 1.2;
+    for (let x = 0; x < TEX; x += 5) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, TEX); g.stroke(); }
+    g.globalAlpha = 1;
+    // south field rows run east-west: repaint
+    const sfTop = T(M(548, 572))[1];
+    g.save(); g.beginPath(); g.rect(T(M(548, 0))[0], sfTop, TEX, TEX); g.clip();
+    g.fillStyle = '#c3ad84'; g.fillRect(0, 0, TEX, TEX); g.globalAlpha = .2; g.strokeStyle = '#8c7754';
+    for (let y = sfTop; y < TEX; y += 5) { g.beginPath(); g.moveTo(0, y); g.lineTo(TEX, y); g.stroke(); }
+    g.restore(); g.globalAlpha = 1;
+    // green: church lawn, trail meadow, north-of-rail meadow, neighbours
+    const grass = '#7d9558', grass2 = '#6f8a4c';
+    poly([[543, 290], [990, 290], [990, 572], [543, 572]], grass);
+    const railY = x => 60 + (x - 537) * 0.359;
+    poly([[960, railY(960) + 6], [2600, railY(2600) + 6], [2600, 640], [960, 640]], grass2);
+    poly([[545, railY(545) - 6], [1663, railY(1663) - 6], [1663, -260], [545, -260]], grass);
+    poly([[100, -700], [530, -700], [530, 255], [100, 255]], '#7a9255');
+    poly([[-512, -700], [90, -700], [90, 40], [-512, 40]], '#86a061');
+    // woods floor
+    poly(C.woods, '#3f5a2e');
+    // roads
+    C.roads.forEach(r => { line([r.a, r.b], r.w + 2, '#9c937f'); line([r.a, r.b], r.w, '#45464a'); });
+    // rail bed
+    line(RAIL, 9, '#7d7466'); line(RAIL, 4.2, '#5b544c'); line(RAIL, 0.25, '#2b2a28');
+    const off = 1.6 / 0.374; line(RAIL.map(p => [p[0], p[1] - off]), 0.3, '#222'); line(RAIL.map(p => [p[0], p[1] + off]), 0.3, '#222');
+    // parking + drives
+    C.asphalt.forEach(p => poly(p, '#3b3c40'));
+    C.gravel.forEach(p => poly(p, '#9a948a'));
+    // island lawn
+    const [icx, icz] = T(M(...C.island.c));
+    g.beginPath(); g.ellipse(icx, icz, C.island.r[0] * 0.374 / SIZE * TEX, C.island.r[1] * 0.374 / SIZE * TEX, 0, 0, 7); g.fillStyle = grass; g.fill();
+    C.concrete.forEach(p => poly(p, '#cfcac2'));
+    // parking stripes
+    g.strokeStyle = 'rgba(255,255,255,.7)'; g.lineWidth = 0.15 / SIZE * TEX * 1.5;
+    C.carRows.forEach(([a, b]) => {
+      const A = M(...a), B = M(...b), len = Math.hypot(B[0] - A[0], B[1] - A[1]), n = Math.floor(len / 2.8);
+      const ux = (B[0] - A[0]) / len, uz = (B[1] - A[1]) / len, nx = -uz, nz = ux;
+      for (let i = 0; i <= n; i++) { const x = A[0] + ux * i * 2.8, z = A[1] + uz * i * 2.8; const [p1x, p1y] = T([x - nx * 2.6, z - nz * 2.6]), [p2x, p2y] = T([x + nx * 2.6, z + nz * 2.6]); g.beginPath(); g.moveTo(p1x, p1y); g.lineTo(p2x, p2y); g.stroke(); }
+    });
+    poly(C.sand, '#e2cf9e'); poly(C.dirt, '#a4876a');
+    C.path.forEach(p => line(p, 2.2, '#d9d4ca'));
+    return cv;
+  }
+
+  function noise(x, z) { return Math.sin(x * 0.011) * Math.cos(z * 0.013) * 1.6 + Math.sin(x * 0.023 + z * 0.017) * 0.8 + Math.cos(z * 0.031 - x * 0.007) * 0.5; }
+  function heightAt(x, z) { const d = Math.hypot(x - 10, z - 10); const k = Math.min(1, Math.max(0, (d - 140) / 220)); return noise(x, z) * k * k * 1.6; }
+
+  function inPoly(pt, poly) { let c = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) { const [xi, zi] = poly[i], [xj, zj] = poly[j]; if (((zi > pt[1]) !== (zj > pt[1])) && (pt[0] < (xj - xi) * (pt[1] - zi) / (zj - zi) + xi)) c = !c; } return c; }
+
+  function build(THREE, hostEl, layerEl) {
+    host = hostEl; layer = layerEl;
+    scene = new THREE.Scene();
+    // golden-hour sky
+    const sky = document.createElement('canvas'); sky.width = 4; sky.height = 256;
+    const sg = sky.getContext('2d'), gr = sg.createLinearGradient(0, 0, 0, 256);
+    gr.addColorStop(0, '#1c2433'); gr.addColorStop(0.55, '#5d5a6a'); gr.addColorStop(0.82, '#e9927c'); gr.addColorStop(1, '#ffc9a8');
+    sg.fillStyle = gr; sg.fillRect(0, 0, 4, 256);
+    scene.background = new THREE.CanvasTexture(sky);
+    scene.fog = new THREE.Fog(0xe8a48c, 260, 620);
+    camera = new THREE.PerspectiveCamera(38, 1, 1, 3000);
+    camera.position.set(150, 120, 230);
+
+    scene.add(new THREE.HemisphereLight(0xcfe0ff, 0x6a5a40, 0.75));
+    const sun = new THREE.DirectionalLight(0xffd6b5, 1.15); sun.position.set(-220, 160, 90);
+    sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+    Object.assign(sun.shadow.camera, { left: -180, right: 180, top: 180, bottom: -180, near: 10, far: 700 });
+    sun.shadow.bias = -0.0008; scene.add(sun);
+
+    // ground
+    const geo = new THREE.PlaneGeometry(SIZE, SIZE, 180, 180); geo.rotateX(-Math.PI / 2);
+    const pos = geo.attributes.position;
+    for (let i = 0; i < pos.count; i++) pos.setY(i, heightAt(pos.getX(i), pos.getZ(i)));
+    geo.computeVertexNormals();
+    const tex = new THREE.CanvasTexture(paintGround()); tex.anisotropy = 8;
+    if ('colorSpace' in tex) tex.colorSpace = THREE.SRGBColorSpace; else tex.encoding = THREE.sRGBEncoding;
+    const ground = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: tex, roughness: 1 }));
+    ground.receiveShadow = true; scene.add(ground);
+    // far ring so the horizon is never empty
+    const far = new THREE.Mesh(new THREE.RingGeometry(SIZE * 0.46, 2200, 64), new THREE.MeshStandardMaterial({ color: 0xa99a72, roughness: 1 }));
+    far.rotation.x = -Math.PI / 2; far.position.y = -0.4; scene.add(far);
+
+    // road name painted flat on the asphalt (a map label, not a floating tag)
+    const roadText = (text, sx, sy) => {
+      const cv = document.createElement('canvas'); cv.width = 1024; cv.height = 160;
+      const g = cv.getContext('2d');
+      g.font = '800 120px Archivo, "Helvetica Neue", Arial, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillStyle = 'rgba(255,255,255,0.88)'; g.fillText(text, 512, 84);
+      const t = new THREE.CanvasTexture(cv); t.anisotropy = 8;
+      if ('colorSpace' in t) t.colorSpace = THREE.SRGBColorSpace; else t.encoding = THREE.sRGBEncoding;
+      const m = new THREE.Mesh(new THREE.PlaneGeometry(26, 4.06), new THREE.MeshBasicMaterial({ map: t, transparent: true, depthWrite: false }));
+      const [x, z] = M(sx, sy);
+      m.rotation.set(-Math.PI / 2, 0, -Math.PI / 2);   // lie flat, text running along the north-south road
+      m.position.set(x, heightAt(x, z) + 0.06, z); m.renderOrder = 1; scene.add(m);
+    };
+    [[537, 470], [537, 1080], [537, -230]].forEach(([sx, sy]) => roadText('100 E', sx, sy));
+
+    // church buildings
+    bldGroup = new THREE.Group(); bldGroup.userData.church = true;
+    const wall = new THREE.MeshStandardMaterial({ color: 0xf2eeeb, roughness: 0.85 });
+    const roof = new THREE.MeshStandardMaterial({ color: 0xc9cdd2, roughness: 0.6, metalness: 0.15 });
+    const whGroup = new THREE.Group();
+    const whWall = new THREE.MeshStandardMaterial({ color: 0xdedad6, roughness: 0.9 }), whRoof = new THREE.MeshStandardMaterial({ color: 0xb3b8be, roughness: 0.55, metalness: 0.25 });
+    C.buildings.forEach(b => {
+      const [x1, z1] = M(b.r[0], b.r[1]), [x2, z2] = M(b.r[2], b.r[3]), w = x2 - x1, d = z2 - z1;
+      const grp = b.wh ? whGroup : bldGroup, wl = b.wh ? whWall : wall, rf = b.wh ? whRoof : roof;
+      const m = new THREE.Mesh(new THREE.BoxGeometry(w, b.h, d), [wl, wl, rf, wl, wl, wl]);
+      m.position.set((x1 + x2) / 2, b.h / 2, (z1 + z2) / 2); m.castShadow = m.receiveShadow = true;
+      grp.add(m);
+      if (b.wh) { world.wh = world.wh || []; world.wh.push({ name: b.wh, p: [(x1 + x2) / 2, b.h + 0.2, (z1 + z2) / 2] }); }
+      if (b.gable) {
+        const gab = new THREE.Mesh(new THREE.CylinderGeometry(d / 2, d / 2, w, 3, 1), roof);
+        gab.rotation.z = Math.PI / 2; gab.scale.set(1, 1, 0.22); gab.rotation.y = 0;
+        gab.position.set((x1 + x2) / 2, b.h + 0.2, (z1 + z2) / 2); gab.castShadow = true; bldGroup.add(gab);
+      }
+      if (b.hvac) [[0.35, 0.3], [0.62, 0.5], [0.4, 0.7]].forEach(([fx, fz]) => {
+        const u = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.4, 2.4), new THREE.MeshStandardMaterial({ color: 0xb7bcc2 }));
+        u.position.set(x1 + w * fx, b.h + 0.7, z1 + d * fz); u.castShadow = true; grp.add(u);
+      });
+    });
+    // main entrance: coral canopy on the west face of the Bw section, facing the island lot
+    const coral = new THREE.MeshStandardMaterial({ color: 0xff654d, roughness: 0.55 });
+    const [ex1, ez1] = M(706, 303), [ex2, ez2] = M(725, 328.5);
+    const can = new THREE.Mesh(new THREE.BoxGeometry(ex2 - ex1, 0.55, ez2 - ez1), coral);
+    can.position.set((ex1 + ex2) / 2, 4.1, (ez1 + ez2) / 2); can.castShadow = true; bldGroup.add(can);
+    [[ex1 + 0.6, ez1 + 0.8], [ex1 + 0.6, ez2 - 0.8]].forEach(([x, z]) => { const p = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 4.1, 10), wall); p.position.set(x, 2.05, z); p.castShadow = true; bldGroup.add(p); });
+    { const [bx1, bz1] = M(725, 301.5), [, bz2] = M(725, 330);
+      const band = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.9, bz2 - bz1), coral); band.position.set(bx1 - 0.1, 4.0, (bz1 + bz2) / 2); bldGroup.add(band);
+      const glass = new THREE.Mesh(new THREE.BoxGeometry(0.2, 2.6, (bz2 - bz1) * 0.5), new THREE.MeshStandardMaterial({ color: 0x2b3440, roughness: 0.2, metalness: 0.6 }));
+      glass.position.set(bx1 - 0.08, 1.3, (bz1 + bz2) / 2); bldGroup.add(glass); }
+    scene.add(bldGroup, whGroup);
+    // logo ring floating over the main church building
+    const [dx1, dz1] = M(736, 241.5), [dx2, dz2] = M(802.5, 385);
+    const halo = new THREE.Group();
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(5, 0.55, 12, 64), new THREE.MeshStandardMaterial({ color: 0xff654d, emissive: 0x7a2015 }));
+    halo.add(ring); halo.position.set((dx1 + dx2) / 2, 19, (dz1 + dz2) / 2); halo.userData.spin = true; scene.add(halo);
+    world.halo = halo;
+
+    // shed + neighbour houses
+    const gable = (w, d, rise, over) => {
+      const sh = new THREE.Shape(); sh.moveTo(-d / 2 - over, 0); sh.lineTo(d / 2 + over, 0); sh.lineTo(0, rise); sh.closePath();
+      const g = new THREE.ExtrudeGeometry(sh, { depth: w + over * 2, bevelEnabled: false });
+      g.translate(0, 0, -(w + over * 2) / 2); g.rotateY(Math.PI / 2); return g;
+    };
+    const mkHouse = (x, z, w, d, h, col, roofCol = 0x5b5048, rise = d * 0.32) => {
+      const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), new THREE.MeshStandardMaterial({ color: col, roughness: 0.9 }));
+      b.position.set(x, h / 2, z); b.castShadow = b.receiveShadow = true; scene.add(b);
+      const r = new THREE.Mesh(gable(w, d, rise, 0.4), new THREE.MeshStandardMaterial({ color: roofCol, roughness: 0.8, side: THREE.DoubleSide }));
+      r.position.set(x, h, z); r.castShadow = true; scene.add(r);
+      return b;
+    };
+    { // garage: low-pitch metal roof, two overhead doors facing the parking lot
+      const [x1, z1] = M(C.shed[0], C.shed[1]), [x2, z2] = M(C.shed[2], C.shed[3]), w = x2 - x1, d = z2 - z1, cx = (x1 + x2) / 2, cz = (z1 + z2) / 2;
+      mkHouse(cx, cz, w, d, 3.6, 0xe6e2de, 0x8d949b, 1.4);
+      const doorMat = new THREE.MeshStandardMaterial({ color: 0xb9bec4, roughness: 0.5, metalness: 0.2 });
+      [-0.22, 0.22].forEach(f => { const dr = new THREE.Mesh(new THREE.BoxGeometry(0.12, 2.6, d * 0.32), doorMat); dr.position.set(x1 - 0.05, 1.3, cz + d * f); scene.add(dr); });
+    }
+    C.houses.forEach(([sx, sz], i) => { const [x, z] = M(sx, sz); mkHouse(x, z, 11 + (i % 3) * 2, 8, 4.5, [0xe8e2d8, 0xcfd4d8, 0xd8cbb8][i % 3]); });
+
+    // trees (instanced)
+    const pts = [];
+    const rnd = (s => () => (s = (s * 16807) % 2147483647) / 2147483647)(42);
+    const woods = C.woods.map(p => M(p[0], p[1]));
+    const bb = woods.reduce((a, p) => [Math.min(a[0], p[0]), Math.min(a[1], p[1]), Math.max(a[2], p[0]), Math.max(a[3], p[1])], [1e9, 1e9, -1e9, -1e9]);
+    for (let i = 0; i < 1400 && pts.length < 420; i++) { const p = [bb[0] + rnd() * (bb[2] - bb[0]), bb[1] + rnd() * (bb[3] - bb[1])]; if (inPoly(p, woods)) pts.push([...p, 6 + rnd() * 5]); }
+    const [n1, n2] = [M(...C.nwTrees[0]), M(...C.nwTrees[1])];
+    for (let i = 0; i < 70; i++) pts.push([n1[0] + rnd() * (n2[0] - n1[0]), n1[1] + rnd() * (n2[1] - n1[1]), 4 + rnd() * 4]);
+    for (let i = 0; i < 90; i++) { const sx = 300 + rnd() * 1500, sy = 60 + (sx - 537) * 0.359 - 14 - rnd() * 22; const p = M(sx, sy); pts.push([...p, 3 + rnd() * 3]); }
+    for (let i = 0; i < 40; i++) { const sx = 520 + rnd() * 20, sy = -400 + rnd() * 1300; if (sy > 140 && sy < 600) continue; pts.push([...M(sx, sy), 3 + rnd() * 3]); }
+    const isl = M(...C.island.c); pts.push([isl[0] + 2, isl[1] - 1, 7.5], [isl[0] - 4, isl[1] + 5, 5.5]);
+    const crown = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 1), new THREE.MeshStandardMaterial({ color: 0x4d6b35, roughness: 1, flatShading: true }), pts.length);
+    const trunk = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.18, 0.28, 1, 6), new THREE.MeshStandardMaterial({ color: 0x5a4433 }), pts.length);
+    const o = new THREE.Object3D(), col = new THREE.Color();
+    pts.forEach(([x, z, r], i) => {
+      const y = heightAt(x, z);
+      o.position.set(x, y + r * 0.55 + 1.6, z); o.scale.set(r * 0.62, r * 0.75, r * 0.62); o.rotation.set(0, rnd() * 6, 0); o.updateMatrix(); crown.setMatrixAt(i, o.matrix);
+      col.setHSL(0.24 + rnd() * 0.06, 0.32 + rnd() * 0.15, 0.24 + rnd() * 0.1); crown.setColorAt(i, col);
+      o.position.set(x, y + 1, z); o.scale.set(1, 2.2, 1); o.updateMatrix(); trunk.setMatrixAt(i, o.matrix);
+    });
+    crown.castShadow = trunk.castShadow = true; scene.add(crown, trunk);
+
+    // parked cars
+    const carCols = [0xe9e9e9, 0x2b2b2e, 0x8b9096, 0x9c2a22, 0x2c4a7a, 0xd8d2c4, 0x4b4f55];
+    const carSpots = [];
+    C.carRows.forEach(([a, b]) => {
+      const A = M(...a), B = M(...b), len = Math.hypot(B[0] - A[0], B[1] - A[1]), n = Math.floor(len / 2.8);
+      const ang = Math.atan2(B[1] - A[1], B[0] - A[0]);
+      for (let i = 0; i < n; i++) if (rnd() < 0.72) carSpots.push([A[0] + (B[0] - A[0]) * (i + 0.5) / n, A[1] + (B[1] - A[1]) * (i + 0.5) / n, ang]);
+    });
+    const cars = new THREE.InstancedMesh(new THREE.BoxGeometry(1.9, 1.4, 4.4), new THREE.MeshStandardMaterial({ roughness: 0.4, metalness: 0.3 }), carSpots.length);
+    carSpots.forEach(([x, z, a], i) => { o.position.set(x, 0.75, z); o.scale.set(1, 1, 1); o.rotation.set(0, -a, 0); o.updateMatrix(); cars.setMatrixAt(i, o.matrix); cars.setColorAt(i, col.setHex(carCols[Math.floor(rnd() * carCols.length)])); });
+    cars.castShadow = true; scene.add(cars);
+
+    // labels
+    C.labels.forEach(l => {
+      const el = document.createElement(l.cls === 'entrance' ? 'div' : 'div');
+      el.className = 'map-label campus ' + (l.cls || ''); el.textContent = l.t; layer.appendChild(el);
+      const [x, z] = M(...l.at); labels.push({ el, p: [x, l.cls === 'entrance' ? 4.3 : 0.4, z] });
+    });
+    const tag = document.createElement('button'); tag.type = 'button'; tag.className = 'map-label campus church';
+    tag.innerHTML = '<b>Your Venture Church</b><span>Tap to go inside →</span>';
+    tag.addEventListener('click', () => VMap.enter()); layer.appendChild(tag);
+    labels.push({ el: tag, p: [(dx1 + dx2) / 2, 8, (dz1 + dz2) / 2] });
+    world.spots = {};
+    C.spots.forEach(sp => {
+      const [x, z] = M(...sp.at), y = heightAt(x, z);
+      const el = document.createElement('div'); el.className = 'map-label campus spot'; el.textContent = sp.t; layer.appendChild(el);
+      labels.push({ el, p: [x, y + 0.4, z] });
+      const ring = new THREE.Mesh(new THREE.RingGeometry(9, 12, 64), new THREE.MeshBasicMaterial({ color: 0xff654d, side: THREE.DoubleSide, transparent: true, opacity: 0.85, depthWrite: false }));
+      ring.rotation.x = -Math.PI / 2; ring.position.set(x, y + 0.15, z); ring.visible = false; ring.renderOrder = 2; scene.add(ring);
+      world.spots[sp.id] = { el, ring, x, z, sp };
+    });
+    (world.wh || []).forEach(w => { const el = document.createElement('div'); el.className = 'map-label campus wh'; el.textContent = w.name; layer.appendChild(el); labels.push({ el, p: w.p }); });
+    return { scene, camera, center: new THREE.Vector3(-5, 0, 10) };
+  }
+
+  function pickChurch(raycaster) { return raycaster.intersectObjects(bldGroup.children, false).length > 0; }
+  function setHover(on) {
+    if (on === hoverOn) return; hoverOn = on;
+    bldGroup.children.forEach(m => { const mats = Array.isArray(m.material) ? m.material : [m.material]; mats.forEach(mt => { if (mt.emissive && mt.color.getHex() !== 0xff654d) mt.emissive.setHex(on ? 0x3a1209 : 0x000000); }); });
+    host.style.cursor = on ? 'pointer' : '';
+  }
+  function tick(t, THREE, w, h) {
+    if (world.halo) { world.halo.rotation.y = t * 0.8; world.halo.position.y = 19 + Math.sin(t * 1.6) * 0.8; }
+    Object.values(world.spots || {}).forEach(o => { if (o.ring.visible) { const k = 1 + 0.18 * Math.sin(t * 3); o.ring.scale.set(k, k, k); o.ring.material.opacity = 0.55 + 0.3 * Math.sin(t * 3); } });
+    const v = new THREE.Vector3();
+    layoutLabels(labels.map(({ el, p }) => {
+      v.set(p[0], p[1], p[2]).project(camera);
+      const vis = v.z < 1 && Math.abs(v.x) < 1.15 && Math.abs(v.y) < 1.15;
+      const pri = el.classList.contains('church') || el.classList.contains('on') ? 3 : el.classList.contains('entrance') ? 2 : 0;
+      return { el, x: (v.x * 0.5 + 0.5) * w, y: (-v.y * 0.5 + 0.5) * h, z: v.z, vis, pri };
+    }), layer);
+  }
+  function churchCenter() { const [x1, z1] = M(736, 241.5), [x2, z2] = M(802.5, 385); return [(x1 + x2) / 2, (z1 + z2) / 2]; }
+  function focusSpot(id) {
+    let hit = null;
+    Object.entries(world.spots || {}).forEach(([k, o]) => { const on = k === id; o.el.classList.toggle('on', on); o.ring.visible = on; if (on) hit = o; });
+    return hit;
+  }
+  return { build, tick, pickChurch, setHover, churchCenter, focusSpot, spots: C.spots };
+})();
+
+/* ---------- label layout: every tag sits at a fixed spot above its anchor, joined by a short
+   leader line, and moves only with the building. When two tags collide the less important one fades
+   out (nearer and more important tags win), so tags never slide or jump around. ---------- */
+function layoutLabels(items, box) {
+  const W = box.clientWidth, H = box.clientHeight, NS = 'http://www.w3.org/2000/svg';
+  let svg = box.querySelector(':scope > svg.leaders');
+  if (!svg) { svg = document.createElementNS(NS, 'svg'); svg.setAttribute('class', 'leaders'); box.prepend(svg); }
+  svg.setAttribute('width', W); svg.setAttribute('height', H);
+  const hide = el => { el.style.visibility = 'hidden'; if (el._ln) { el._ln.style.display = 'none'; el._dot.style.display = 'none'; } };
+  items.forEach(i => { if (!i.vis) hide(i.el); });
+  const vis = items.filter(i => i.vis).sort((a, b) => (b.pri || 0) - (a.pri || 0) || a.z - b.z);
+  const placed = [];
+  const hits = r => placed.some(q => r.x < q.x + q.w && q.x < r.x + r.w && r.y < q.y + q.h && q.y < r.y + r.h);
+  vis.forEach((it, rank) => {
+    const el = it.el;
+    if ((!el._wh || el._whAt !== el.textContent) && el.offsetWidth) { el._wh = [el.offsetWidth, el.offsetHeight]; el._whAt = el.textContent; }
+    const sc = it.scale || 1, bw = (el._wh || [80, 22])[0] * sc, bh = (el._wh || [80, 22])[1] * sc;
+    // fixed spots around the anchor: above (preferred), below, right, left. A tag keeps its spot while it stays free,
+    // and only changes spot when that one is blocked, so tags don't wander as the view turns.
+    const gap = 16 * sc, slots = [[0, -(bh / 2 + gap)], [0, bh / 2 + gap], [bw / 2 + gap, 0], [-(bw / 2 + gap), 0]];
+    const tol = 5 * sc; // pills are rounded: allow their corners to touch
+    const rectAt = k => ({ x: it.x + slots[k][0] - bw / 2 + tol, y: it.y + slots[k][1] - bh / 2 + tol / 2, w: bw - 2 * tol, h: bh - tol });
+    const inView = r => r.x > -4 && r.y > -4 && r.x + r.w < W + 4 && r.y + r.h < H + 4;
+    let k = -1;
+    const order = el._slot != null ? [el._slot, 0, 1, 2, 3].filter((v, i, a) => a.indexOf(v) === i) : [0, 1, 2, 3];
+    for (const c of order) { const r = rectAt(c); if (!hits(r) && inView(r)) { k = c; break; } }
+    const shown = it.pri >= 2 || k >= 0;
+    if (k < 0) k = el._slot != null ? el._slot : 0;
+    el._slot = k; el._shown = shown;
+    const cx = it.x + slots[k][0], cy = it.y + slots[k][1];
+    if (shown) placed.push(rectAt(k));
+    el.style.transform = `translate(-50%,-50%) translate(${cx}px,${cy}px) scale(${sc})`;
+    el.style.zIndex = String(1000 - rank);
+    el.style.visibility = 'visible';
+    el.style.opacity = shown ? '' : '0';
+    el.style.pointerEvents = shown ? '' : 'none';
+    if (!el._ln) {
+      el._ln = document.createElementNS(NS, 'line'); el._dot = document.createElementNS(NS, 'circle'); el._dot.setAttribute('r', '3.5');
+      svg.appendChild(el._ln); svg.appendChild(el._dot);
+    }
+    const on = el.classList.contains('on');
+    const ex = Math.max(cx - bw / 2, Math.min(it.x, cx + bw / 2)), ey = Math.max(cy - bh / 2, Math.min(it.y, cy + bh / 2));
+    el._ln.setAttribute('x1', it.x); el._ln.setAttribute('y1', it.y); el._ln.setAttribute('x2', ex); el._ln.setAttribute('y2', ey);
+    el._ln.setAttribute('class', on ? 'on' : ''); el._dot.setAttribute('class', on ? 'on' : '');
+    el._dot.setAttribute('cx', it.x); el._dot.setAttribute('cy', it.y);
+    el._ln.style.display = el._dot.style.display = '';
+    el._ln.style.opacity = el._dot.style.opacity = shown ? '' : '0';
+  });
+}
+/* ---------- 3D map: campus view + building floor plan ---------- */
+const VMap = (() => {
+  let data = null, ready = false, renderer, raycaster, pointer, clock, host, labelLayer, campusLayer, fadeEl;
+  let plan = {}, campus = {}, mode = 'campus', selected = null, tween = null, busy = false;
+  let lmMeshes = {}, roomMeshes = {}, wallGroups = {}, labelEls = {}, pathGroup = null, crumbs = [], curve = null;
+  const KIND = { patio: 0x55504a, worship: 0x3a2f2c, commons: 0x2f2a28, service: 0x26221f, flex: 0x2c2725, room: 0x2a2624, office: 0x252120, hall: 0x1c1918 };
+  const S = 22, OX = 1000, OZ = 650;
+  const W = (x, y) => [(x - OX) / S, (y - OZ) / S];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const rectsOf = r => r.rects || [r.rect];
+  function roomAt(pt) { return data.rooms.find(r => rectsOf(r).some(q => pt[0] >= q[0] && pt[0] <= q[2] && pt[1] >= q[1] && pt[1] <= q[3])); }
+
+  function route(targetId) {
+    let lm = (data.landmarks || []).find(l => l.id === targetId);
+    const zn = (data.zones || []).find(z => z.id === targetId);
+    if (zn) {
+      const en = (data.landmarks || []).find(l => l.id === zn.entry), er = data.rooms.find(r => r.id === zn.entry);
+      if (en) lm = { id: zn.id, name: zn.name, at: en.at, via: en.name, suffix: zn.suffix || '' };
+      else if (er) { const q = rectsOf(er)[0]; lm = { id: zn.id, name: zn.name, at: [(q[0] + q[2]) / 2, (q[1] + q[3]) / 2], suffix: zn.suffix || '' }; }
+    }
+    const room = lm ? roomAt(lm.at) : data.rooms.find(r => r.id === targetId); if (!room) return null;
+    const adj = {};
+    data.edges.forEach(([a, b]) => { const d = Math.hypot(data.nodes[a][0] - data.nodes[b][0], data.nodes[a][1] - data.nodes[b][1]); (adj[a] = adj[a] || []).push([b, d]); (adj[b] = adj[b] || []).push([a, d]); });
+    const dist = { [data.entrance]: 0 }, prev = {}, todo = new Set(Object.keys(data.nodes));
+    while (todo.size) {
+      let u = null; todo.forEach(n => { if (dist[n] !== undefined && (u === null || dist[n] < dist[u])) u = n; });
+      if (u === null) break; todo.delete(u);
+      (adj[u] || []).forEach(([v, d]) => { if (dist[u] + d < (dist[v] ?? Infinity)) { dist[v] = dist[u] + d; prev[v] = u; } });
+    }
+    let endNode = room.node;
+    if (lm) { // enter from whichever nearby walkway point gives the shortest total walk
+      let best = Infinity;
+      Object.entries(data.nodes).forEach(([k, p]) => { const e = Math.hypot(p[0] - lm.at[0], p[1] - lm.at[1]); if (dist[k] === undefined || (e > 140 && k !== room.node)) return; if (dist[k] + e < best) { best = dist[k] + e; endNode = k; } });
+    }
+    const seq = []; let n = endNode; while (n) { seq.unshift(n); n = prev[n]; }
+    const pts = seq.map(k => data.nodes[k]);
+    if (lm) pts.push(lm.at); else { const q = rectsOf(room)[0]; pts.push([(q[0] + q[2]) / 2, (q[1] + q[3]) / 2]); }
+    const steps = [];
+    pts.forEach(p => { const r = roomAt(p); const nm = r && r.label !== false ? r.name : null; if (nm && steps[steps.length - 1] !== nm) steps.push(nm); });
+    const entRoom = roomAt(data.nodes[data.entrance]);
+    if (entRoom && steps[0] === entRoom.name && steps.length > 1) steps.shift();
+    const target = lm ? { id: lm.id, name: lm.name } : room;
+    if (lm && lm.via) steps.push(lm.via);
+    if (steps[steps.length - 1] !== target.name) steps.push(target.name + (lm && lm.suffix ? lm.suffix : ''));
+    const feet = Math.round(pts.reduce((s, p, i) => i ? s + Math.hypot(p[0] - pts[i - 1][0], p[1] - pts[i - 1][1]) : 0, 0) * 0.6);
+    return { room: target, pts, steps, feet };
+  }
+
+  function makeControls(THREE, cam, opts) {
+    const c = new THREE.OrbitControls(cam, renderer.domElement);
+    c.enableDamping = true; c.dampingFactor = 0.08;
+    Object.assign(c, opts);
+    c.autoRotate = !reduce; c.autoRotateSpeed = opts.autoRotateSpeed || 0.35;
+    c.addEventListener('start', () => { c.autoRotate = false; });
+    return c;
+  }
+
+  function buildPlan(THREE) {
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x070707, 70, 140);
+    const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 400);
+    camera.position.set(18, 52, 58);
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x3a2420, 0.85));
+    const sun = new THREE.DirectionalLight(0xffffff, 0.75); sun.position.set(-30, 60, 25); scene.add(sun);
+    const grid = new THREE.GridHelper(160, 64, 0x2a2523, 0x1a1716); grid.position.y = -0.02; scene.add(grid);
+    const wallMat = new THREE.MeshStandardMaterial({ color: 0xf4efed, roughness: 0.9, transparent: true, opacity: 0.92 });
+    data.rooms.forEach(r => {
+      const parts = rectsOf(r), floors = [], g = new THREE.Group();
+      const h = r.kind === 'hall' ? 0.5 : r.kind === 'patio' ? 0.35 : (r.kind === 'worship' ? 2.2 : 1.5), t = 0.16;
+      parts.forEach((q, qi) => {
+        const [x1, z1] = W(q[0], q[1]), [x2, z2] = W(q[2], q[3]);
+        const w = x2 - x1, d = z2 - z1, cx = (x1 + x2) / 2, cz = (z1 + z2) / 2;
+        const floor = new THREE.Mesh(new THREE.BoxGeometry(w - 0.12, 0.18, d - 0.12), new THREE.MeshStandardMaterial({ color: KIND[r.kind] || 0x2a2624, roughness: 0.8 }));
+        floor.position.set(cx, 0.09, cz); floor.userData.id = r.id; scene.add(floor); floors.push(floor);
+        // walls; for joined parts skip the shared edge so the room reads as one space
+        const sides = [[w, t, cx, z1, 'n'], [w, t, cx, z2, 's'], [t, d, x1, cz, 'w'], [t, d, x2, cz, 'e']];
+        sides.forEach(([ww, dd, px, pz, side]) => {
+          const shared = parts.some((o, oi) => oi !== qi && ((side === 'w' && o[2] === q[0]) || (side === 'e' && o[0] === q[2]) || (side === 'n' && o[3] === q[1]) || (side === 's' && o[1] === q[3])));
+          if (shared) return;
+          const m = new THREE.Mesh(new THREE.BoxGeometry(ww, h, dd), wallMat.clone()); m.position.set(px, h / 2, pz); g.add(m);
+        });
+      });
+      scene.add(g); wallGroups[r.id] = g;
+      roomMeshes[r.id] = floors[0]; (window.__extraFloors = window.__extraFloors || []).push(...floors.slice(1));
+      floors.forEach(f => f.userData.siblings = floors);
+      if (r.label === false) return; // unlabeled space: still walkable, no tag
+      const el = document.createElement('button');
+      el.className = 'map-label lm room' + (['worship', 'commons'].includes(r.kind) ? ' major' : ''); el.textContent = r.name; el.type = 'button';
+      el.addEventListener('click', () => { location.hash = 'room-' + r.id; });
+      if (r.labelAt) { const [lx, lz] = W(r.labelAt[0], r.labelAt[1]); el._pos = [lx, 0.3, lz]; }
+      if (r.labelAt || ['worship', 'commons'].includes(r.kind)) el._pinned = true;
+      labelLayer.appendChild(el); labelEls[r.id] = el;
+    });
+    (data.landmarks || []).forEach(l => {
+      const [x, z] = W(l.at[0], l.at[1]), g = new THREE.Group(), mat = new THREE.MeshStandardMaterial({ color: 0xf4efed, roughness: 0.6 });
+      if (l.type === 'counter') {
+        const [sw, sd] = l.size, m = new THREE.Mesh(new THREE.BoxGeometry(sw / S, 0.9, sd / S), mat); m.position.y = 0.55; g.add(m);
+      } else if (l.type === 'door') {
+        // pulsing ring centred on the doorway in the outside wall (same marker as the main entrance)
+        const ring = new THREE.Mesh(new THREE.RingGeometry(0.9, 1.25, 48), new THREE.MeshBasicMaterial({ color: 0xff654d, side: THREE.DoubleSide, transparent: true }));
+        ring.rotation.x = -Math.PI / 2; ring.position.set(0, 0.25, 0); ring.userData.pulse = true; g.add(ring);
+      } else if (l.type === 'stairs') {
+        for (let i = 0; i < 6; i++) { const m = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.25 * (i + 1), 0.5), mat); m.position.set(0, 0.125 * (i + 1) + 0.18, 1.2 - i * 0.5); g.add(m); }
+      }
+      g.position.set(x, 0, z); g.userData.mat = mat; scene.add(g); lmMeshes[l.id] = g;
+      if (l.type === 'none' || l.noLabel) return;
+      const el = document.createElement('button'); el.type = 'button'; el.className = l.type === 'door' ? 'map-label lm door' : 'map-label lm'; el.textContent = l.name;
+      el.addEventListener('click', () => { location.hash = 'room-' + l.id; });
+      el._pos = [x, 0.9, z]; labelLayer.appendChild(el); labelEls['lm:' + l.id] = el;
+    });
+    // department zones: translucent fill + outline of the union of their rectangles + a solid tag
+    (data.zones || []).forEach(z => {
+      const col = new THREE.Color(z.color || '#FF654D'), grp = new THREE.Group();
+      const fill = new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.5, depthWrite: false });
+      z.rects.forEach(q => {
+        const [x1, z1] = W(q[0], q[1]), [x2, z2] = W(q[2], q[3]);
+        const m = new THREE.Mesh(new THREE.PlaneGeometry(x2 - x1, z2 - z1), fill);
+        m.rotation.x = -Math.PI / 2; m.position.set((x1 + x2) / 2, 0.24, (z1 + z2) / 2); m.renderOrder = 2; grp.add(m);
+      });
+      // outline: split every rect edge at all breakpoints; edges shared by two rects cancel out
+      const xs = [...new Set(z.rects.flatMap(q => [q[0], q[2]]))].sort((a, b) => a - b), ys = [...new Set(z.rects.flatMap(q => [q[1], q[3]]))].sort((a, b) => a - b);
+      const seg = {};
+      const add = (k) => { seg[k] = (seg[k] || 0) + 1; };
+      z.rects.forEach(([x1, y1, x2, y2]) => {
+        xs.filter(x => x >= x1 && x < x2).forEach(x => { const nx = xs[xs.indexOf(x) + 1]; add(`h,${y1},${x},${nx}`); add(`h,${y2},${x},${nx}`); });
+        ys.filter(y => y >= y1 && y < y2).forEach(y => { const ny = ys[ys.indexOf(y) + 1]; add(`v,${x1},${y},${ny}`); add(`v,${x2},${y},${ny}`); });
+      });
+      const lineMat = new THREE.MeshBasicMaterial({ color: col });
+      Object.entries(seg).filter(([, n]) => n === 1).forEach(([k]) => {
+        const [t, c, a, b] = k.split(','); const C = +c, A = +a, B = +b;
+        const [p1x, p1z] = t === 'h' ? W(A, C) : W(C, A), [p2x, p2z] = t === 'h' ? W(B, C) : W(C, B);
+        const len = Math.hypot(p2x - p1x, p2z - p1z), bar = new THREE.Mesh(new THREE.BoxGeometry(t === 'h' ? len + 0.26 : 0.26, 0.12, t === 'h' ? 0.26 : len + 0.26), lineMat);
+        bar.position.set((p1x + p2x) / 2, 0.3, (p1z + p2z) / 2); grp.add(bar);
+      });
+      scene.add(grp);
+      const el = document.createElement('button'); el.type = 'button'; el.className = 'map-label lm zone'; el.textContent = z.name; el.style.setProperty('--zc', z.color || '#FF654D');
+      el.addEventListener('click', () => { location.hash = 'room-' + z.id; });
+      const [lx, lz] = W(z.labelAt[0], z.labelAt[1]); el._pos = [lx, 0.3, lz]; el._zone = true;
+      labelLayer.appendChild(el); labelEls['zone:' + z.id] = el;
+    });
+    { // stage: curved front edge facing the seats, flat against the back wall
+      const front = [[1599, 866], [1549, 948], [1519, 1002], [1508, 1062], [1529, 1131], [1569, 1191], [1599, 1221], [1626, 1244]];
+      const sh = new THREE.Shape(), p0 = W(...front[0]);
+      sh.moveTo(p0[0], p0[1]);
+      sh.splineThru(front.slice(1).map(p => { const [x, z] = W(...p); return new THREE.Vector2(x, z); }));
+      [[1712, 1244], [1712, 866]].forEach(p => { const [x, z] = W(...p); sh.lineTo(x, z); });
+      sh.closePath();
+      const geo = new THREE.ExtrudeGeometry(sh, { depth: 0.5, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 2, curveSegments: 48 });
+      geo.rotateX(Math.PI / 2);
+      const stage = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: 0x4a3c37, roughness: 0.7 }));
+      stage.position.y = 0.62; scene.add(stage);
+      // thin coral lip along the stage front
+      const lip = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(front.map(p => { const [x, z] = W(...p); return new THREE.Vector3(x, 0.62, z); })), 64, 0.05, 6, false), new THREE.MeshBasicMaterial({ color: 0xff654d }));
+      scene.add(lip);
+    }
+    const e = data.nodes[data.entrance], [ex, ez] = W(e[0], e[1]);
+    const ring = new THREE.Mesh(new THREE.RingGeometry(0.9, 1.25, 48), new THREE.MeshBasicMaterial({ color: 0xff654d, side: THREE.DoubleSide, transparent: true }));
+    ring.rotation.x = -Math.PI / 2; ring.position.set(ex, 0.25, ez); ring.userData.pulse = true; scene.add(ring);
+    const entLabel = document.createElement('div'); entLabel.className = 'map-label entrance'; entLabel.textContent = 'Main entrance';
+    labelLayer.appendChild(entLabel); labelEls.__ent = entLabel; entLabel._pos = [ex, 0.3, ez];
+    const controls = makeControls(THREE, camera, { maxPolarAngle: Math.PI * 0.44, minDistance: 12, maxDistance: 110 });
+    controls.target.set(2, 0, -2);
+    plan = { scene, camera, controls, home: { c: new THREE.Vector3(18, 52, 58), t: new THREE.Vector3(2, 0, -2) } };
+  }
+
+  function buildCampus(THREE) {
+    const r = VCampus.build(THREE, host, campusLayer);
+    const controls = makeControls(THREE, r.camera, { maxPolarAngle: Math.PI * 0.43, minDistance: 40, maxDistance: 520, autoRotateSpeed: 0.25 });
+    controls.target.copy(r.center);
+    campus = { scene: r.scene, camera: r.camera, controls, home: { c: r.camera.position.clone(), t: r.center.clone() } };
+  }
+
+  function build() {
+    const THREE = window.THREE;
+    host = document.getElementById('map-canvas');
+    labelLayer = document.getElementById('map-labels');
+    campusLayer = document.getElementById('campus-labels');
+    fadeEl = document.getElementById('map-fade');
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    if ('outputColorSpace' in renderer) renderer.outputColorSpace = THREE.SRGBColorSpace; else renderer.outputEncoding = THREE.sRGBEncoding;
+    host.appendChild(renderer.domElement);
+    buildPlan(THREE); buildCampus(THREE); setMode('campus');
+    raycaster = new THREE.Raycaster(); pointer = new THREE.Vector2();
+    const toPointer = ev => { const b = renderer.domElement.getBoundingClientRect(); pointer.set(((ev.clientX - b.left) / b.width) * 2 - 1, -((ev.clientY - b.top) / b.height) * 2 + 1); };
+    let down = null;
+    renderer.domElement.addEventListener('pointerdown', ev => { down = [ev.clientX, ev.clientY]; });
+    renderer.domElement.addEventListener('pointermove', ev => {
+      if (mode !== 'campus' || ev.pointerType === 'touch') return;
+      toPointer(ev); raycaster.setFromCamera(pointer, campus.camera); VCampus.setHover(VCampus.pickChurch(raycaster));
+    });
+    renderer.domElement.addEventListener('pointerup', ev => {
+      if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 6) return;
+      toPointer(ev);
+      if (mode === 'campus') { raycaster.setFromCamera(pointer, campus.camera); if (VCampus.pickChurch(raycaster)) enter(); return; }
+      raycaster.setFromCamera(pointer, plan.camera);
+      const hit = raycaster.intersectObjects(Object.values(roomMeshes).concat(window.__extraFloors || []))[0];
+      if (hit) { const rr = data.rooms.find(x => x.id === hit.object.userData.id); if (rr && rr.label !== false) location.hash = 'room-' + rr.id; }
+    });
+    new ResizeObserver(resize).observe(host); resize();
+    clock = new THREE.Clock();
+    renderer.setAnimationLoop(frame);
+  }
+
+  function active() { return mode === 'campus' ? campus : plan; }
+  function resize() {
+    if (!renderer) return;
+    const w = host.clientWidth, h = host.clientHeight; if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    [plan, campus].forEach(v => { if (v.camera) { v.camera.aspect = w / h; v.camera.updateProjectionMatrix(); } });
+  }
+
+  function flyTo(view, toC, toT, dur) {
+    tween = { view, t0: performance.now(), dur: reduce ? 1 : dur, fromT: view.controls.target.clone(), toT, fromC: view.camera.position.clone(), toC };
+    return new Promise(res => { tween.done = res; });
+  }
+
+  function frame() {
+    const THREE = window.THREE, t = clock.getElapsedTime(), v = active();
+    if (tween) {
+      const k = Math.min(1, (performance.now() - tween.t0) / tween.dur), e = k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      tween.view.controls.target.lerpVectors(tween.fromT, tween.toT, e);
+      tween.view.camera.position.lerpVectors(tween.fromC, tween.toC, e);
+      if (k >= 1) { const d = tween.done; tween = null; d && d(); }
+    }
+    v.controls.update();
+    renderer.render(v.scene, v.camera);
+    const w = host.clientWidth, h = host.clientHeight;
+    if (mode === 'campus') { VCampus.tick(t, THREE, w, h); return; }
+    plan.scene.traverse(o => { if (o.userData.pulse) { const s = 1 + 0.35 * Math.sin(t * 3); o.scale.set(s, s, s); o.material.opacity = 0.55 + 0.45 * Math.cos(t * 3); } });
+    if (curve && crumbs.length) crumbs.forEach((c, i) => { const u = ((t * 0.12) + i / crumbs.length) % 1; const p = curve.getPointAt(u); c.position.set(p.x, 0.5, p.z); });
+    const vec = new THREE.Vector3();
+    const items = Object.entries(labelEls).map(([id, el]) => {
+      const pos = el._pos || [roomMeshes[id].position.x, 0.3, roomMeshes[id].position.z];
+      vec.set(pos[0], pos[1], pos[2]).project(plan.camera);
+      const vis = vec.z < 1 && Math.abs(vec.x) < 1.1 && Math.abs(vec.y) < 1.1;
+      const pri = el.classList.contains('on') ? 3 : id === '__ent' ? 2 : el.classList.contains('door') ? 1.9 : el._zone ? 1.8 : el._pinned ? 1.5 : id.startsWith('lm:') ? 1 : 0;
+      const dist = plan.camera.position.distanceTo(new THREE.Vector3(pos[0], pos[1], pos[2]));
+      const scale = pri >= 2 ? 1 : Math.max(0.74, Math.min(1.08, 1.12 - (dist - 30) / 110));
+      return { el, x: (vec.x * 0.5 + 0.5) * w, y: (-vec.y * 0.5 + 0.5) * h, z: vec.z, vis, pri, scale };
+    });
+    layoutLabels(items, labelLayer);
+  }
+
+  function setMode(m) {
+    mode = m;
+    campus.controls.enabled = m === 'campus'; plan.controls.enabled = m === 'plan';
+    document.getElementById('map-stage').dataset.mode = m;
+    if (m === 'plan') VCampus.setHover(false);
+    resize();
+  }
+
+  const fade = on => new Promise(res => { fadeEl.classList.toggle('on', on); setTimeout(res, reduce ? 0 : 380); });
+
+  async function enter() {
+    if (busy || mode !== 'campus') return; busy = true;
+    const THREE = window.THREE, [cx, cz] = VCampus.churchCenter();
+    campus.controls.autoRotate = false;
+    await flyTo(campus, new THREE.Vector3(cx + 18, 26, cz + 34), new THREE.Vector3(cx, 4, cz), 1300);
+    busy = false;
+    location.hash = selected ? 'room-' + selected : 'building';
+  }
+
+  async function goPlan(room) {
+    const THREE = window.THREE;
+    if (mode !== 'plan') {
+      await fade(true);
+      setMode('plan');
+      plan.camera.position.set(4, 120, 18); plan.controls.target.set(2, 0, -2);
+      await fade(false);
+      if (!room) flyTo(plan, plan.home.c.clone(), plan.home.t.clone(), 1400);
+    }
+    select(room || null);
+  }
+
+  async function goCampus(spot) {
+    const THREE = window.THREE, o = VCampus.focusSpot(spot || null);
+    const box = document.getElementById('campus-spot');
+    if (box) {
+      box.hidden = !o;
+      box.innerHTML = o ? `<p class="eyebrow" style="color:var(--coral)">You're looking for</p><h3 class="side-h">${esc(o.sp.t)}</h3><p class="fine">${esc(o.sp.note)}</p>` : '';
+    }
+    let toC = campus.home.c.clone(), toT = campus.home.t.clone();
+    if (o) {
+      toT = new THREE.Vector3(o.x, 0, o.z);
+      toC = toT.clone().add(campus.home.c.clone().sub(campus.home.t).normalize().multiplyScalar(190));
+      campus.controls.autoRotate = false;
+    }
+    if (mode === 'campus') { if (o) flyTo(campus, toC, toT, 1400); return; }
+    await fade(true);
+    setMode('campus');
+    campus.camera.position.copy(campus.home.c).multiplyScalar(0.55); campus.controls.target.copy(campus.home.t);
+    await fade(false);
+    flyTo(campus, toC, toT, 1500);
+  }
+
+  function clearPath() { if (pathGroup) { plan.scene.remove(pathGroup); pathGroup = null; } crumbs = []; curve = null; }
+
+  function select(id) {
+    const THREE = window.THREE;
+    Object.entries(roomMeshes).forEach(([rid, m0]) => {
+      const on = rid === id;
+      (m0.userData.siblings || [m0]).forEach(m => {
+        m.material.color.setHex(on ? 0xff654d : (KIND[data.rooms.find(r => r.id === rid).kind] || 0x2a2624));
+        m.material.emissive = new THREE.Color(on ? 0x5a1a10 : 0x000000);
+      });
+      wallGroups[rid].children.forEach(w => { w.material.opacity = id && !on ? 0.55 : 0.92; w.material.color.setHex(on ? 0xffd9d2 : 0xf4efed); });
+      if (labelEls[rid]) labelEls[rid].classList.toggle('on', on);
+    });
+    const lmSel = (data.landmarks || []).find(l => l.id === id);
+    const lmOn = lmSel ? (lmSel.type === 'none' ? (data.landmarks.find(l => l.name === lmSel.via) || {}).id : lmSel.id) : null;
+    Object.entries(lmMeshes).forEach(([lid, g]) => { if (g.userData.mat) g.userData.mat.color.setHex(lid === lmOn ? 0xff654d : 0xf4efed); const le = labelEls['lm:' + lid]; if (le) le.classList.toggle('on', lid === lmOn); });
+    Object.entries(labelEls).forEach(([k, e]) => { if (k.startsWith('zone:')) e.classList.toggle('on', k === 'zone:' + id); });
+    clearPath(); selected = id;
+    const panel = document.getElementById('map-route');
+    if (!id) { panel.innerHTML = panel.dataset.empty; return; }
+    const plain = data.rooms.find(x => x.id === id) || (data.landmarks || []).find(x => x.id === id);
+    if (plain && plain.noRoute) {
+      panel.innerHTML = `<p class="eyebrow">Selected</p><h3>${esc(plain.name)}</h3>${plain.note ? `<p class="fine">${esc(plain.note)}</p>` : ''}`;
+      plan.controls.autoRotate = false; flyTo(plan, plan.home.c.clone(), plan.home.t.clone(), 1100);
+      fillList.draw && fillList.draw(); return;
+    }
+    const r = route(id); if (!r) return;
+    const v3 = r.pts.map(p => { const [x, z] = W(p[0], p[1]); return new THREE.Vector3(x, 0.4, z); });
+    curve = new THREE.CatmullRomCurve3(v3, false, 'catmullrom', 0.05);
+    pathGroup = new THREE.Group();
+    pathGroup.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 160, 0.16, 8, false), new THREE.MeshBasicMaterial({ color: 0xff654d })));
+    for (let i = 0; i < 9; i++) { const c = new THREE.Mesh(new THREE.SphereGeometry(0.32, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffffff })); pathGroup.add(c); crumbs.push(c); }
+    const end = v3[v3.length - 1];
+    const pin = new THREE.Mesh(new THREE.ConeGeometry(0.7, 1.6, 24), new THREE.MeshStandardMaterial({ color: 0xff654d, emissive: 0x6a1d12 }));
+    pin.rotation.x = Math.PI; pin.position.set(end.x, 3.2, end.z); pathGroup.add(pin);
+    plan.scene.add(pathGroup);
+    plan.controls.autoRotate = false;
+    const box = new THREE.Box3().setFromPoints(v3), ctr = box.getCenter(new THREE.Vector3()), size = box.getSize(new THREE.Vector3());
+    const span = Math.max(size.x, size.z, 14);
+    flyTo(plan, new THREE.Vector3(ctr.x + span * 0.35, span * 1.05 + 8, ctr.z + span * 0.95 + 6), ctr.clone(), 1100);
+    panel.innerHTML = `
+      <p class="eyebrow">Directions to</p>
+      <h3>${esc(r.room.name)}</h3>
+      <ol class="steps">${['Main entrance'].concat(r.steps).map(s => `<li>${esc(s)}</li>`).join('')}</ol>
+      <p class="fine">About ${r.feet} ft from the main entrance. Follow the coral path on the map.</p>
+      <p class="fine mono">${lmSel ? 'Spot' : (data.zones || []).some(z => z.id === id) ? 'Area' : 'Room'} ID: ${esc(r.room.id)}</p>`;
+    fillList.draw && fillList.draw();
+  }
+
+  async function init() {
+    if (ready) return;
+    if (init.p) return init.p;
+    init.p = (async () => {
+      data = data || await (await fetch('data/rooms.json')).json(); window.VROOMS = data;
+      fillList();
+      try {
+        if (!window.THREE || !window.THREE.OrbitControls) throw new Error('3D library did not load');
+        build(); ready = true;
+      } catch (e) {
+        document.getElementById('map-canvas').innerHTML = `<p class="map-fallback">The 3D map couldn't start in this browser. Pick a room from the list for written directions.</p>`;
+      }
+    })();
+    return init.p;
+  }
+
+  function fillList() {
+    const list = document.getElementById('room-list'), q = document.getElementById('room-q');
+    const draw = () => {
+      const term = q.value.trim().toLowerCase();
+      const lms = (data.landmarks || []).filter(l => l.type !== 'stairs' && !l.noLabel && l.name.toLowerCase().includes(term))
+        .map(l => `<li><button type="button" data-room="${l.id}" class="lm ${l.id === selected ? 'on' : ''}">${esc(l.name)}</button></li>`).join('');
+      const zs = (data.zones || []).filter(z => z.name.toLowerCase().includes(term))
+        .map(z => `<li><button type="button" data-room="${z.id}" class="zone ${z.id === selected ? 'on' : ''}" style="--zc:${esc(z.color || '#FF654D')}">${esc(z.name)}</button></li>`).join('');
+      list.innerHTML = zs + lms + data.rooms.filter(r => r.kind !== 'hall' && r.label !== false && r.name.toLowerCase().includes(term))
+        .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
+        .map(r => `<li><button type="button" data-room="${r.id}" class="${r.id === selected ? 'on' : ''}">${esc(r.name)}</button></li>`).join('');
+    };
+    q.addEventListener('input', draw); draw();
+    list.addEventListener('click', ev => { const b = ev.target.closest('[data-room]'); if (b) location.hash = 'room-' + b.dataset.room; });
+    fillList.draw = draw;
+  }
+
+  async function show(view, room, spot) {
+    document.body.dataset.mapmode = view;
+    await init();
+    if (!ready) { if (room) textOnly(room); return; }
+    resize();
+    if (view === 'campus') { selected = null; select(null); goCampus(spot); }
+    else goPlan(room);
+  }
+  function textOnly(id) {
+    const r = route(id); if (!r) return;
+    document.getElementById('map-route').innerHTML = `<p class="eyebrow">Directions to</p><h3>${esc(r.room.name)}</h3><ol class="steps">${['Main entrance'].concat(r.steps).map(s => `<li>${esc(s)}</li>`).join('')}</ol>`;
+  }
+  return {
+    show, enter,
+    load: async () => { if (!data) { data = await (await fetch('data/rooms.json')).json(); window.VROOMS = data; } return data; }
+  };
+})();
+
+document.documentElement.classList.add('js');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+/* ---------- router ---------- */
+const VIEWS = [...document.querySelectorAll('[data-view]')].map(v => v.dataset.view);
+function route() {
+  let h = (location.hash || '#home').slice(1);
+  let room = null, mapView = 'campus', spot = null;
+  if (h.startsWith('room-')) { room = h.slice(5); h = 'map'; mapView = 'plan'; }
+  if (h.startsWith('campus-')) { spot = h.slice(7); h = 'map'; }
+  if (h === 'building') { h = 'map'; mapView = 'plan'; }
+  if (!VIEWS.includes(h)) {
+    const target = document.getElementById(h);
+    if (target) { const v = target.closest('[data-view]'); if (v) { showView(v.dataset.view); target.scrollIntoView(); return; } }
+    h = 'home';
+  }
+  const wasMap = document.body.dataset.page === 'map';
+  showView(h, wasMap && h === 'map');
+  if (h === 'map') VMap.show(mapView, room, spot);
+  if (h === 'events' || h === 'home') Events.load();
+  if (h === 'small-groups') Groups.load();
+}
+function showView(name, keepScroll) {
+  document.querySelectorAll('[data-view]').forEach(v => { v.hidden = v.dataset.view !== name; });
+  document.body.dataset.page = name;
+  document.body.classList.remove('menu-open');
+  document.querySelectorAll('.nav-current').forEach(a => a.classList.remove('nav-current'));
+  const titles = { home: 'Your Venture Church', map: 'Building Map · Your Venture Church', events: 'Announcements · Your Venture Church' };
+  document.title = titles[name] || (name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) + ' · Your Venture Church');
+  const hv = document.querySelector('.hero video');
+  if (hv) { name === 'home' ? hv.play().catch(() => {}) : hv.pause(); }
+  if (!keepScroll) window.scrollTo(0, 0);
+  reveal();
+}
+addEventListener('hashchange', route);
+
+/* ---------- header + menu ---------- */
+const topEl = document.querySelector('.top');
+const onScroll = () => topEl.classList.toggle('solid', scrollY > 40 || document.body.dataset.page !== 'home');
+addEventListener('scroll', onScroll, { passive: true });
+(() => { // stop the hint once someone has found the menu
+  const b = document.querySelector('.menu-btn');
+  try { if (localStorage.getItem('vyc-menu-seen')) b.classList.remove('hint'); } catch (e) {}
+  b.addEventListener('click', () => { b.classList.remove('hint'); try { localStorage.setItem('vyc-menu-seen', '1'); } catch (e) {} });
+})();
+document.querySelector('.menu-btn').addEventListener('click', e => {
+  const open = document.body.classList.toggle('menu-open');
+  e.currentTarget.setAttribute('aria-expanded', open);
+});
+document.querySelector('.menu').addEventListener('click', e => { if (e.target.closest('a[href^="#"]')) document.body.classList.remove('menu-open'); });
+addEventListener('keydown', e => { if (e.key === 'Escape') { document.body.classList.remove('menu-open'); closeModal(); } });
+
+/* ---------- story video modal ---------- */
+const modal = document.getElementById('story');
+function closeModal() { if (!modal.hidden) { modal.querySelector('video').pause(); modal.hidden = true; } }
+document.querySelectorAll('[data-story]').forEach(b => b.addEventListener('click', () => {
+  modal.hidden = false; const v = modal.querySelector('video'); v.currentTime = 0; v.play().catch(() => {});
+}));
+modal.querySelector('.x').addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+/* ---------- copy buttons ---------- */
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-copy]'); if (!b) return;
+  const text = b.dataset.copy, done = () => { const o = b.textContent; b.textContent = 'Copied'; setTimeout(() => b.textContent = o, 1400); };
+  try { navigator.clipboard.writeText(text).then(done, () => sel(b)); } catch { sel(b); }
+  function sel(btn) { const c = btn.parentElement.querySelector('code'); if (c) { const r = document.createRange(); r.selectNodeContents(c); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } }
+});
+
+/* ---------- scroll reveal (transform only) ---------- */
+let io;
+function reveal() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  io = io || new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.remove('pre'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('[data-view]:not([hidden]) .rv').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top > innerHeight) { el.classList.add('pre'); io.observe(el); }
+  });
+}
+
+/* ---------- announcements hub ---------- */
+function placeName(id) {
+  const d = window.VROOMS; if (!id || !d) return null;
+  const r = d.rooms.find(x => x.id === id) || (d.landmarks || []).find(x => x.id === id) || (d.zones || []).find(x => x.id === id);
+  if (r) return r.name;
+  const sp = (VCampus.spots || []).find(x => x.id === id);
+  return sp ? sp.t : null;
+}
+// building rooms open the floor plan; outdoor spots open the campus map
+const placeHref = id => (VCampus.spots || []).some(x => x.id === id) ? '#campus-' + id : '#room-' + id;
+
+const Events = (() => {
+  let data = null, filter = 'all', busy = null;
+  const TZ = 'America/Indiana/Indianapolis';
+  const fmt = (d, o) => new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }).format(d);
+  function load() {
+    if (busy) return busy;
+    busy = Promise.all([fetch('data/events.json').then(r => r.json()), VMap.load()])
+      .then(([d]) => { data = d; render(); })
+      .catch(() => { data = { events: [] }; render(); });
+    return busy;
+  }
+  function upcoming() {
+    const now = Date.now() - 3 * 3600e3;
+    return (data.events || []).filter(e => new Date(e.ends || e.starts).getTime() >= now)
+      .sort((a, b) => new Date(a.starts) - new Date(b.starts));
+  }
+  // one card per series: its next upcoming date
+  function nextOfEach(list) {
+    const seen = {}, out = [];
+    list.forEach(e => { const k = e.series || e.id; if (seen[k]) { seen[k].more++; return; } const c = Object.assign({ more: 0 }, e); seen[k] = c; out.push(c); });
+    return out;
+  }
+  const weekly = e => /^Every (Sun|Mon|Tue|Wed|Thu|Fri|Sat)/.test(e.recur || '');
+  function card(e) {
+    const d = new Date(e.starts);
+    const time = e.allDay ? 'All day' : fmt(d, { hour: 'numeric', minute: '2-digit' }) + (e.ends ? ' – ' + fmt(new Date(e.ends), { hour: 'numeric', minute: '2-digit' }) : '');
+    const roomName = placeName(e.roomId);
+    return `<article class="ev rv">
+      <div class="date"><b>${fmt(d, { month: 'short' })}</b><span>${fmt(d, { day: 'numeric' })}</span></div>
+      <div style="min-width:0">
+        ${e.category ? `<p class="tag">${esc(e.category)}</p>` : ''}
+        <h3>${esc(e.title)}</h3>
+        <div class="meta"><span>${fmt(d, { weekday: 'long' })} · ${time}</span>${e.recur ? `<span class="recur">↻ ${esc(e.recur)}</span>` : ''}</div>
+        ${e.summary ? `<p class="sum">${esc(e.summary)}</p>` : ''}
+        <div class="row">
+          ${roomName ? `<a class="chip room" href="${placeHref(e.roomId)}">Find ${esc(roomName)} →</a>` : ''}
+          ${e.url ? `<a class="chip" href="${esc(e.url)}" target="_blank" rel="noopener">Details &amp; sign up ↗</a>` : ''}
+        </div>
+      </div></article>`;
+  }
+  function emptyState(where) {
+    return `<div class="empty"><p class="eyebrow" style="color:var(--coral)">Syncing with Church Center</p>
+      <h3>Upcoming events will show up here.</h3>
+      <p>This hub reads Venture's Church Center calendar and refreshes automatically every morning. Anything with a room assigned gets a "Find room" button that opens the building map.</p>
+      ${where === 'home' ? '<a class="btn btn-ghost" href="#events">Open the announcements hub <span class="arr">→</span></a>' : ''}</div>`;
+  }
+  function render() {
+    const all = upcoming(), list = nextOfEach(all);
+    const home = document.getElementById('home-events');
+    if (home) {
+      const pick = list.filter(e => e.featured).slice(0, 3);
+      list.filter(e => !e.featured && !weekly(e)).forEach(e => { if (pick.length < 3) pick.push(e); });
+      pick.sort((a, b) => new Date(a.starts) - new Date(b.starts));
+      home.innerHTML = pick.length ? `<div class="ev-grid">${pick.map(card).join('')}</div>` : emptyState('home');
+    }
+    const hub = document.getElementById('hub-list'); if (!hub) return;
+    const cats = [...new Set(list.map(e => e.category).filter(Boolean))].sort();
+    const weekEnd = Date.now() + 7 * 864e5;
+    const tabs = [['all', 'Everything'], ['week', 'Next 7 days']].concat(cats.map(c => [c, c]));
+    document.getElementById('hub-filters').innerHTML = list.length ? tabs.map(([k, l]) => `<button type="button" data-f="${esc(k)}" class="${k === filter ? 'on' : ''}">${esc(l)}</button>`).join('') : '';
+    if (!list.length) { hub.innerHTML = emptyState('hub'); }
+    else if (filter === 'week') {
+      const wk = all.filter(e => new Date(e.starts).getTime() <= weekEnd && !(e.allDay && e.series && all.filter(x => x.series === e.series).indexOf(e) > 0));
+      hub.innerHTML = wk.length ? `<div class="ev-grid">${wk.map(card).join('')}</div>` : '<p>Nothing on the calendar in the next 7 days.</p>';
+    } else {
+      const shown = list.filter(e => filter === 'all' || e.category === filter);
+      const special = shown.filter(e => !weekly(e)), rhythm = shown.filter(weekly);
+      const groups = {};
+      special.forEach(e => { const k = fmt(new Date(e.starts), { month: 'long', year: 'numeric' }); (groups[k] = groups[k] || []).push(e); });
+      hub.innerHTML = (Object.entries(groups).map(([k, es]) => `<h3 class="month">${esc(k)}</h3><div class="ev-grid">${es.map(card).join('')}</div>`).join('')
+        + (rhythm.length ? `<h3 class="month">Every week</h3><div class="ev-grid">${rhythm.map(card).join('')}</div>` : '')) || '<p>No events match that filter.</p>';
+    }
+    const up = document.getElementById('hub-updated');
+    if (up) up.textContent = data.updated ? 'Synced from Church Center ' + fmt(new Date(data.updated), { weekday: 'short', month: 'short', day: 'numeric' }) : '';
+    reveal();
+  }
+  document.addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (b) { filter = b.dataset.f; render(); } });
+  return { load };
+})();
+
+
+/* ---------- latest sermon: YouTube's "Live streams" playlist always opens on the newest stream ---------- */
+(() => {
+  const LIST = 'UULVKsBvnIosSH1_KeqAn9KiLQ'; // live streams of channel UCKsBvnIosSH1_KeqAn9KiLQ
+  const src = `https://www.youtube-nocookie.com/embed/videoseries?list=${LIST}&rel=0&modestbranding=1`;
+  let blocked = false;
+  const frames = [];
+  document.addEventListener('securitypolicyviolation', e => {
+    if (!/youtube/.test(e.blockedURI || '')) return;
+    blocked = true; frames.forEach(f => f.remove());
+  });
+  document.querySelectorAll('[data-sermon]').forEach(box => {
+    const f = document.createElement('iframe');
+    f.src = src; f.title = 'Latest message from Your Venture Church'; f.loading = 'lazy';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.referrerPolicy = 'strict-origin-when-cross-origin'; f.allowFullscreen = true;
+    if (!blocked) { box.appendChild(f); frames.push(f); }
+  });
+})();
+
+/* ---------- small groups, synced from Church Center ---------- */
+const Groups = (() => {
+  let data = null, who = 'All', day = 'Any day', busy = null;
+  const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Monthly', 'Varies'];
+  function load() {
+    if (busy) return busy;
+    busy = Promise.all([fetch('data/groups.json').then(r => r.json()), VMap.load()]).then(([d]) => { data = d; render(); })
+      .catch(() => { data = { groups: [] }; render(); });
+    return busy;
+  }
+  function render() {
+    const box = document.getElementById('group-list'); if (!box) return;
+    const gs = data.groups || [];
+    const whos = ['All'].concat([...new Set(gs.map(g => g.who))].sort());
+    const days = ['Any day'].concat(DAYS.filter(d => gs.some(g => g.day === d)));
+    document.getElementById('group-filters').innerHTML =
+      `<div class="filters">${whos.map(w => `<button type="button" data-gw="${esc(w)}" class="${w === who ? 'on' : ''}">${esc(w)}</button>`).join('')}</div>
+       <div class="filters">${days.map(d => `<button type="button" data-gd="${esc(d)}" class="${d === day ? 'on' : ''}">${esc(d)}</button>`).join('')}</div>`;
+    const shown = gs.filter(g => (who === 'All' || g.who === who) && (day === 'Any day' || g.day === day))
+      .sort((a, b) => DAYS.indexOf(a.day) - DAYS.indexOf(b.day) || a.name.localeCompare(b.name));
+    document.getElementById('group-count').textContent = `${shown.length} of ${gs.length} open groups`;
+    box.innerHTML = shown.length ? shown.map(g => {
+      const room = placeName(g.roomId);
+      return `<article class="grp rv">
+        <p class="tag">${esc(g.who)}</p>
+        <h3>${esc(g.name)}</h3>
+        <p class="when">${esc(g.when)}</p>
+        <p class="where">${esc(g.where)}</p>
+        <p class="sum">${esc(g.summary)}</p>
+        <div class="row">
+          <a class="chip room" href="${esc(g.url)}" target="_blank" rel="noopener">Join on Church Center ↗</a>
+          ${room ? `<a class="chip" href="${placeHref(g.roomId)}">Find ${esc(room)} →</a>` : ''}
+        </div></article>`;
+    }).join('') : '<p>No groups match those filters. Try another day.</p>';
+    const up = document.getElementById('group-updated');
+    if (up && data.updated) up.textContent = 'Synced from Church Center ' + new Intl.DateTimeFormat('en-US', { timeZone: 'America/Indiana/Indianapolis', weekday: 'short', month: 'short', day: 'numeric' }).format(new Date(data.updated));
+    reveal();
+  }
+  document.addEventListener('click', e => {
+    const w = e.target.closest('[data-gw]'), d = e.target.closest('[data-gd]');
+    if (w) { who = w.dataset.gw; render(); } if (d) { day = d.dataset.gd; render(); }
+  });
+  return { load };
+})();
+
+
+
+const STAFF = [
+  ["Rob & Jamie Dugan","rob-jamie","Founding Pastor · Director of Ministry Operations & Co-Founder","Rob and Jamie started Your Venture Church in 2014 and have been in full-time ministry for 25 years. Together, they want to see God use ordinary people to do extraordinary things through Christ."],
+  ["Sean & Jordan Adams","sean-jordan","Connections Pastor","Sean loves getting to know people through Growth Track and small groups. Jordan is our online campus and social media director and sings on the worship team."],
+  ["Nathan \"Gerb\" & Anna Gerber","nathan-anna","NextGen Pastor","Gerb has led Venture Students since January 2023 and helps with video production. He loves long walks to Taco Bell and the best possible deal on fast food."],
+  ["Kayleigh & John Gerbick","kayleigh-john","Director of Children's Ministry","Kayleigh has led Venture Kids on Sunday mornings since November 2022. Her top priority: kids have fun while learning about Jesus. John serves on the worship team."],
+  ["Scott & Taylor Poynter","scott-taylor","Worship Pastor","Scott plays guitar and piano and musically directs the worship team. Taylor leads worship and develops a team of vocalists rooted in the Word."],
+  ["Ethan & Kelsey Sustersic","ethan-kelsey","Productions Director","Since 2020 Ethan has brought services to life through lighting, sound and video. Kelsey serves in the children's ministry."],
+  ["Tony Black","tony","Care Pastor","Tony has attended since day one. He supports people through illness, grief and personal crisis."],
+  ["Karen Egerton","karen","Administrative Assistant","With Venture since the very first service, Karen oversees Hospitality and the Prayer Team."],
+  ["Autra Miller-Green","autra","Dream Team Director","Autra coordinates our volunteer teams with care and excellence, and serves on the prayer team, as a small group coach and on the worship team."],
+  ["Tori Hall","tori","Marketing & Social Media Intern","A five-year Venture attender and Venture Leadership Institute student, Tori helps point people to Jesus through digital outreach."]
+];
+document.getElementById('staff-grid').innerHTML = STAFF.map(([n, img, r, b]) => {
+  const ini = n.replace(/"[^"]*"/g, '').split(/\s|&/).filter(Boolean).filter(w => /^[A-Z]/.test(w));
+  const mono = (ini[0] || '')[0] + (ini[ini.length - 1] || '')[0];
+  return `<article class="person rv"><div class="av">${img ? `<img src="img/staff/${img}.jpg" alt="${esc(n)}" loading="lazy">` : `<span>${esc(mono)}</span>`}</div><div><h3>${esc(n)}</h3><p style="color:var(--ember);font-weight:600;margin:4px 0 8px">${esc(r)}</p><p>${esc(b)}</p></div></article>`;
+}).join('');
+
+route(); onScroll();
+</script>
+
+</body></html>
