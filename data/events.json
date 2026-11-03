@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T13:12:27-05:00",
+ "updated": "2026-11-03T15:00:00-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -346,6 +346,21 @@
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/172027017",
    "featured": false
+  },
+  {
+   "id": "reg-3978467-2026-11-14",
+   "series": "reg-3978467",
+   "title": "The Day of Global Youth Evangelism",
+   "starts": "2026-11-14T15:00:00Z",
+   "ends": "2026-11-14T21:30:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Students",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "Teens get trained to share their faith, then head out together to do it. Lunch is free.",
+   "url": "https://yvc.churchcenter.com/registrations/events/3978467",
+   "featured": true
   },
   {
    "id": "211723419-2026-11-15",

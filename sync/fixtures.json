@@ -1,0 +1,3124 @@
+{
+ "now": "2026-11-03T14:00:00",
+ "calendar": [
+  {
+   "id": "211723421",
+   "date": "2026-11-03",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "209681887",
+   "date": "2026-11-03",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "211723422",
+   "date": "2026-11-04",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "171156392",
+   "date": "2026-11-04",
+   "title": "First Wednesday Service 7pm",
+   "time": "6–8pm | The first Wednesday of every month"
+  },
+  {
+   "id": "171156400",
+   "date": "2026-11-04",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "211723423",
+   "date": "2026-11-05",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723424",
+   "date": "2026-11-06",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723425",
+   "date": "2026-11-07",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723426",
+   "date": "2026-11-08",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "206784028",
+   "date": "2026-11-08",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784140",
+   "date": "2026-11-08",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784938",
+   "date": "2026-11-08",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209679641",
+   "date": "2026-11-08",
+   "title": "Growth Track Session 2",
+   "time": "11am–12:15pm | The second Sunday of every month"
+  },
+  {
+   "id": "206784586",
+   "date": "2026-11-08",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "211723427",
+   "date": "2026-11-09",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723428",
+   "date": "2026-11-10",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "209681888",
+   "date": "2026-11-10",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "211723429",
+   "date": "2026-11-11",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "171701439",
+   "date": "2026-11-11",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "211723430",
+   "date": "2026-11-12",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723431",
+   "date": "2026-11-13",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723432",
+   "date": "2026-11-14",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "172027017",
+   "date": "2026-11-14",
+   "title": "Men's Prayer Breakfast",
+   "time": "8–9am"
+  },
+  {
+   "id": "211723433",
+   "date": "2026-11-15",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "206784029",
+   "date": "2026-11-15",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784141",
+   "date": "2026-11-15",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784939",
+   "date": "2026-11-15",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784213",
+   "date": "2026-11-15",
+   "title": "Growth Track Session 3 - 11 AM",
+   "time": "11am–12:15pm | The third Sunday of every month"
+  },
+  {
+   "id": "206784587",
+   "date": "2026-11-15",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "211723434",
+   "date": "2026-11-16",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "211723435",
+   "date": "2026-11-17",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "209681889",
+   "date": "2026-11-17",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "211723436",
+   "date": "2026-11-18",
+   "title": "Food Drive Drop Off",
+   "time": "All day | Every day"
+  },
+  {
+   "id": "172345455",
+   "date": "2026-11-18",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "211723317",
+   "date": "2026-11-19",
+   "title": "Food Drive",
+   "time": "6–7:30pm"
+  },
+  {
+   "id": "206784030",
+   "date": "2026-11-22",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784142",
+   "date": "2026-11-22",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784940",
+   "date": "2026-11-22",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784588",
+   "date": "2026-11-22",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681890",
+   "date": "2026-11-24",
+   "title": "Restore",
+   "time": "6:30–8pm"
+  },
+  {
+   "id": "172897864",
+   "date": "2026-11-25",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "206784031",
+   "date": "2026-11-29",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784143",
+   "date": "2026-11-29",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784941",
+   "date": "2026-11-29",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784589",
+   "date": "2026-11-29",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681891",
+   "date": "2026-12-01",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "173241733",
+   "date": "2026-12-02",
+   "title": "First Wednesday Service 7pm",
+   "time": "6–8pm | The first Wednesday of every month"
+  },
+  {
+   "id": "173241731",
+   "date": "2026-12-02",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "206784032",
+   "date": "2026-12-06",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784144",
+   "date": "2026-12-06",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784942",
+   "date": "2026-12-06",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784274",
+   "date": "2026-12-06",
+   "title": "Growth Track Session 1 11 AM",
+   "time": "11am–12pm | The first Sunday of every month"
+  },
+  {
+   "id": "206784590",
+   "date": "2026-12-06",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681892",
+   "date": "2026-12-08",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "173816991",
+   "date": "2026-12-09",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "174133662",
+   "date": "2026-12-12",
+   "title": "Men's Prayer Breakfast",
+   "time": "8–9am | The second Saturday of every month"
+  },
+  {
+   "id": "206784033",
+   "date": "2026-12-13",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784145",
+   "date": "2026-12-13",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784943",
+   "date": "2026-12-13",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209679642",
+   "date": "2026-12-13",
+   "title": "Growth Track Session 2",
+   "time": "11am–12:15pm | The second Sunday of every month"
+  },
+  {
+   "id": "206784591",
+   "date": "2026-12-13",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "211723764",
+   "date": "2026-12-13",
+   "title": "Jingle Jam 2026",
+   "time": "5–6:30pm"
+  },
+  {
+   "id": "209681893",
+   "date": "2026-12-15",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "174403226",
+   "date": "2026-12-16",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "239723148",
+   "date": "2026-12-17",
+   "title": "Women's Cookie Exchange",
+   "time": "6:30–8:30pm"
+  },
+  {
+   "id": "206784034",
+   "date": "2026-12-20",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784146",
+   "date": "2026-12-20",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784944",
+   "date": "2026-12-20",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784214",
+   "date": "2026-12-20",
+   "title": "Growth Track Session 3 - 11 AM",
+   "time": "11am–12:15pm | The third Sunday of every month"
+  },
+  {
+   "id": "206784592",
+   "date": "2026-12-20",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681894",
+   "date": "2026-12-22",
+   "title": "Restore",
+   "time": "6:30–8pm"
+  },
+  {
+   "id": "174992048",
+   "date": "2026-12-23",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "234734297",
+   "date": "2026-12-24",
+   "title": "Christmas Eve Service",
+   "time": "4:30–5:30pm"
+  },
+  {
+   "id": "234734453",
+   "date": "2026-12-24",
+   "title": "Christmas Eve Service",
+   "time": "6–7pm"
+  },
+  {
+   "id": "206784035",
+   "date": "2026-12-27",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784147",
+   "date": "2026-12-27",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784945",
+   "date": "2026-12-27",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784593",
+   "date": "2026-12-27",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681895",
+   "date": "2026-12-29",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  },
+  {
+   "id": "175307309",
+   "date": "2026-12-30",
+   "title": "High School Ministry",
+   "time": "7–9pm | Every Wednesday"
+  },
+  {
+   "id": "206784036",
+   "date": "2027-01-03",
+   "title": "Sunday 8 AM Express Service",
+   "time": "8–9am | Every Sunday"
+  },
+  {
+   "id": "206784148",
+   "date": "2027-01-03",
+   "title": "Sunday 9:30 AM Service",
+   "time": "9:30–10:15am | Every Sunday"
+  },
+  {
+   "id": "206784946",
+   "date": "2027-01-03",
+   "title": "Sunday 11 AM Service",
+   "time": "10:59am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "206784275",
+   "date": "2027-01-03",
+   "title": "Growth Track Session 1 11 AM",
+   "time": "11am–12pm | The first Sunday of every month"
+  },
+  {
+   "id": "206784594",
+   "date": "2027-01-03",
+   "title": "Middle School Ministry 11 AM",
+   "time": "11am–12:15pm | Every Sunday"
+  },
+  {
+   "id": "209681896",
+   "date": "2027-01-05",
+   "title": "Restore",
+   "time": "6:30–8pm | Every Tuesday"
+  }
+ ],
+ "regText": "The Day of Global Youth Evangelism\n14 November 2026\nRegistration is open\nAlready registered? Log in\nRegister\nCATEGORIES\nTeens\nDetails\n\nThe Day of Global Youth Evangelism is a Global Movement of teenagers around the world sharing the Gospel all on the same day!\n\nUPCOMING DATES\nNov 14, 2026\n10am–4:30pm\nLOCATION\nLizton Campus\n7865 N County Road 100 E\nLizton, IN 46149\nShow map\nGet directions\nSELECTIONS\nStandard\nFree",
+ "registrations": [
+  {
+   "id": "3956076",
+   "title": "First Wednesday Service",
+   "dates": [
+    {
+     "date": "2026-11-04",
+     "time": "6–8pm"
+    }
+   ]
+  },
+  {
+   "id": "3978467",
+   "title": "The Day of Global Youth Evangelism",
+   "text": "The Day of Global Youth Evangelism\n14 November 2026\nRegistration is open\nAlready registered? Log in\nRegister\nCATEGORIES\nTeens\nDetails\n\nThe Day of Global Youth Evangelism is a Global Movement of teenagers around the world sharing the Gospel all on the same day!\n\nUPCOMING DATES\nNov 14, 2026\n10am–4:30pm\nLOCATION\nLizton Campus\n7865 N County Road 100 E\nLizton, IN 46149\nShow map\nGet directions\nSELECTIONS\nStandard\nFree",
+   "categories": [
+    "Teens"
+   ]
+  },
+  {
+   "id": "3956340",
+   "title": "Jingle Jam 2026",
+   "dates": [
+    {
+     "date": "2026-12-13",
+     "time": "5–6:30pm"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "slug": "2026-men-s-bible-reading",
+   "name": "2026 Men's Bible Reading",
+   "schedule": "once a month"
+  },
+  {
+   "slug": "27-17-men",
+   "name": "27:17 Men",
+   "schedule": "Mostly Tuesdays 6-7:30, every third week Wednesday 6-7:30"
+  },
+  {
+   "slug": "care-share-fall-2026-ladies",
+   "name": "Care & Share Fall 2026 (Ladies)",
+   "schedule": "Thursdays from 6-8pm"
+  },
+  {
+   "slug": "coffee-jesus-ladies",
+   "name": "Coffee & Jesus (Ladies)",
+   "schedule": "Meets weekly on Fridays from 9-11am"
+  },
+  {
+   "slug": "discipleship-study-men",
+   "name": "Discipleship Study (Men)",
+   "schedule": "Meets weekly on Thursdays from 6:30-8pm"
+  },
+  {
+   "slug": "football-faith",
+   "name": "Football & Faith",
+   "schedule": "Meets weekly on Sundays from 1-4pm"
+  },
+  {
+   "slug": "freedom-with-the-greens",
+   "name": "Freedom with the Greens",
+   "schedule": "Meets weekly on Wednesdays from 6:30-8pm"
+  },
+  {
+   "slug": "gathered-grounded-brownsburg",
+   "name": "Gathered & Grounded Brownsburg",
+   "schedule": "Meets weekly on Saturdays from 9-11am"
+  },
+  {
+   "slug": "grace-at-the-basin",
+   "name": "Grace at the Basin",
+   "schedule": "Meets weekly on Tuesdays from 6-7:30pm"
+  },
+  {
+   "slug": "grief-share",
+   "name": "Grief Share",
+   "schedule": "Meets weekly on Mondays from 6:30-8pm"
+  },
+  {
+   "slug": "lift-living-in-faith-together",
+   "name": "LiFT (Living in Faith Together)",
+   "schedule": "Meets weekly on Wednesdays from 10-11:30am"
+  },
+  {
+   "slug": "loaves-life-18-30s-women",
+   "name": "Loaves & Life (18-30s) Women",
+   "schedule": "Meets weekly on Tuesdays from 6-7:30pm"
+  },
+  {
+   "slug": "men-s-breakfast-2nd-sat",
+   "name": "Men's Breakfast 2nd Sat",
+   "schedule": "second Saturday of every month"
+  },
+  {
+   "slug": "pour-it-out-and-fill-it-up-ladies",
+   "name": "Pour it Out and Fill it Up (Ladies)",
+   "schedule": "Meets weekly on Mondays from 6:30-8pm"
+  },
+  {
+   "slug": "restore-addiction-recovery-tuesday-6-30-pm",
+   "name": "Restore Addiction & Recovery Tuesday 6:30 pm",
+   "schedule": "Meets weekly on Tuesdays from 6:30-8pm"
+  },
+  {
+   "slug": "take-5",
+   "name": "Take 5",
+   "schedule": "Meets weekly on Fridays from 6-8pm"
+  },
+  {
+   "slug": "the-cornerstone-for-young-adults-online",
+   "name": "The Cornerstone for Young Adults (online)",
+   "schedule": "Meets weekly on Fridays from 5:30-7pm"
+  },
+  {
+   "slug": "the-revival-project",
+   "name": "The Revival Project",
+   "schedule": "Meets weekly on Saturdays from 9-11am"
+  },
+  {
+   "slug": "venture-55-been-there-done-that-men-women",
+   "name": "Venture 55+ Been There Done That (Men & Women)",
+   "schedule": "Monthly outings"
+  },
+  {
+   "slug": "venture-maintenance-team-men-women",
+   "name": "Venture Maintenance Team (Men & Women)",
+   "schedule": ""
+  },
+  {
+   "slug": "venture-serve-team-men-women",
+   "name": "Venture Serve Team (Men & Women)",
+   "schedule": ""
+  },
+  {
+   "slug": "weight-release-for-women",
+   "name": "Weight Release for Women",
+   "schedule": "Meets weekly on Tuesdays from 6-8pm"
+  },
+  {
+   "slug": "well-built-women",
+   "name": "Well Built Women",
+   "schedule": "Meets weekly on Tuesdays from 6-7:30pm"
+  }
+ ],
+ "groupPage2717": "27:17 Men\n\nGroup is open\n\nContact\nRequest to join\nCATEGORIES\nNeighborhood\n: Pittsboro\nSeason\n: Spring\nRegularity\n: Weekly\nSCHEDULE\nMostly Tuesdays 6-7:30, every third week Wednesday 6-7:30\nLEADERS\n\nJoe\n\nJohn\n\nLOCATION\n\nJoe's house\n\nPittsboro, IN 46167\nShow map\nAbout 27:17 Men\nIron Sharpens Iron",
+ "groupPageBasin": "Grace at the Basin\n\nGroup is open\n\nContact\nRequest to join\nSCHEDULE\nMeets weekly on Tuesdays from 6-7:30pm\nLEADER\n\nChardell\n\nLOCATION\n\nYour Venture Church\n\nPittsboro, IN 46167\nShow map\nAbout Grace at the Basin\nTuesdays at Venture Coffee Bar, 6 PM.\n\nWelcome to the study of A King Washes Feet.",
+ "oldEvents": {
+  "updated": "2026-11-03T13:12:27-05:00",
+  "source": "https://yvc.churchcenter.com/calendar",
+  "events": [
+   {
+    "id": "211723419-2026-11-03",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-03T05:00:00Z",
+    "ends": "2026-11-04T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723421",
+    "featured": true
+   },
+   {
+    "id": "209681887-2026-11-03",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-11-03T23:30:00Z",
+    "ends": "2026-11-04T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681887",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-04",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-04T05:00:00Z",
+    "ends": "2026-11-05T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723422",
+    "featured": true
+   },
+   {
+    "id": "171156392-2026-11-04",
+    "series": "171156392",
+    "title": "First Wednesday Service 7pm",
+    "starts": "2026-11-04T23:00:00Z",
+    "ends": "2026-11-05T01:00:00Z",
+    "allDay": false,
+    "recur": "First Wednesday of every month",
+    "category": "Prayer",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "Pitch-in dinner at 6 PM and service at 7 PM. Get ready for the month ahead.",
+    "url": "https://yvc.churchcenter.com/calendar/event/171156392",
+    "featured": true
+   },
+   {
+    "id": "170652971-2026-11-04",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-11-05T00:00:00Z",
+    "ends": "2026-11-05T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/171156400",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-05",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-05T05:00:00Z",
+    "ends": "2026-11-06T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723423",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-06",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-06T05:00:00Z",
+    "ends": "2026-11-07T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723424",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-07",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-07T05:00:00Z",
+    "ends": "2026-11-08T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723425",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-08",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-08T05:00:00Z",
+    "ends": "2026-11-09T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723426",
+    "featured": true
+   },
+   {
+    "id": "206784027-2026-11-08",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-11-08T13:00:00Z",
+    "ends": "2026-11-08T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784028",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-11-08",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-11-08T14:30:00Z",
+    "ends": "2026-11-08T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784140",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-11-08",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-11-08T15:59:00Z",
+    "ends": "2026-11-08T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784938",
+    "featured": false
+   },
+   {
+    "id": "209679641-2026-11-08",
+    "series": "209679641",
+    "title": "Growth Track Session 2",
+    "starts": "2026-11-08T16:00:00Z",
+    "ends": "2026-11-08T17:15:00Z",
+    "allDay": false,
+    "recur": "Second Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Discover Your Design: your personality, your gifts and how you can make a difference.",
+    "url": "https://yvc.churchcenter.com/calendar/event/209679641",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-11-08",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-11-08T16:00:00Z",
+    "ends": "2026-11-08T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784586",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-09",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-09T05:00:00Z",
+    "ends": "2026-11-10T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723427",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-10",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-10T05:00:00Z",
+    "ends": "2026-11-11T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723428",
+    "featured": true
+   },
+   {
+    "id": "209681887-2026-11-10",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-11-10T23:30:00Z",
+    "ends": "2026-11-11T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681888",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-11",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-11T05:00:00Z",
+    "ends": "2026-11-12T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723429",
+    "featured": true
+   },
+   {
+    "id": "170652971-2026-11-11",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-11-12T00:00:00Z",
+    "ends": "2026-11-12T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/171701439",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-12",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-12T05:00:00Z",
+    "ends": "2026-11-13T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723430",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-13",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-13T05:00:00Z",
+    "ends": "2026-11-14T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723431",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-14",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-14T05:00:00Z",
+    "ends": "2026-11-15T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723432",
+    "featured": true
+   },
+   {
+    "id": "172027017-2026-11-14",
+    "series": "172027017",
+    "title": "Men's Breakfast",
+    "starts": "2026-11-14T13:00:00Z",
+    "ends": "2026-11-14T14:00:00Z",
+    "allDay": false,
+    "recur": "Second Saturday of every month",
+    "category": "Men",
+    "roomId": "lobby",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/172027017",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-15",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-15T05:00:00Z",
+    "ends": "2026-11-16T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723433",
+    "featured": true
+   },
+   {
+    "id": "206784027-2026-11-15",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-11-15T13:00:00Z",
+    "ends": "2026-11-15T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784029",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-11-15",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-11-15T14:30:00Z",
+    "ends": "2026-11-15T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784141",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-11-15",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-11-15T15:59:00Z",
+    "ends": "2026-11-15T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784939",
+    "featured": false
+   },
+   {
+    "id": "206784213-2026-11-15",
+    "series": "206784213",
+    "title": "Growth Track Session 3 - 11 AM",
+    "starts": "2026-11-15T16:00:00Z",
+    "ends": "2026-11-15T17:15:00Z",
+    "allDay": false,
+    "recur": "Third Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Join the Dream Team: connect to ways to serve others with your God-given gifts.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784213",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-11-15",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-11-15T16:00:00Z",
+    "ends": "2026-11-15T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784587",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-16",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-16T05:00:00Z",
+    "ends": "2026-11-17T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723434",
+    "featured": true
+   },
+   {
+    "id": "211723419-2026-11-17",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-17T05:00:00Z",
+    "ends": "2026-11-18T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723435",
+    "featured": true
+   },
+   {
+    "id": "209681887-2026-11-17",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-11-17T23:30:00Z",
+    "ends": "2026-11-18T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681889",
+    "featured": false
+   },
+   {
+    "id": "211723419-2026-11-18",
+    "series": "211723419",
+    "title": "Food Drive Drop Off",
+    "starts": "2026-11-18T05:00:00Z",
+    "ends": "2026-11-19T04:59:00Z",
+    "allDay": true,
+    "recur": "Every day through Nov 18",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "Drop off food donations any day.",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723436",
+    "featured": true
+   },
+   {
+    "id": "170652971-2026-11-18",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-11-19T00:00:00Z",
+    "ends": "2026-11-19T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/172345455",
+    "featured": false
+   },
+   {
+    "id": "211723317-2026-11-19",
+    "series": "211723317",
+    "title": "Food Drive",
+    "starts": "2026-11-19T23:00:00Z",
+    "ends": "2026-11-20T00:30:00Z",
+    "allDay": false,
+    "recur": "",
+    "category": "Outreach",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723317",
+    "featured": true
+   },
+   {
+    "id": "206784027-2026-11-22",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-11-22T13:00:00Z",
+    "ends": "2026-11-22T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784030",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-11-22",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-11-22T14:30:00Z",
+    "ends": "2026-11-22T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784142",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-11-22",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-11-22T15:59:00Z",
+    "ends": "2026-11-22T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784940",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-11-22",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-11-22T16:00:00Z",
+    "ends": "2026-11-22T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784588",
+    "featured": false
+   },
+   {
+    "id": "209681887-2026-11-24",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-11-24T23:30:00Z",
+    "ends": "2026-11-25T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681890",
+    "featured": false
+   },
+   {
+    "id": "170652971-2026-11-25",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-11-26T00:00:00Z",
+    "ends": "2026-11-26T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/172897864",
+    "featured": false
+   },
+   {
+    "id": "206784027-2026-11-29",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-11-29T13:00:00Z",
+    "ends": "2026-11-29T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784031",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-11-29",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-11-29T14:30:00Z",
+    "ends": "2026-11-29T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784143",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-11-29",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-11-29T15:59:00Z",
+    "ends": "2026-11-29T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784941",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-11-29",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-11-29T16:00:00Z",
+    "ends": "2026-11-29T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784589",
+    "featured": false
+   },
+   {
+    "id": "209681887-2026-12-01",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-12-01T23:30:00Z",
+    "ends": "2026-12-02T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681891",
+    "featured": false
+   },
+   {
+    "id": "171156392-2026-12-02",
+    "series": "171156392",
+    "title": "First Wednesday Service 7pm",
+    "starts": "2026-12-02T23:00:00Z",
+    "ends": "2026-12-03T01:00:00Z",
+    "allDay": false,
+    "recur": "First Wednesday of every month",
+    "category": "Prayer",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "Pitch-in dinner at 6 PM and service at 7 PM. Get ready for the month ahead.",
+    "url": "https://yvc.churchcenter.com/calendar/event/173241733",
+    "featured": true
+   },
+   {
+    "id": "170652971-2026-12-02",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-12-03T00:00:00Z",
+    "ends": "2026-12-03T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/173241731",
+    "featured": false
+   },
+   {
+    "id": "206784027-2026-12-06",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-12-06T13:00:00Z",
+    "ends": "2026-12-06T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784032",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-12-06",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-12-06T14:30:00Z",
+    "ends": "2026-12-06T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784144",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-12-06",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-12-06T15:59:00Z",
+    "ends": "2026-12-06T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784942",
+    "featured": false
+   },
+   {
+    "id": "206784273-2026-12-06",
+    "series": "206784273",
+    "title": "Growth Track Session 1 11 AM",
+    "starts": "2026-12-06T16:00:00Z",
+    "ends": "2026-12-06T17:00:00Z",
+    "allDay": false,
+    "recur": "First Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Become a Member: learn the ins and outs of Venture, from beliefs and leadership to how the church is organized.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784274",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-12-06",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-12-06T16:00:00Z",
+    "ends": "2026-12-06T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784590",
+    "featured": false
+   },
+   {
+    "id": "209681887-2026-12-08",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-12-08T23:30:00Z",
+    "ends": "2026-12-09T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681892",
+    "featured": false
+   },
+   {
+    "id": "170652971-2026-12-09",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-12-10T00:00:00Z",
+    "ends": "2026-12-10T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/173816991",
+    "featured": false
+   },
+   {
+    "id": "172027017-2026-12-12",
+    "series": "172027017",
+    "title": "Men's Breakfast",
+    "starts": "2026-12-12T13:00:00Z",
+    "ends": "2026-12-12T14:00:00Z",
+    "allDay": false,
+    "recur": "Second Saturday of every month",
+    "category": "Men",
+    "roomId": "lobby",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/174133662",
+    "featured": false
+   },
+   {
+    "id": "206784027-2026-12-13",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-12-13T13:00:00Z",
+    "ends": "2026-12-13T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784033",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-12-13",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-12-13T14:30:00Z",
+    "ends": "2026-12-13T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784145",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-12-13",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-12-13T15:59:00Z",
+    "ends": "2026-12-13T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784943",
+    "featured": false
+   },
+   {
+    "id": "209679641-2026-12-13",
+    "series": "209679641",
+    "title": "Growth Track Session 2",
+    "starts": "2026-12-13T16:00:00Z",
+    "ends": "2026-12-13T17:15:00Z",
+    "allDay": false,
+    "recur": "Second Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Discover Your Design: your personality, your gifts and how you can make a difference.",
+    "url": "https://yvc.churchcenter.com/calendar/event/209679642",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-12-13",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-12-13T16:00:00Z",
+    "ends": "2026-12-13T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784591",
+    "featured": false
+   },
+   {
+    "id": "211723764-2026-12-13",
+    "series": "211723764",
+    "title": "Jingle Jam 2026",
+    "starts": "2026-12-13T22:00:00Z",
+    "ends": "2026-12-13T23:30:00Z",
+    "allDay": false,
+    "recur": "",
+    "category": "Family",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/211723764",
+    "featured": true
+   },
+   {
+    "id": "209681887-2026-12-15",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-12-15T23:30:00Z",
+    "ends": "2026-12-16T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681893",
+    "featured": false
+   },
+   {
+    "id": "170652971-2026-12-16",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-12-17T00:00:00Z",
+    "ends": "2026-12-17T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/174403226",
+    "featured": false
+   },
+   {
+    "id": "239723148-2026-12-17",
+    "series": "239723148",
+    "title": "Women's Cookie Exchange",
+    "starts": "2026-12-17T23:30:00Z",
+    "ends": "2026-12-18T01:30:00Z",
+    "allDay": false,
+    "recur": "",
+    "category": "Women",
+    "roomId": null,
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/239723148",
+    "featured": true
+   },
+   {
+    "id": "206784027-2026-12-20",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-12-20T13:00:00Z",
+    "ends": "2026-12-20T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784034",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-12-20",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-12-20T14:30:00Z",
+    "ends": "2026-12-20T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784146",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-12-20",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-12-20T15:59:00Z",
+    "ends": "2026-12-20T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784944",
+    "featured": false
+   },
+   {
+    "id": "206784213-2026-12-20",
+    "series": "206784213",
+    "title": "Growth Track Session 3 - 11 AM",
+    "starts": "2026-12-20T16:00:00Z",
+    "ends": "2026-12-20T17:15:00Z",
+    "allDay": false,
+    "recur": "Third Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Join the Dream Team: connect to ways to serve others with your God-given gifts.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784214",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-12-20",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-12-20T16:00:00Z",
+    "ends": "2026-12-20T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784592",
+    "featured": false
+   },
+   {
+    "id": "209681887-2026-12-22",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-12-22T23:30:00Z",
+    "ends": "2026-12-23T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681894",
+    "featured": false
+   },
+   {
+    "id": "170652971-2026-12-23",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-12-24T00:00:00Z",
+    "ends": "2026-12-24T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/174992048",
+    "featured": false
+   },
+   {
+    "id": "234734297-2026-12-24",
+    "series": "234734297",
+    "title": "Christmas Eve Service",
+    "starts": "2026-12-24T21:30:00Z",
+    "ends": "2026-12-24T22:30:00Z",
+    "allDay": false,
+    "recur": "",
+    "category": "Holiday",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/234734297",
+    "featured": true
+   },
+   {
+    "id": "234734453-2026-12-24",
+    "series": "234734453",
+    "title": "Christmas Eve Service",
+    "starts": "2026-12-24T23:00:00Z",
+    "ends": "2026-12-25T00:00:00Z",
+    "allDay": false,
+    "recur": "",
+    "category": "Holiday",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/234734453",
+    "featured": true
+   },
+   {
+    "id": "206784027-2026-12-27",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2026-12-27T13:00:00Z",
+    "ends": "2026-12-27T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784035",
+    "featured": false
+   },
+   {
+    "id": "206784139-2026-12-27",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2026-12-27T14:30:00Z",
+    "ends": "2026-12-27T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784147",
+    "featured": false
+   },
+   {
+    "id": "206784937-2026-12-27",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2026-12-27T15:59:00Z",
+    "ends": "2026-12-27T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784945",
+    "featured": false
+   },
+   {
+    "id": "206784585-2026-12-27",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2026-12-27T16:00:00Z",
+    "ends": "2026-12-27T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784593",
+    "featured": false
+   },
+   {
+    "id": "209681887-2026-12-29",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2026-12-29T23:30:00Z",
+    "ends": "2026-12-30T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681895",
+    "featured": false
+   },
+   {
+    "id": "170652971-2026-12-30",
+    "series": "170652971",
+    "title": "High School Ministry",
+    "starts": "2026-12-31T00:00:00Z",
+    "ends": "2026-12-31T02:00:00Z",
+    "allDay": false,
+    "recur": "Every Wednesday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "High school students meet every Wednesday night.",
+    "url": "https://yvc.churchcenter.com/calendar/event/175307309",
+    "featured": false
+   },
+   {
+    "id": "206784027-2027-01-03",
+    "series": "206784027",
+    "title": "Sunday 8 AM Express Service",
+    "starts": "2027-01-03T13:00:00Z",
+    "ends": "2027-01-03T14:00:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "A shorter early service that wraps up around 9 AM.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784036",
+    "featured": false
+   },
+   {
+    "id": "206784139-2027-01-03",
+    "series": "206784139",
+    "title": "Sunday 9:30 AM Service",
+    "starts": "2027-01-03T14:30:00Z",
+    "ends": "2027-01-03T15:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784148",
+    "featured": false
+   },
+   {
+    "id": "206784937-2027-01-03",
+    "series": "206784937",
+    "title": "Sunday 11 AM Service",
+    "starts": "2027-01-03T15:59:00Z",
+    "ends": "2027-01-03T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Sunday services",
+    "roomId": "auditorium",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784946",
+    "featured": false
+   },
+   {
+    "id": "206784273-2027-01-03",
+    "series": "206784273",
+    "title": "Growth Track Session 1 11 AM",
+    "starts": "2027-01-03T16:00:00Z",
+    "ends": "2027-01-03T17:00:00Z",
+    "allDay": false,
+    "recur": "First Sunday of every month",
+    "category": "Growth Track",
+    "roomId": "growth-track-room",
+    "location": "Lizton Campus",
+    "summary": "Become a Member: learn the ins and outs of Venture, from beliefs and leadership to how the church is organized.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784275",
+    "featured": false
+   },
+   {
+    "id": "206784585-2027-01-03",
+    "series": "206784585",
+    "title": "Middle School Ministry 11 AM",
+    "starts": "2027-01-03T16:00:00Z",
+    "ends": "2027-01-03T17:15:00Z",
+    "allDay": false,
+    "recur": "Every Sunday",
+    "category": "Students",
+    "roomId": "nw-classroom",
+    "location": "Lizton Campus",
+    "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+    "url": "https://yvc.churchcenter.com/calendar/event/206784594",
+    "featured": false
+   },
+   {
+    "id": "209681887-2027-01-05",
+    "series": "209681887",
+    "title": "Restore",
+    "starts": "2027-01-05T23:30:00Z",
+    "ends": "2027-01-06T01:00:00Z",
+    "allDay": false,
+    "recur": "Every Tuesday",
+    "category": "Groups",
+    "roomId": "west-hall",
+    "location": "Lizton Campus",
+    "summary": "",
+    "url": "https://yvc.churchcenter.com/calendar/event/209681896",
+    "featured": false
+   }
+  ]
+ },
+ "oldGroups": {
+  "updated": "2026-11-02T13:41:13-05:00",
+  "source": "https://yvc.churchcenter.com/groups/small-groups",
+  "groups": [
+   {
+    "name": "2026 Men's Bible Reading",
+    "when": "Once a month",
+    "day": "Monthly",
+    "who": "Men",
+    "where": "Varies",
+    "roomId": null,
+    "summary": "Men reading the whole Bible together from January 1 to December 31, 2026, in any translation.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/2026-men-s-bible-reading",
+    "ccName": "2026 Men's Bible Reading",
+    "ccSchedule": "once a month"
+   },
+   {
+    "name": "27:17 Men",
+    "when": "Most Tuesdays 6–7:30 PM; every third week on Wednesday",
+    "day": "Tuesday",
+    "who": "Men",
+    "where": "In a home · Pittsboro",
+    "roomId": null,
+    "summary": "Iron sharpens iron. Men committed to pushing one another toward Christ.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/27-17-men",
+    "ccName": "27:17 Men",
+    "ccSchedule": "Mostly Tuesdays 6-7:30, every third week Wednesday 6-7:30"
+   },
+   {
+    "name": "Care & Share (Ladies)",
+    "when": "Thursdays 6–8 PM",
+    "day": "Thursday",
+    "who": "Women",
+    "where": "In a home",
+    "roomId": null,
+    "summary": "Make a craft or share a talent, plus scripture, testimonies and prayer.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/care-share-fall-2026-ladies",
+    "ccName": "Care & Share Fall 2026 (Ladies)",
+    "ccSchedule": "Thursdays from 6-8pm"
+   },
+   {
+    "name": "Coffee & Jesus (Ladies)",
+    "when": "Fridays 9–11 AM",
+    "day": "Friday",
+    "who": "Women",
+    "where": "Off-site · Maplewood",
+    "roomId": null,
+    "summary": "Pitch-in breakfast and coffee while walking through the parables of Jesus.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/coffee-jesus-ladies",
+    "ccName": "Coffee & Jesus (Ladies)",
+    "ccSchedule": "Meets weekly on Fridays from 9-11am"
+   },
+   {
+    "name": "Discipleship Study (Men)",
+    "when": "Thursdays 6:30–8 PM",
+    "day": "Thursday",
+    "who": "Men",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "A study of how ordinary, flawed disciples were changed by time with Jesus.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/discipleship-study-men",
+    "ccName": "Discipleship Study (Men)",
+    "ccSchedule": "Meets weekly on Thursdays from 6:30-8pm"
+   },
+   {
+    "name": "Football & Faith",
+    "when": "Sundays 1–4 PM",
+    "day": "Sunday",
+    "who": "Men",
+    "where": "At Venture · Growth Track Room",
+    "roomId": "growth-track-room",
+    "summary": "Men watch football together after church upstairs in the Growth Track Room.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/football-faith",
+    "ccName": "Football & Faith",
+    "ccSchedule": "Meets weekly on Sundays from 1-4pm"
+   },
+   {
+    "name": "Freedom with the Greens",
+    "when": "Wednesdays 6:30–8 PM",
+    "day": "Wednesday",
+    "who": "Everyone",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "A 13-week semester working through the Freedom small group curriculum.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/freedom-with-the-greens",
+    "ccName": "Freedom with the Greens",
+    "ccSchedule": "Meets weekly on Wednesdays from 6:30-8pm"
+   },
+   {
+    "name": "Gathered & Grounded Brownsburg",
+    "when": "Saturdays 9–11 AM",
+    "day": "Saturday",
+    "who": "Women",
+    "where": "In a home · Brownsburg",
+    "roomId": null,
+    "summary": "Women of all ages growing in God's Word with a short weekly video study.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/gathered-grounded-brownsburg",
+    "ccName": "Gathered & Grounded Brownsburg",
+    "ccSchedule": "Meets weekly on Saturdays from 9-11am"
+   },
+   {
+    "name": "Grace at the Basin",
+    "when": "Tuesdays 6–7:30 PM",
+    "day": "Tuesday",
+    "who": "Everyone",
+    "where": "At Venture · Coffee Bar",
+    "roomId": "coffee-bar",
+    "summary": "A study of A King Washes Feet by Jessica Bond on the humility of Jesus.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/grace-at-the-basin",
+    "ccName": "Grace at the Basin",
+    "ccSchedule": "Meets weekly on Tuesdays from 6-7:30pm"
+   },
+   {
+    "name": "GriefShare",
+    "when": "Mondays 6:30–8 PM",
+    "day": "Monday",
+    "who": "Support",
+    "where": "At Venture · Multipurpose Room",
+    "roomId": "west-hall",
+    "summary": "Help and encouragement after the death of a spouse, child, family member or friend.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/grief-share",
+    "ccName": "Grief Share",
+    "ccSchedule": "Meets weekly on Mondays from 6:30-8pm"
+   },
+   {
+    "name": "LiFT (Living in Faith Together)",
+    "when": "Wednesdays 10–11:30 AM",
+    "day": "Wednesday",
+    "who": "Women",
+    "where": "Off-site",
+    "roomId": null,
+    "summary": "Ladies of all ages deepening their walk with Jesus and building friendships.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/lift-living-in-faith-together",
+    "ccName": "LiFT (Living in Faith Together)",
+    "ccSchedule": "Meets weekly on Wednesdays from 10-11:30am"
+   },
+   {
+    "name": "Loaves & Life (Women 18–30s)",
+    "when": "Tuesdays 6–7:30 PM",
+    "day": "Tuesday",
+    "who": "Young adults",
+    "where": "Off-site",
+    "roomId": null,
+    "summary": "A space for young women in every walk of life to grow, love and encourage one another.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/loaves-life-18-30s-women",
+    "ccName": "Loaves & Life (18-30s) Women",
+    "ccSchedule": "Meets weekly on Tuesdays from 6-7:30pm"
+   },
+   {
+    "name": "Men's Breakfast",
+    "when": "Second Saturday of every month, 8 AM",
+    "day": "Saturday",
+    "who": "Men",
+    "where": "At Venture · Main Lobby",
+    "roomId": "lobby",
+    "summary": "A big buffet breakfast and time together for the men of Venture.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/men-s-breakfast-2nd-sat",
+    "ccName": "Men's Breakfast 2nd Sat",
+    "ccSchedule": "second Saturday of every month"
+   },
+   {
+    "name": "Pour It Out and Fill It Up (Ladies)",
+    "when": "Mondays 6:30–8 PM",
+    "day": "Monday",
+    "who": "Women",
+    "where": "At Venture · Teen Room",
+    "roomId": "nw-classroom",
+    "summary": "A laid-back group for women of all ages to connect and do life together.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/pour-it-out-and-fill-it-up-ladies",
+    "ccName": "Pour it Out and Fill it Up (Ladies)",
+    "ccSchedule": "Meets weekly on Mondays from 6:30-8pm"
+   },
+   {
+    "name": "Restore: Addiction & Recovery",
+    "when": "Tuesdays 6:30–8 PM",
+    "day": "Tuesday",
+    "who": "Support",
+    "where": "At Venture · Multipurpose Room",
+    "roomId": "west-hall",
+    "summary": "For people facing active addiction, working in recovery, or who have lost a loved one to it.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/restore-addiction-recovery-tuesday-6-30-pm",
+    "ccName": "Restore Addiction & Recovery Tuesday 6:30 pm",
+    "ccSchedule": "Meets weekly on Tuesdays from 6:30-8pm"
+   },
+   {
+    "name": "Take 5",
+    "when": "Fridays 6–8 PM",
+    "day": "Friday",
+    "who": "Families",
+    "where": "In a home",
+    "roomId": null,
+    "summary": "Friday, family, faith, food and fun: five things every meeting focuses on.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/take-5",
+    "ccName": "Take 5",
+    "ccSchedule": "Meets weekly on Fridays from 6-8pm"
+   },
+   {
+    "name": "The Cornerstone (Young Adults)",
+    "when": "Fridays 5:30–7 PM",
+    "day": "Friday",
+    "who": "Young adults",
+    "where": "Online",
+    "roomId": null,
+    "summary": "A virtual young adult community figuring out adulthood together.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/the-cornerstone-for-young-adults-online",
+    "ccName": "The Cornerstone for Young Adults (online)",
+    "ccSchedule": "Meets weekly on Fridays from 5:30-7pm"
+   },
+   {
+    "name": "The Revival Project",
+    "when": "Saturdays 9–11 AM",
+    "day": "Saturday",
+    "who": "Everyone",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "Working through the book Revival and its practices together.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/the-revival-project",
+    "ccName": "The Revival Project",
+    "ccSchedule": "Meets weekly on Saturdays from 9-11am"
+   },
+   {
+    "name": "Venture 55+ Been There Done That",
+    "when": "Monthly outings",
+    "day": "Monthly",
+    "who": "55+",
+    "where": "Varies",
+    "roomId": null,
+    "summary": "Monthly outings for men and women 55 and up. Starting back up in the spring.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/venture-55-been-there-done-that-men-women",
+    "ccName": "Venture 55+ Been There Done That (Men & Women)",
+    "ccSchedule": "Monthly outings"
+   },
+   {
+    "name": "Venture Maintenance Team",
+    "when": "Usually after the monthly men's breakfast",
+    "day": "Monthly",
+    "who": "Serve teams",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "Men and women using their skills to care for Venture's buildings.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/venture-maintenance-team-men-women",
+    "ccName": "Venture Maintenance Team (Men & Women)",
+    "ccSchedule": ""
+   },
+   {
+    "name": "Venture Serve Team",
+    "when": "As needs come up",
+    "day": "Varies",
+    "who": "Serve teams",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "Serving others as needs come up, plus Serve Day every July.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/venture-serve-team-men-women",
+    "ccName": "Venture Serve Team (Men & Women)",
+    "ccSchedule": ""
+   },
+   {
+    "name": "Weight Release for Women",
+    "when": "Tuesdays 6–8 PM",
+    "day": "Tuesday",
+    "who": "Women",
+    "where": "At Venture",
+    "roomId": null,
+    "summary": "Releasing what holds us back, from pounds to things we carry inside.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/weight-release-for-women",
+    "ccName": "Weight Release for Women",
+    "ccSchedule": "Meets weekly on Tuesdays from 6-8pm"
+   },
+   {
+    "name": "Well Built Women",
+    "when": "Tuesdays 6–7:30 PM",
+    "day": "Tuesday",
+    "who": "Women",
+    "where": "At Venture · Kids Check-in area",
+    "roomId": "kids-checkin",
+    "summary": "Learning to live by the virtues of the Proverbs 31 woman.",
+    "url": "https://yvc.churchcenter.com/groups/small-groups/well-built-women",
+    "ccName": "Well Built Women",
+    "ccSchedule": "Meets weekly on Tuesdays from 6-7:30pm"
+   }
+  ]
+ },
+ "rooms": {
+  "note": "Coordinates are traced from the June 2024 floor plan (2000px-wide drawing space). Rename rooms by editing 'name' only. 'kind' drives the colour in the 3D map.",
+  "entrance": "ENT",
+  "rooms": [
+   {
+    "id": "auditorium",
+    "name": "Auditorium",
+    "kind": "worship",
+    "rect": [
+     1205,
+     862,
+     1720,
+     1250
+    ],
+    "node": "AUD"
+   },
+   {
+    "id": "lobby",
+    "name": "Main Lobby",
+    "kind": "commons",
+    "rect": [
+     1460,
+     615,
+     1720,
+     855
+    ],
+    "node": "LOB"
+   },
+   {
+    "id": "south-hall",
+    "name": "Covered Entrance",
+    "kind": "patio",
+    "rect": [
+     1205,
+     648,
+     1458,
+     825
+    ],
+    "node": "PAV",
+    "noRoute": true,
+    "note": "The covered entry outside the main doors into the Main Lobby."
+   },
+   {
+    "id": "commons",
+    "name": "Commons",
+    "kind": "commons",
+    "rect": [
+     1255,
+     365,
+     1465,
+     612
+    ],
+    "node": "COM",
+    "rects": [
+     [
+      1255,
+      365,
+      1465,
+      612
+     ],
+     [
+      1465,
+      515,
+      1578,
+      612
+     ]
+    ],
+    "labelAt": [
+     1345,
+     545
+    ]
+   },
+   {
+    "id": "restrooms-ne",
+    "name": "Restrooms",
+    "kind": "service",
+    "rect": [
+     1465,
+     280,
+     1578,
+     515
+    ],
+    "node": "REST"
+   },
+   {
+    "id": "kitchen",
+    "name": "Kitchen",
+    "kind": "service",
+    "rect": [
+     1578,
+     425,
+     1720,
+     612
+    ],
+    "node": "KITE"
+   },
+   {
+    "id": "ne-large",
+    "name": "Gym",
+    "kind": "flex",
+    "rect": [
+     1578,
+     165,
+     1720,
+     425
+    ],
+    "node": "E1D"
+   },
+   {
+    "id": "ne-office-1",
+    "name": "Room E2",
+    "kind": "room",
+    "rect": [
+     1375,
+     165,
+     1420,
+     245
+    ],
+    "node": "NEH2",
+    "label": false
+   },
+   {
+    "id": "ne-office-2",
+    "name": "Room E3",
+    "kind": "room",
+    "rect": [
+     1420,
+     165,
+     1578,
+     245
+    ],
+    "node": "NEH2",
+    "label": false
+   },
+   {
+    "id": "ne-office-3",
+    "name": "Room E4",
+    "kind": "room",
+    "rect": [
+     1375,
+     280,
+     1465,
+     362
+    ],
+    "node": "NEH2",
+    "label": false
+   },
+   {
+    "id": "ne-hall",
+    "name": "East Hallway",
+    "kind": "hall",
+    "rect": [
+     1255,
+     165,
+     1375,
+     365
+    ],
+    "node": "NEH",
+    "rects": [
+     [
+      1255,
+      165,
+      1375,
+      365
+     ],
+     [
+      1375,
+      245,
+      1578,
+      280
+     ],
+     [
+      1120,
+      165,
+      1255,
+      228
+     ]
+    ],
+    "label": false
+   },
+   {
+    "id": "center-a",
+    "name": "Room C1",
+    "kind": "room",
+    "rect": [
+     875,
+     228,
+     997,
+     362
+    ],
+    "node": "HALLW",
+    "label": false
+   },
+   {
+    "id": "center-b",
+    "name": "Room C2",
+    "kind": "room",
+    "rect": [
+     997,
+     228,
+     1132,
+     362
+    ],
+    "node": "HALLM",
+    "label": false
+   },
+   {
+    "id": "center-c",
+    "name": "Room C3",
+    "kind": "room",
+    "rect": [
+     1132,
+     228,
+     1255,
+     362
+    ],
+    "node": "HALLE",
+    "label": false
+   },
+   {
+    "id": "center-hall",
+    "name": "Center Hallway",
+    "kind": "hall",
+    "rect": [
+     875,
+     362,
+     1255,
+     425
+    ],
+    "node": "HALLM",
+    "label": false
+   },
+   {
+    "id": "center-south",
+    "name": "Patio",
+    "kind": "patio",
+    "rect": [
+     855,
+     425,
+     1255,
+     520
+    ],
+    "node": "PATN"
+   },
+   {
+    "id": "north-large",
+    "name": "Room N1",
+    "kind": "flex",
+    "rect": [
+     875,
+     38,
+     1120,
+     228
+    ],
+    "node": "N1D",
+    "label": false
+   },
+   {
+    "id": "north-ne",
+    "name": "Room N2",
+    "kind": "room",
+    "rect": [
+     1120,
+     38,
+     1255,
+     165
+    ],
+    "node": "N1D",
+    "label": false
+   },
+   {
+    "id": "west-hall",
+    "name": "Multipurpose Room",
+    "kind": "flex",
+    "rect": [
+     722,
+     38,
+     875,
+     335
+    ],
+    "node": "WEST"
+   },
+   {
+    "id": "west-lobby",
+    "name": "West Entry",
+    "kind": "hall",
+    "rect": [
+     722,
+     335,
+     875,
+     425
+    ],
+    "node": "WLOB"
+   },
+   {
+    "id": "nw-classroom",
+    "name": "Teen Room",
+    "kind": "room",
+    "rect": [
+     330,
+     38,
+     550,
+     215
+    ],
+    "node": "NWR"
+   },
+   {
+    "id": "nw-lounge",
+    "name": "Room NW2",
+    "kind": "room",
+    "rect": [
+     262,
+     38,
+     330,
+     110
+    ],
+    "node": "NWR",
+    "label": false
+   },
+   {
+    "id": "nw-storage",
+    "name": "Room NW3",
+    "kind": "service",
+    "rect": [
+     262,
+     110,
+     330,
+     215
+    ],
+    "node": "NWR",
+    "label": false
+   },
+   {
+    "id": "nw-annex",
+    "name": "Teen Lobby",
+    "kind": "room",
+    "rect": [
+     550,
+     38,
+     722,
+     215
+    ],
+    "node": "TLD"
+   },
+   {
+    "id": "office-1",
+    "name": "Office O1",
+    "kind": "office",
+    "rect": [
+     442,
+     240,
+     612,
+     312
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-2",
+    "name": "Office O2",
+    "kind": "office",
+    "rect": [
+     612,
+     240,
+     690,
+     272
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-3",
+    "name": "Office O3",
+    "kind": "office",
+    "rect": [
+     612,
+     272,
+     690,
+     312
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-4",
+    "name": "Office O4",
+    "kind": "office",
+    "rect": [
+     442,
+     340,
+     518,
+     425
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-5",
+    "name": "Office O5",
+    "kind": "office",
+    "rect": [
+     518,
+     340,
+     595,
+     425
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-rr",
+    "name": "Office Restrooms",
+    "kind": "service",
+    "rect": [
+     595,
+     340,
+     690,
+     425
+    ],
+    "node": "OFC",
+    "label": false
+   },
+   {
+    "id": "office-hall",
+    "name": "Office Hallway",
+    "kind": "hall",
+    "rects": [
+     [
+      442,
+      215,
+      722,
+      240
+     ],
+     [
+      690,
+      240,
+      722,
+      425
+     ],
+     [
+      442,
+      312,
+      690,
+      340
+     ]
+    ],
+    "node": "OFC",
+    "label": false
+   }
+  ],
+  "nodes": {
+   "ENT": [
+    1458,
+    738
+   ],
+   "LOB": [
+    1600,
+    735
+   ],
+   "AUDD": [
+    1495,
+    858
+   ],
+   "AUD": [
+    1440,
+    1040
+   ],
+   "PAVD": [
+    1460,
+    735
+   ],
+   "PAV": [
+    1330,
+    735
+   ],
+   "LOBN": [
+    1495,
+    622
+   ],
+   "COM": [
+    1360,
+    500
+   ],
+   "COMN": [
+    1300,
+    392
+   ],
+   "HALLE": [
+    1200,
+    395
+   ],
+   "HALLM": [
+    1065,
+    395
+   ],
+   "HALLW": [
+    905,
+    395
+   ],
+   "WLOB": [
+    800,
+    390
+   ],
+   "WEST": [
+    800,
+    200
+   ],
+   "NWC": [
+    640,
+    228
+   ],
+   "NWR": [
+    450,
+    150
+   ],
+   "OFC": [
+    560,
+    326
+   ],
+   "NEH": [
+    1315,
+    265
+   ],
+   "NEH2": [
+    1400,
+    262
+   ],
+   "REST": [
+    1500,
+    535
+   ],
+   "KIT": [
+    1640,
+    520
+   ],
+   "KITD": [
+    1560,
+    600
+   ],
+   "E1D": [
+    1650,
+    300
+   ],
+   "N1D": [
+    1100,
+    200
+   ],
+   "LOBE": [
+    1688,
+    712
+   ],
+   "KITS": [
+    1688,
+    612
+   ],
+   "KITE": [
+    1688,
+    515
+   ],
+   "GYMD": [
+    1688,
+    425
+   ],
+   "WW": [
+    706,
+    395
+   ],
+   "TLD": [
+    706,
+    228
+   ],
+   "PATE": [
+    1248,
+    468
+   ],
+   "PATN": [
+    1262,
+    432
+   ],
+   "COMW": [
+    1266,
+    398
+   ]
+  },
+  "edges": [
+   [
+    "LOB",
+    "AUDD"
+   ],
+   [
+    "AUDD",
+    "AUD"
+   ],
+   [
+    "LOB",
+    "PAVD"
+   ],
+   [
+    "PAVD",
+    "PAV"
+   ],
+   [
+    "LOB",
+    "LOBN"
+   ],
+   [
+    "LOBN",
+    "COM"
+   ],
+   [
+    "LOBN",
+    "KITD"
+   ],
+   [
+    "KITD",
+    "KIT"
+   ],
+   [
+    "COM",
+    "REST"
+   ],
+   [
+    "COM",
+    "COMN"
+   ],
+   [
+    "COMN",
+    "NEH"
+   ],
+   [
+    "NEH",
+    "NEH2"
+   ],
+   [
+    "COMN",
+    "HALLE"
+   ],
+   [
+    "HALLE",
+    "HALLM"
+   ],
+   [
+    "HALLM",
+    "HALLW"
+   ],
+   [
+    "HALLW",
+    "WLOB"
+   ],
+   [
+    "WLOB",
+    "WEST"
+   ],
+   [
+    "WEST",
+    "NWC"
+   ],
+   [
+    "NWC",
+    "NWR"
+   ],
+   [
+    "NWC",
+    "OFC"
+   ],
+   [
+    "NEH",
+    "N1D"
+   ],
+   [
+    "ENT",
+    "PAVD"
+   ],
+   [
+    "ENT",
+    "PAV"
+   ],
+   [
+    "LOB",
+    "LOBE"
+   ],
+   [
+    "LOBE",
+    "KITS"
+   ],
+   [
+    "KITS",
+    "KITE"
+   ],
+   [
+    "KITE",
+    "GYMD"
+   ],
+   [
+    "GYMD",
+    "E1D"
+   ],
+   [
+    "KITE",
+    "KIT"
+   ],
+   [
+    "WLOB",
+    "WW"
+   ],
+   [
+    "WW",
+    "TLD"
+   ],
+   [
+    "TLD",
+    "NWC"
+   ],
+   [
+    "COM",
+    "PATE"
+   ],
+   [
+    "LOBN",
+    "PATN"
+   ],
+   [
+    "LOBN",
+    "COMW"
+   ],
+   [
+    "COMW",
+    "HALLE"
+   ]
+  ],
+  "landmarks": [
+   {
+    "id": "kids-checkin",
+    "name": "Kids Check-in",
+    "at": [
+     1418,
+     402
+    ],
+    "type": "counter",
+    "size": [
+     64,
+     16
+    ]
+   },
+   {
+    "id": "coffee-bar",
+    "name": "Coffee Bar",
+    "at": [
+     1610,
+     634
+    ],
+    "type": "counter",
+    "size": [
+     120,
+     22
+    ]
+   },
+   {
+    "id": "stairs-gt",
+    "name": "Stairs to Growth Track Room",
+    "at": [
+     1552,
+     560
+    ],
+    "type": "stairs"
+   },
+   {
+    "id": "growth-track-room",
+    "name": "Growth Track Room",
+    "at": [
+     1552,
+     560
+    ],
+    "type": "none",
+    "via": "Stairs to Growth Track Room",
+    "suffix": " (upstairs)"
+   },
+   {
+    "id": "back-entrance",
+    "name": "Back Entrance",
+    "at": [
+     1720,
+     700
+    ],
+    "type": "door",
+    "noRoute": true,
+    "note": "A second way in, on the east wall of the Main Lobby."
+   },
+   {
+    "id": "west-door",
+    "name": "West Entrance",
+    "at": [
+     762,
+     425
+    ],
+    "type": "door",
+    "noLabel": true
+   },
+   {
+    "id": "students-entrance",
+    "name": "Venture Students Entrance",
+    "at": [
+     530,
+     38
+    ],
+    "type": "door",
+    "noRoute": true,
+    "note": "The outside door into the Venture Students wing, on the north wall by the Teen Room and Teen Lobby."
+   }
+  ],
+  "zones": [
+   {
+    "id": "venture-kids",
+    "name": "Venture Kids",
+    "color": "#FF654D",
+    "rects": [
+     [
+      875,
+      38,
+      1255,
+      362
+     ],
+     [
+      1255,
+      165,
+      1720,
+      280
+     ],
+     [
+      1255,
+      280,
+      1465,
+      365
+     ],
+     [
+      1578,
+      280,
+      1720,
+      425
+     ],
+     [
+      1369,
+      365,
+      1465,
+      420
+     ]
+    ],
+    "labelAt": [
+     1070,
+     200
+    ],
+    "entry": "kids-checkin",
+    "suffix": " (check in here)"
+   },
+   {
+    "id": "venture-students",
+    "name": "Venture Students",
+    "color": "#D3483D",
+    "rects": [
+     [
+      262,
+      38,
+      722,
+      215
+     ]
+    ],
+    "labelAt": [
+     490,
+     110
+    ],
+    "entry": "nw-annex",
+    "suffix": ""
+   }
+  ]
+ }
+}

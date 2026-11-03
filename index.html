@@ -851,6 +851,19 @@ body:not([data-page="home"]) .wall .track{animation-play-state:paused}
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
 <script>
+/* ---------- data files: revalidate with the server and retry, so a dropped connection never leaves a list empty ---------- */
+async function getJSON(url, tries = 4) {
+  for (let i = 1; ; i++) {
+    try {
+      const r = await fetch(url, { cache: 'no-cache' });
+      if (!r.ok) throw new Error(url + ' ' + r.status);
+      return await r.json();
+    } catch (e) {
+      if (i >= tries) throw e;
+      await new Promise(res => setTimeout(res, 600 * i));
+    }
+  }
+}
 /* ---------- 3D campus (traced from satellite imagery; 1 unit = 1 metre) ---------- */
 const VCampus = (() => {
   // Traced in a 19z satellite frame centred on 39.87665,-86.50455 at 0.374 m per traced pixel.
@@ -1553,7 +1566,7 @@ const VMap = (() => {
     if (ready) return;
     if (init.p) return init.p;
     init.p = (async () => {
-      data = data || await (await fetch('data/rooms.json')).json(); window.VROOMS = data;
+      data = data || await getJSON('data/rooms.json'); window.VROOMS = data;
       fillList();
       try {
         if (!window.THREE || !window.THREE.OrbitControls) throw new Error('3D library did not load');
@@ -1596,7 +1609,7 @@ const VMap = (() => {
   }
   return {
     show, enter,
-    load: async () => { if (!data) { data = await (await fetch('data/rooms.json')).json(); window.VROOMS = data; } return data; }
+    load: async () => { if (!data) { data = await getJSON('data/rooms.json'); window.VROOMS = data; } return data; }
   };
 })();
 
@@ -1697,9 +1710,9 @@ const Events = (() => {
   const fmt = (d, o) => new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }).format(d);
   function load() {
     if (busy) return busy;
-    busy = Promise.all([fetch('data/events.json').then(r => r.json()), VMap.load()])
+    busy = Promise.all([getJSON('data/events.json'), VMap.load()])
       .then(([d]) => { data = d; render(); })
-      .catch(() => { data = { events: [] }; render(); });
+      .catch(() => { data = { events: [] }; render(); busy = null; });
     return busy;
   }
   function upcoming() {
@@ -1797,8 +1810,8 @@ const Groups = (() => {
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Monthly', 'Varies'];
   function load() {
     if (busy) return busy;
-    busy = Promise.all([fetch('data/groups.json').then(r => r.json()), VMap.load()]).then(([d]) => { data = d; render(); })
-      .catch(() => { data = { groups: [] }; render(); });
+    busy = Promise.all([getJSON('data/groups.json'), VMap.load()]).then(([d]) => { data = d; render(); })
+      .catch(() => { data = { groups: [] }; render(); busy = null; });
     return busy;
   }
   function render() {
