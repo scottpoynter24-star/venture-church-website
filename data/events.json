@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-05T06:15:26-05:00",
+ "updated": "2026-11-06T06:22:34-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
-  {
-   "id": "211723419-2026-11-05",
-   "series": "211723419",
-   "title": "Food Drive Drop Off",
-   "starts": "2026-11-05T05:00:00Z",
-   "ends": "2026-11-06T04:59:00Z",
-   "allDay": true,
-   "recur": "Every day through Nov 18",
-   "category": "Outreach",
-   "roomId": null,
-   "location": "Lizton Campus",
-   "summary": "Drop off food donations any day.",
-   "url": "https://yvc.churchcenter.com/calendar/event/211723423",
-   "featured": true
-  },
   {
    "id": "211723419-2026-11-06",
    "series": "211723419",
