@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T05:53:18-05:00",
+ "updated": "2026-11-08T13:56:21-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -16,81 +16,6 @@
    "summary": "Drop off food donations any day.",
    "url": "https://yvc.churchcenter.com/calendar/event/211723426",
    "featured": true
-  },
-  {
-   "id": "206784027-2026-11-08",
-   "series": "206784027",
-   "title": "Sunday 8 AM Express Service",
-   "starts": "2026-11-08T13:00:00Z",
-   "ends": "2026-11-08T14:00:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "A shorter early service that wraps up around 9 AM.",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784028",
-   "featured": false
-  },
-  {
-   "id": "206784139-2026-11-08",
-   "series": "206784139",
-   "title": "Sunday 9:30 AM Service",
-   "starts": "2026-11-08T14:30:00Z",
-   "ends": "2026-11-08T15:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784140",
-   "featured": false
-  },
-  {
-   "id": "206784937-2026-11-08",
-   "series": "206784937",
-   "title": "Sunday 11 AM Service",
-   "starts": "2026-11-08T15:59:00Z",
-   "ends": "2026-11-08T17:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784938",
-   "featured": false
-  },
-  {
-   "id": "209679641-2026-11-08",
-   "series": "209679641",
-   "title": "Growth Track Session 2",
-   "starts": "2026-11-08T16:00:00Z",
-   "ends": "2026-11-08T17:15:00Z",
-   "allDay": false,
-   "recur": "Second Sunday of every month",
-   "category": "Growth Track",
-   "roomId": "growth-track-room",
-   "location": "Lizton Campus",
-   "summary": "Discover Your Design: your personality, your gifts and how you can make a difference.",
-   "url": "https://yvc.churchcenter.com/calendar/event/209679641",
-   "featured": false
-  },
-  {
-   "id": "206784585-2026-11-08",
-   "series": "206784585",
-   "title": "Middle School Ministry 11 AM",
-   "starts": "2026-11-08T16:00:00Z",
-   "ends": "2026-11-08T17:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Students",
-   "roomId": "nw-classroom",
-   "location": "Lizton Campus",
-   "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784586",
-   "featured": false
   },
   {
    "id": "211723419-2026-11-09",
