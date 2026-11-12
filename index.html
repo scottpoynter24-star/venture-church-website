@@ -1858,12 +1858,15 @@ const STAFF = [
   ["Sean & Jordan Adams","sean-jordan","Connections Pastor","Sean loves getting to know people through Growth Track and small groups. Jordan is our online campus and social media director and sings on the worship team."],
   ["Nathan \"Gerb\" & Anna Gerber","nathan-anna","NextGen Pastor","Gerb has led Venture Students since January 2023 and helps with video production. He loves long walks to Taco Bell and the best possible deal on fast food."],
   ["Kayleigh & John Gerbick","kayleigh-john","Director of Children's Ministry","Kayleigh has led Venture Kids on Sunday mornings since November 2022. Her top priority: kids have fun while learning about Jesus. John serves on the worship team."],
-  ["Scott & Taylor Poynter","scott-taylor","Worship Pastor","Scott plays guitar and piano and musically directs the worship team. Taylor leads worship and develops a team of vocalists rooted in the Word."],
   ["Ethan & Kelsey Sustersic","ethan-kelsey","Productions Director","Since 2020 Ethan has brought services to life through lighting, sound and video. Kelsey serves in the children's ministry."],
   ["Tony Black","tony","Care Pastor","Tony has attended since day one. He supports people through illness, grief and personal crisis."],
   ["Karen Egerton","karen","Administrative Assistant","With Venture since the very first service, Karen oversees Hospitality and the Prayer Team."],
   ["Autra Miller-Green","autra","Dream Team Director","Autra coordinates our volunteer teams with care and excellence, and serves on the prayer team, as a small group coach and on the worship team."],
   ["Tori Hall","tori","Marketing & Social Media Intern","A five-year Venture attender and Venture Leadership Institute student, Tori helps point people to Jesus through digital outreach."]
+];
+// Hidden for now, kept here to bring back later: move the line below back into STAFF (between the Gerbicks and the Sustersics). Photo: img/staff/scott-taylor.jpg
+const STAFF_HIDDEN = [
+  ["Scott & Taylor Poynter","scott-taylor","Worship Pastor","Scott plays guitar and piano and musically directs the worship team. Taylor leads worship and develops a team of vocalists rooted in the Word."],
 ];
 document.getElementById('staff-grid').innerHTML = STAFF.map(([n, img, r, b]) => {
   const ini = n.replace(/"[^"]*"/g, '').split(/\s|&/).filter(Boolean).filter(w => /^[A-Z]/.test(w));
