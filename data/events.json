@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T05:54:29-05:00",
+ "updated": "2026-11-15T13:58:06-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -16,81 +16,6 @@
    "summary": "Drop off food donations any day.",
    "url": "https://yvc.churchcenter.com/calendar/event/211723433",
    "featured": true
-  },
-  {
-   "id": "206784027-2026-11-15",
-   "series": "206784027",
-   "title": "Sunday 8 AM Express Service",
-   "starts": "2026-11-15T13:00:00Z",
-   "ends": "2026-11-15T14:00:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "A shorter early service that wraps up around 9 AM.",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784029",
-   "featured": false
-  },
-  {
-   "id": "206784139-2026-11-15",
-   "series": "206784139",
-   "title": "Sunday 9:30 AM Service",
-   "starts": "2026-11-15T14:30:00Z",
-   "ends": "2026-11-15T15:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784141",
-   "featured": false
-  },
-  {
-   "id": "206784937-2026-11-15",
-   "series": "206784937",
-   "title": "Sunday 11 AM Service",
-   "starts": "2026-11-15T15:59:00Z",
-   "ends": "2026-11-15T17:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Sunday services",
-   "roomId": "auditorium",
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784939",
-   "featured": false
-  },
-  {
-   "id": "206784213-2026-11-15",
-   "series": "206784213",
-   "title": "Growth Track Session 3 - 11 AM",
-   "starts": "2026-11-15T16:00:00Z",
-   "ends": "2026-11-15T17:15:00Z",
-   "allDay": false,
-   "recur": "Third Sunday of every month",
-   "category": "Growth Track",
-   "roomId": "growth-track-room",
-   "location": "Lizton Campus",
-   "summary": "Join the Dream Team: connect to ways to serve others with your God-given gifts.",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784213",
-   "featured": false
-  },
-  {
-   "id": "206784585-2026-11-15",
-   "series": "206784585",
-   "title": "Middle School Ministry 11 AM",
-   "starts": "2026-11-15T16:00:00Z",
-   "ends": "2026-11-15T17:15:00Z",
-   "allDay": false,
-   "recur": "Every Sunday",
-   "category": "Students",
-   "roomId": "nw-classroom",
-   "location": "Lizton Campus",
-   "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
-   "url": "https://yvc.churchcenter.com/calendar/event/206784587",
-   "featured": false
   },
   {
    "id": "211723419-2026-11-16",
