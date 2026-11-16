@@ -1862,6 +1862,7 @@ const STAFF = [
   ["Tony Black","tony","Care Pastor","Tony has attended since day one. He supports people through illness, grief and personal crisis."],
   ["Karen Egerton","karen","Administrative Assistant","With Venture since the very first service, Karen oversees Hospitality and the Prayer Team."],
   ["Autra Miller-Green","autra","Dream Team Director","Autra coordinates our volunteer teams with care and excellence, and serves on the prayer team, as a small group coach and on the worship team."],
+  ["Joanna Kennedy","joanna","HR Director","Joanna is an HR Business Partner at TMC Transportation in Brownsburg and holds the Senior Professional in Human Resources (SPHR) credential, with more than 30 years in Indiana's industrial, legal and transportation fields. She earned her degree in Organizational Leadership and Supervision from Purdue University at IUPUI. Joanna and Lance, her husband of 33 years, worship and serve at Venture, and she serves as Vice President and Treasurer of Tri-West Scholarships, Inc."],
   ["Tori Hall","tori","Marketing & Social Media Intern","A five-year Venture attender and Venture Leadership Institute student, Tori helps point people to Jesus through digital outreach."]
 ];
 // Hidden for now, kept here to bring back later: move the line below back into STAFF (between the Gerbicks and the Sustersics). Photo: img/staff/scott-taylor.jpg
@@ -1871,7 +1872,7 @@ const STAFF_HIDDEN = [
 document.getElementById('staff-grid').innerHTML = STAFF.map(([n, img, r, b]) => {
   const ini = n.replace(/"[^"]*"/g, '').split(/\s|&/).filter(Boolean).filter(w => /^[A-Z]/.test(w));
   const mono = (ini[0] || '')[0] + (ini[ini.length - 1] || '')[0];
-  return `<article class="person rv"><div class="av">${img ? `<img src="img/staff/${img}.jpg" alt="${esc(n)}" loading="lazy">` : `<span>${esc(mono)}</span>`}</div><div><h3>${esc(n)}</h3><p style="color:var(--ember);font-weight:600;margin:4px 0 8px">${esc(r)}</p><p>${esc(b)}</p></div></article>`;
+  return `<article class="person rv"><div class="av">${img ? `<img src="img/staff/${img}.jpg" alt="${esc(n)}" loading="lazy" onerror="this.remove()">` : `<span>${esc(mono)}</span>`}</div><div><h3>${esc(n)}</h3><p style="color:var(--ember);font-weight:600;margin:4px 0 8px">${esc(r)}</p><p>${esc(b)}</p></div></article>`;
 }).join('');
 
 route(); onScroll();
