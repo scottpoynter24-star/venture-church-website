@@ -266,7 +266,12 @@ body.menu-open .menu-main a{transform:none;opacity:1}
 .beliefs summary::after{content:"+";color:var(--coral);font-size:28px;line-height:.8;transition:transform .3s}
 .beliefs details[open] summary::after{transform:rotate(45deg)}
 .beliefs details p{margin-top:12px;color:#3b3433}
-.staff{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.staff{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;--n:1}
+.staff>.person{width:calc((100% - (var(--n) - 1) * 16px) / var(--n))}
+@media (min-width:520px){.staff{--n:2}}
+@media (min-width:760px){.staff{--n:3}}
+@media (min-width:1000px){.staff{--n:4}}
+@media (min-width:1100px){.staff{--n:6}} /* 6 across on desktop; a short last row stays centered */
 .person{display:grid;gap:12px;align-content:start}
 .person .av{aspect-ratio:4/5;border-radius:20px;background:var(--blush);display:grid;place-items:center;overflow:hidden;position:relative}
 .person .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s var(--ease)}
