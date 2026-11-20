@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-19T06:10:57-05:00",
+ "updated": "2026-11-20T06:13:35-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
-  {
-   "id": "211723317-2026-11-19",
-   "series": "211723317",
-   "title": "Food Drive",
-   "starts": "2026-11-19T05:00:00Z",
-   "ends": "2026-11-20T04:59:00Z",
-   "allDay": true,
-   "recur": "",
-   "category": "Outreach",
-   "roomId": null,
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/211723317",
-   "featured": true
-  },
   {
    "id": "206784585-2026-11-22",
    "series": "206784585",
@@ -1170,6 +1155,21 @@
    "location": "Lizton Campus",
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/234734855",
+   "featured": false
+  },
+  {
+   "id": "234734847-2027-01-22",
+   "series": "234734847",
+   "title": "21 Days of Prayer",
+   "starts": "2027-01-22T05:00:00Z",
+   "ends": "2027-01-23T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Prayer",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/calendar/event/234734856",
    "featured": false
   }
  ]
