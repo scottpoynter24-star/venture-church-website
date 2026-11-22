@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:13:35-05:00",
+ "updated": "2026-11-22T05:56:06-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -1170,6 +1170,66 @@
    "location": "Lizton Campus",
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/234734856",
+   "featured": false
+  },
+  {
+   "id": "206784585-2027-01-24",
+   "series": "206784585",
+   "title": "Middle School Ministry 11 AM",
+   "starts": "2027-01-24T05:00:00Z",
+   "ends": "2027-01-25T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Students",
+   "roomId": "nw-classroom",
+   "location": "Lizton Campus",
+   "summary": "6th, 7th and 8th grades meet weekly in the Teen Room.",
+   "url": "https://yvc.churchcenter.com/calendar/event/206784597",
+   "featured": false
+  },
+  {
+   "id": "206784937-2027-01-24",
+   "series": "206784937",
+   "title": "Sunday 11 AM Service",
+   "starts": "2027-01-24T05:00:00Z",
+   "ends": "2027-01-25T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Sunday services",
+   "roomId": "auditorium",
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/calendar/event/206784949",
+   "featured": false
+  },
+  {
+   "id": "206784027-2027-01-24",
+   "series": "206784027",
+   "title": "Sunday 8 AM Express Service",
+   "starts": "2027-01-24T05:00:00Z",
+   "ends": "2027-01-25T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Sunday services",
+   "roomId": "auditorium",
+   "location": "Lizton Campus",
+   "summary": "A shorter early service that wraps up around 9 AM.",
+   "url": "https://yvc.churchcenter.com/calendar/event/206784039",
+   "featured": false
+  },
+  {
+   "id": "206784139-2027-01-24",
+   "series": "206784139",
+   "title": "Sunday 9:30 AM Service",
+   "starts": "2027-01-24T05:00:00Z",
+   "ends": "2027-01-25T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Sunday services",
+   "roomId": "auditorium",
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/calendar/event/206784151",
    "featured": false
   }
  ]
