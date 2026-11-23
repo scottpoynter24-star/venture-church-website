@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:02:06-05:00",
+ "updated": "2026-11-23T06:16:45-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -1170,6 +1170,21 @@
    "location": "Lizton Campus",
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/206784151",
+   "featured": false
+  },
+  {
+   "id": "234734847-2027-01-25",
+   "series": "234734847",
+   "title": "21 Days of Prayer",
+   "starts": "2027-01-25T05:00:00Z",
+   "ends": "2027-01-26T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Prayer",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/calendar/event/234734857",
    "featured": false
   }
  ]
