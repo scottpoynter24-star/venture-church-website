@@ -1,7 +1,15 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Venture Photo Wall Hero</title>
+<title>Your Venture Church</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Your Venture Church is a nondenominational church in Pittsboro, Indiana. Sundays at 8:00, 9:30 and 11:00 AM.">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#070707">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Venture">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Jost:wght@200;300&display=swap">
 <style>
@@ -286,6 +294,30 @@ body.menu-open .menu-main a{transform:none;opacity:1}
 .copybtn{font:600 13px var(--body);border:1.5px solid currentColor;background:none;color:inherit;border-radius:99px;padding:7px 12px;cursor:pointer}
 
 /* ---------- footer ---------- */
+/* ---------- installed app (home-screen) ---------- */
+.tabbar,.app-quick{display:none}
+html.is-app .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(7,7,7,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--smoke);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+.tabbar a,.tabbar button{display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;color:var(--dim);font:600 10.5px/1 var(--body);text-decoration:none;padding:6px 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tabbar svg,.app-quick svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabbar .on{color:var(--coral)}
+body.menu-open .tabbar .tab-more{color:var(--coral)}
+html.is-app body{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
+html.is-app .app-quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:22px var(--gutR) 22px var(--gut);background:var(--ink)}
+.app-quick a{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--on-dark);font:600 12px/1.2 var(--body);text-decoration:none;text-align:center}
+.app-quick i{width:56px;height:56px;border-radius:18px;background:var(--coral);color:var(--paper);display:grid;place-items:center}
+.app-quick a:nth-child(2) i{background:var(--ember)}
+.app-quick a:nth-child(3) i{background:var(--smoke)}
+.app-quick a:nth-child(4) i{background:var(--paper);color:var(--ink)}
+html.is-app [data-getapp]{display:none}
+.getapp{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:70;max-width:460px;margin:0 auto;background:var(--ink);color:var(--on-dark);border:1px solid var(--smoke);border-radius:20px;padding:12px 12px 12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 50px rgba(0,0,0,.4);transform:translateY(calc(100% + 40px));visibility:hidden;transition:transform .55s var(--ease),visibility 0s .55s}
+.getapp.show{transform:none;visibility:visible;transition:transform .55s var(--ease)}
+.getapp img{width:46px;height:46px;border-radius:12px;flex:none}
+.getapp .t{flex:1;min-width:0}
+.getapp b{display:block;font:800 15px/1.2 var(--display);color:var(--paper)}
+.getapp .t span{display:block;font-size:12.5px;line-height:1.35;color:var(--dim);margin-top:2px}
+.getapp .btn{padding:10px 16px;font-size:13px;flex:none}
+.getapp .x{background:none;border:0;color:var(--dim);font-size:22px;line-height:1;cursor:pointer;padding:4px 6px;flex:none}
+html.is-app .getapp{display:none!important}
 .foot{padding:clamp(56px,8vw,96px) var(--gutR) 40px var(--gut)}
 .foot-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
 .foot .big svg{height:110px;width:auto;color:var(--coral)}
@@ -441,13 +473,15 @@ body:not([data-page="home"]) .wall .track{animation-play-state:paused}
     </div>
     <div class="menu-side">
       <div><h4>Families</h4><a href="#kids">Venture Kids</a><a href="#students">Students</a></div>
-      <div><h4>Get connected</h4><a href="#growth-track">Growth Track</a><a href="#small-groups">Small Groups</a><a href="#dream-team">Dream Team</a><a href="#baptism">Baptism</a><a href="#prayer">Prayer Request</a></div>
+      <div><h4>Get connected</h4><a href="#growth-track">Growth Track</a><a href="#small-groups">Small Groups</a><a href="#dream-team">Dream Team</a><a href="#baptism">Baptism</a><a href="#prayer">Prayer Request</a><a href="https://yvc.churchcenter.com/groups" target="_blank" rel="noopener">My Groups &amp; Chat ↗</a><a href="https://yvc.churchcenter.com/registrations" target="_blank" rel="noopener">Event Sign-ups ↗</a><a href="#home" data-getapp>Get the App</a></div>
       <div><h4>Who we are</h4><a href="#about">Mission &amp; Vision</a><a href="#beliefs">What We Believe</a><a href="#story">Our Story</a><a href="#staff">Staff</a><a href="#contact">Contact</a></div>
       <div><h4>Sundays</h4><p style="font-weight:700;font-size:20px">8:00 · 9:30 · 11:00 AM</p><p>7865 N County Road 100 E<br>Pittsboro, IN 46167</p></div>
     </div>
   </div>
 </nav>
 
+<nav class="tabbar" aria-label="App"><a href="#home" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a><a href="#watch" data-tab="watch"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>Watch</a><a href="#events" data-tab="events"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Events</a><a href="#give" data-tab="give"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Give</a><button type="button" class="tab-more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>More</button></nav>
+<div class="getapp" role="dialog" aria-label="Get the Venture app"><img src="/apple-touch-icon.png" alt=""><div class="t"><b>Get the Venture app</b><span>Sermons, events, giving and prayer, right on your home screen.</span></div><button class="btn btn-coral" type="button">Install</button><button class="x" type="button" aria-label="Not now">&times;</button></div>
 <main>
 <section data-view="home">
   <div class="hero wallhero">
@@ -469,6 +503,7 @@ body:not([data-page="home"]) .wall .track{animation-play-state:paused}
   </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="vmark" viewBox="312 312 376 376"><path d="M 500 553.7 L 455.7 425.9 L 418.6 425.9 L 480.5 594.6 L 519.1 594.6 L 581.4 425.9 L 545.3 425.9 ZM 500 553.7"/><path d="M 500 653.2 C 415.5 653.2 346.8 584.5 346.8 500 C 346.8 415.5 415.5 346.8 500 346.8 C 584.5 346.8 653.2 415.5 653.2 500 C 653.2 584.5 584.5 653.2 500 653.2 M 500 315.9 C 398.5 315.9 315.9 398.5 315.9 500 C 315.9 601.5 398.5 684.1 500 684.1 C 601.5 684.1 684.1 601.5 684.1 500 C 684.1 398.5 601.5 315.9 500 315.9"/></symbol></svg>
+  <div class="app-quick"><a href="#prayer"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></i>Prayer Request</a><a href="https://yvc.churchcenter.com/groups" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0M16 4.8a3.2 3.2 0 0 1 0 6.4M21 20a6 6 0 0 0-3.5-5.5"/></svg></i>My Groups &amp; Chat</a><a href="https://yvc.churchcenter.com/registrations" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></i>Event Sign-ups</a><a href="#map"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i>Building Map</a></div>
   <div class="ribbon" aria-hidden="true">
     <div class="band band-a"><div class="set"><span class="it"><i>Know</i><b>God</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Find</i><b>Freedom</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Discover</i><b>Purpose</b></span><svg class="vm" aria-hidden="true"><use href="#vmark"/></svg><span class="it"><i>Make a</i><b>Difference</b></span></div></div>
   </div>
@@ -1881,7 +1916,40 @@ document.getElementById('staff-grid').innerHTML = STAFF.map(([n, img, r, b]) => 
   return `<article class="person rv"><div class="av">${img ? `<img src="img/staff/${img}.jpg" alt="${esc(n)}" loading="lazy" onerror="this.remove()">` : `<span>${esc(mono)}</span>`}</div><div><h3>${esc(n)}</h3><p style="color:var(--ember);font-weight:600;margin:4px 0 8px">${esc(r)}</p><p>${esc(b)}</p></div></article>`;
 }).join('');
 
-route(); onScroll();
+/* ---------- installed app (home-screen) ---------- */
+const VApp = (() => {
+  const isApp = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  if (isApp) document.documentElement.classList.add('is-app');
+  if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  const tabs = document.querySelector('.tabbar');
+  const mark = () => tabs.querySelectorAll('[data-tab]').forEach(a => a.classList.toggle('on', a.dataset.tab === document.body.dataset.page));
+  addEventListener('hashchange', () => setTimeout(mark));
+  tabs.querySelector('.tab-more').addEventListener('click', () => document.querySelector('.menu-btn').click());
+  // "Get the app" card for phone visitors
+  const card = document.querySelector('.getapp'), msg = card.querySelector('.t span'), btn = card.querySelector('.btn');
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const phone = matchMedia('(max-width: 820px) and (pointer: coarse)').matches;
+  let deferred = null, snoozed = false;
+  try { snoozed = Date.now() < +(localStorage.getItem('vyc-app-snooze') || 0); } catch (e) {}
+  const setMsg = () => {
+    btn.hidden = !deferred;
+    if (deferred) msg.textContent = 'Sermons, events, giving and prayer, right on your home screen.';
+    else if (ios) msg.innerHTML = 'Tap the <b style="display:inline;font:inherit">Share</b> button, then <b style="display:inline;font:inherit">Add to Home Screen</b>.';
+    else if (!phone) msg.textContent = 'Open yourventurechurch.org on your phone and add it to your home screen.';
+    else msg.innerHTML = 'Open your browser menu, then tap <b style="display:inline;font:inherit">Add to Home Screen</b>.';
+  };
+  const open = () => { setMsg(); card.classList.add('show'); };
+  const later = () => { if (!isApp && phone && !snoozed) setTimeout(open, 6000); };
+  addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferred = e; if (card.classList.contains('show')) setMsg(); });
+  btn.addEventListener('click', async () => { if (!deferred) return; deferred.prompt(); try { await deferred.userChoice; } catch (e) {} deferred = null; card.classList.remove('show'); });
+  card.querySelector('.x').addEventListener('click', () => { card.classList.remove('show'); try { localStorage.setItem('vyc-app-snooze', Date.now() + 30 * 864e5); } catch (e) {} });
+  addEventListener('appinstalled', () => card.classList.remove('show'));
+  document.querySelectorAll('[data-getapp]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); document.body.classList.remove('menu-open'); open(); }));
+  later();
+  return { mark, isApp };
+})();
+
+route(); onScroll(); VApp.mark();
 </script>
 
 </body></html>
