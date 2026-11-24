@@ -1,0 +1,24 @@
+{
+  "name": "Your Venture Church",
+  "short_name": "Venture",
+  "description": "Sermons, events, giving, groups, maps and prayer for Your Venture Church in Pittsboro, Indiana.",
+  "id": "/",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070707",
+  "theme_color": "#070707",
+  "categories": ["lifestyle", "social"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Watch", "url": "/#watch" },
+    { "name": "Events", "url": "/#events" },
+    { "name": "Give", "url": "/#give" },
+    { "name": "Prayer Request", "url": "/#prayer" }
+  ]
+}
