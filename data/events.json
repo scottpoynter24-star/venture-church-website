@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:04:05-05:00",
+ "updated": "2026-11-24T14:14:32-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
   {
@@ -468,6 +468,51 @@
    "featured": false
   },
   {
+   "id": "reg-4046791-2026-12-20",
+   "series": "reg-4046791",
+   "title": "Christmas With Venture",
+   "starts": "2026-12-20T13:00:00Z",
+   "ends": "2026-12-20T14:00:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Holiday",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/registrations/events/4046791",
+   "featured": true
+  },
+  {
+   "id": "reg-4046791-2026-12-20-2",
+   "series": "reg-4046791",
+   "title": "Christmas With Venture",
+   "starts": "2026-12-20T14:30:00Z",
+   "ends": "2026-12-20T15:30:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Holiday",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/registrations/events/4046791",
+   "featured": true
+  },
+  {
+   "id": "reg-4046791-2026-12-20-3",
+   "series": "reg-4046791",
+   "title": "Christmas With Venture",
+   "starts": "2026-12-20T16:00:00Z",
+   "ends": "2026-12-20T17:00:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Holiday",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/registrations/events/4046791",
+   "featured": true
+  },
+  {
    "id": "209681887-2026-12-22",
    "series": "209681887",
    "title": "Restore",
@@ -525,6 +570,36 @@
    "location": "Lizton Campus",
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/234734453",
+   "featured": true
+  },
+  {
+   "id": "reg-4046772-2026-12-24",
+   "series": "reg-4046772",
+   "title": "Christmas Eve with Venture",
+   "starts": "2026-12-24T21:30:00Z",
+   "ends": "2026-12-24T22:30:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Holiday",
+   "roomId": "auditorium",
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/registrations/events/4046772",
+   "featured": true
+  },
+  {
+   "id": "reg-4046772-2026-12-24-2",
+   "series": "reg-4046772",
+   "title": "Christmas Eve with Venture",
+   "starts": "2026-12-24T23:00:00Z",
+   "ends": "2026-12-25T00:00:00Z",
+   "allDay": false,
+   "recur": "",
+   "category": "Holiday",
+   "roomId": "auditorium",
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/registrations/events/4046772",
    "featured": true
   },
   {
