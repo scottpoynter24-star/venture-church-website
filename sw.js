@@ -1,5 +1,5 @@
 // Your Venture Church app: offline support. Pages always try the network first, so site updates show right away.
-const V = 'venture-v1';
+const V = 'venture-v2';
 const CORE = ['/', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
