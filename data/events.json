@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-24T14:14:32-05:00",
+ "updated": "2026-11-25T06:09:39-05:00",
  "source": "https://yvc.churchcenter.com/calendar",
  "events": [
-  {
-   "id": "209681887-2026-11-24",
-   "series": "209681887",
-   "title": "Restore",
-   "starts": "2026-11-24T05:00:00Z",
-   "ends": "2026-11-25T04:59:00Z",
-   "allDay": true,
-   "recur": "Every Tuesday",
-   "category": "Groups",
-   "roomId": "west-hall",
-   "location": "Lizton Campus",
-   "summary": "",
-   "url": "https://yvc.churchcenter.com/calendar/event/209681890",
-   "featured": false
-  },
   {
    "id": "170652971-2026-11-25",
    "series": "170652971",
@@ -1290,6 +1275,36 @@
    "location": "Lizton Campus",
    "summary": "",
    "url": "https://yvc.churchcenter.com/calendar/event/209681899",
+   "featured": false
+  },
+  {
+   "id": "234734847-2027-01-27",
+   "series": "234734847",
+   "title": "21 Days of Prayer",
+   "starts": "2027-01-27T05:00:00Z",
+   "ends": "2027-01-28T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Prayer",
+   "roomId": null,
+   "location": "Lizton Campus",
+   "summary": "",
+   "url": "https://yvc.churchcenter.com/calendar/event/234734859",
+   "featured": false
+  },
+  {
+   "id": "170652971-2027-01-27",
+   "series": "170652971",
+   "title": "High School Ministry",
+   "starts": "2027-01-27T05:00:00Z",
+   "ends": "2027-01-28T04:59:00Z",
+   "allDay": true,
+   "recur": "",
+   "category": "Students",
+   "roomId": "nw-classroom",
+   "location": "Lizton Campus",
+   "summary": "High school students meet every Wednesday night.",
+   "url": "https://yvc.churchcenter.com/calendar/event/178412565",
    "featured": false
   }
  ]
